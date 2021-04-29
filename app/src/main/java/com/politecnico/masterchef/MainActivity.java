@@ -1,4 +1,4 @@
-package com.politecnico.loginhttp;
+package com.politecnico.masterchef;
 
 import android.content.Context;
 import android.content.Intent;
