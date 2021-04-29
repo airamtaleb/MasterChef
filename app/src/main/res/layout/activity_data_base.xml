@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
-            android:text="BASE DE DATOS"
+            android:text="BASE"
             android:textColor="#FF0264"
             android:textSize="30dp"
             android:textStyle="bold"
