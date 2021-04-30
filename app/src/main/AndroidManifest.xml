@@ -11,12 +11,11 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LoginHttp">
-        <activity android:name=".RegistroActivity"></activity>
-        <activity android:name=".EventosActivity"></activity>
+        android:theme="@style/Theme.MasterChef">
+        <activity android:name=".RegistroActivity" />
+        <activity android:name=".EventosActivity" />
         <activity android:name=".DatabaseActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".WelcomeActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

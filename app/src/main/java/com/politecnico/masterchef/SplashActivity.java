@@ -32,7 +32,7 @@ public class SplashActivity extends AppCompatActivity {
 
                 if (sesion){
 
-                    Intent i = new Intent(getApplicationContext(), WelcomeActivity.class);
+                    Intent i = new Intent(getApplicationContext(), EventosActivity.class);
                     startActivity(i);
                     finish();
                 }else {

@@ -32,7 +32,7 @@ import java.util.Map;
 public class LoginActivity extends AppCompatActivity {
 
     TextInputLayout editUser, editPassword;
-    Button btnLogin;
+    Button btnLogin, btnIrRegistro;
 
     String usuario, password;
 
@@ -46,16 +46,26 @@ public class LoginActivity extends AppCompatActivity {
         editUser = findViewById(R.id.editCorreo);
         editPassword = findViewById(R.id.editPassword);
         btnLogin = findViewById(R.id.btnLogin);
+        btnIrRegistro = findViewById(R.id.btnIrRegistro);
 
         //comprobar si hay datos en sharedPreferences
         getPreferences();
+
+        btnIrRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), RegistroActivity.class);
+                startActivity(i);
+            }
+        });
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                usuario = editUser.getEditText().toString();
-                password = editPassword.getEditText().toString();
+                usuario = editUser.getEditText().getText().toString();
+
+                password = editPassword.getEditText().getText().toString();
 
                 if (!usuario.isEmpty() && !password.isEmpty()) {
                     //en este caso ponemos 10.0.2.2 en vez de localhost si no no lo reconoce...
@@ -75,8 +85,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onResponse(String response) {
                 if (!response.isEmpty()) {
                     guardarSharedPreferences();
-                    Intent i = new Intent(getApplicationContext(), WelcomeActivity.class);
-                    startActivity(i);
+                    Intent i = new Intent(getApplicationContext(), EventosActivity.class);
+                   startActivity(i);
                 } else {
 
                     Toast.makeText(LoginActivity.this, "Usuario y/o contraseña incorrectos", Toast.LENGTH_LONG).show();
@@ -97,7 +107,7 @@ public class LoginActivity extends AppCompatActivity {
                 } else if (error instanceof NoConnectionError) {
                     message = "Imposible conectarse a Interner. Compruebe la conexion";
                 } else if (error instanceof TimeoutError) {
-                    message = "Tiempo de espera agotado . compruebe la conecxion a interner";
+                    message = "Tiempo de espera agotado . compruebe la conexion a interner";
                 }
 
                 Toast.makeText(LoginActivity.this, message, Toast.LENGTH_LONG).show();
