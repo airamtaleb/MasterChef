@@ -2,7 +2,9 @@ package com.politecnico.masterchef;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class RegistroActivity extends AppCompatActivity {
@@ -16,9 +18,15 @@ public class RegistroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registro);
 
 
+        btnIrLogin = findViewById(R.id.btnIrLogin);
 
-
-
+        btnIrLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(i);
+            }
+        });
 
     }
 }
