@@ -1,0 +1,3684 @@
+﻿{
+    "ITEMS": [
+        {
+            "TIPO": "Centro de Salud Mental ",
+            "NOMBRE": "CENTRO SALUD MENTAL CASCO VIEJO",
+            "DIRECCIÓN ": "CALLE COMPAÑIA, 8",
+            "CÓDIGO POSTAL": 31001,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948206635,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centro de Salud Mental ",
+            "NOMBRE": "CENTRO SALUD MENTAL MILAGROSA",
+            "DIRECCIÓN ": "JULIAN GAYARRE, 1A BAJO",
+            "CÓDIGO POSTAL": 31005,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948290466,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centro de Salud Mental ",
+            "NOMBRE": "CENTRO SALUD MENTAL ERMITAGAÑA ",
+            "DIRECCIÓN ": "ERMITAGAÑA, 20",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948198590,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centro de Salud Mental ",
+            "NOMBRE": "CENTRO SALUD MENTAL SAN JUAN ",
+            "DIRECCIÓN ": "AVDA. BARAÑAIN, 14 ",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948190040,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centro de Salud Mental ",
+            "NOMBRE": "CENTRO SALUD MENTAL ANSOAIN",
+            "DIRECCIÓN ": "C/ OSTOKI, 16 ",
+            "CÓDIGO POSTAL": 31013,
+            "LOCALIDAD": "BERRIOZAR",
+            "TELÉFONO": 948139055,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centro de Salud Mental ",
+            "NOMBRE": "CENTRO SALUD MENTAL ROCHAPEA ",
+            "DIRECCIÓN ": "USTARROZ, 24",
+            "CÓDIGO POSTAL": 31014,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948136600,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centro de Salud Mental ",
+            "NOMBRE": "UNIDAD DE TCA ADULTOS",
+            "DIRECCIÓN ": "AVDA. VILLAVA, 53",
+            "CÓDIGO POSTAL": 31015,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848428303,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centro de Salud Mental ",
+            "NOMBRE": "CENTRO SALUD MENTAL ESTELLA",
+            "DIRECCIÓN ": "CAMINO DE LOGROÑO, 4 ",
+            "CÓDIGO POSTAL": 31200,
+            "LOCALIDAD": "ESTELLA",
+            "TELÉFONO": 948556370,
+            "TELÉFONO CITA": 948556370,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centro de Salud Mental ",
+            "NOMBRE": "CENTRO SALUD MENTAL TAFALLA",
+            "DIRECCIÓN ": "CAMINO PEDRERA, S/N",
+            "CÓDIGO POSTAL": 31300,
+            "LOCALIDAD": "TAFALLA",
+            "TELÉFONO": 948703921,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centro de Salud Mental ",
+            "NOMBRE": "CENTRO SALUD MENTAL TUDELA ",
+            "DIRECCIÓN ": "GAYARRE, S/N",
+            "CÓDIGO POSTAL": 31500,
+            "LOCALIDAD": "TUDELA",
+            "TELÉFONO": 948848187,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centro de Salud Mental ",
+            "NOMBRE": "CENTRO SALUD MENTAL BURLADA",
+            "DIRECCIÓN ": "LA FUENTE, S/N",
+            "CÓDIGO POSTAL": 31600,
+            "LOCALIDAD": "BURLADA",
+            "TELÉFONO": 948136119,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "CENTRO ATENCION A LA MUJER ENSANCHE-CASCO VIEJO",
+            "DIRECCIÓN ": "AOIZ, 35",
+            "CÓDIGO POSTAL": 31004,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848429087,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "CENTRO ATENCION A LA MUJER MILAGROSA-AZPILAGAÑA",
+            "DIRECCIÓN ": "LUIS MORONDO, 1",
+            "CÓDIGO POSTAL": 31006,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948290228,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "CENTRO ATENCION A LA MUJER ERMITAGAÑA",
+            "DIRECCIÓN ": "AVENIDA DE BARAÑAIN, S/N (RECINTO HOSPITALARIO)",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848422715,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "CENTRO ATENCION A LA MUJER ITURRAMA-SAN JUAN",
+            "DIRECCIÓN ": "ITURRAMA, 9",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948198333,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "SUBUNIDAD ATENCION A LA MUJER BARAÑAIN",
+            "DIRECCIÓN ": "PLAZA CAIMITO DE GUAYABAL",
+            "CÓDIGO POSTAL": 31010,
+            "LOCALIDAD": "BARAÑAIN",
+            "TELÉFONO": 948198656,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "CENTRO LAIRA",
+            "DIRECCIÓN ": "KALEBERRI, S/N",
+            "CÓDIGO POSTAL": 31013,
+            "LOCALIDAD": "BERRIOZAR",
+            "TELÉFONO": 948301907,
+            "TELÉFONO CITA": 948301907,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "CENTRO ATENCION A LA MUJER CHANTREA-ANDRAIZE",
+            "DIRECCIÓN ": "AVDA. SAN CRISTOBAL, S/N",
+            "CÓDIGO POSTAL": 31015,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848422760,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "CENTRO ATENCION A LA MUJER ARGIA",
+            "DIRECCIÓN ": "IPERTEGUI, 1 BIS BAJO",
+            "CÓDIGO POSTAL": 31160,
+            "LOCALIDAD": "ORKOIEN",
+            "TELÉFONO": 948325054,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "CENTRO ATENCION A LA MUJER ESTELLA",
+            "DIRECCIÓN ": "SANTA SORIA, 22",
+            "CÓDIGO POSTAL": 31200,
+            "LOCALIDAD": "ESTELLA",
+            "TELÉFONO": 948556374,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "CENTRO ATENCION A LA MUJER TAFALLA",
+            "DIRECCIÓN ": "SAN MARTIN DE UNX, 11",
+            "CÓDIGO POSTAL": 31300,
+            "LOCALIDAD": "TAFALLA",
+            "TELÉFONO": 948703919,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "SUBUNIDAD ATENCION A LA MUJER SANGÜESA",
+            "DIRECCIÓN ": "CALLE CANTOLAGUA, S/N",
+            "CÓDIGO POSTAL": 31400,
+            "LOCALIDAD": "SANGUESA",
+            "TELÉFONO": 948871441,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "CENTRO ATENCION A LA MUJER TUDELA-HOSPITAL",
+            "DIRECCIÓN ": "CARRETERA DE TARAZONA, KM 4",
+            "CÓDIGO POSTAL": 31500,
+            "LOCALIDAD": "TUDELA",
+            "TELÉFONO": 948817100,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "CENTRO ATENCION A LA MUJER TUDELA-SANTA ANA",
+            "DIRECCIÓN ": "JUAN A. FERNANDEZ, 12",
+            "CÓDIGO POSTAL": 31500,
+            "LOCALIDAD": "TUDELA",
+            "TELÉFONO": 948848120,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "SUBUNIDAD ATENCION A LA MUJER SAN ADRIAN",
+            "DIRECCIÓN ": "LUIS GURPEGUI, S/N",
+            "CÓDIGO POSTAL": 31570,
+            "LOCALIDAD": "SAN ADRIAN",
+            "TELÉFONO": 948672106,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "SUBUNIDAD ATENCION A LA MUJER LODOSA",
+            "DIRECCIÓN ": "LOS FUEROS, S/N",
+            "CÓDIGO POSTAL": 31580,
+            "LOCALIDAD": "LODOSA",
+            "TELÉFONO": 948662400,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "CENTRO ATENCION A LA MUJER BURLADA",
+            "DIRECCIÓN ": "DE LA FUENTE, S/N",
+            "CÓDIGO POSTAL": 31600,
+            "LOCALIDAD": "BURLADA",
+            "TELÉFONO": 948136658,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "SUBUNIDAD ATENCION A LA MUJER ELIZONDO",
+            "DIRECCIÓN ": "JOAQUIN IRIARTE, 4",
+            "CÓDIGO POSTAL": 31700,
+            "LOCALIDAD": "ELIZONDO",
+            "TELÉFONO": 948581835,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de Atención a la Mujer ",
+            "NOMBRE": "SUBUNIDAD ATENCION A LA MUJER ETXARRI-ARANATZ",
+            "DIRECCIÓN ": "LARRAÑETA, S/N",
+            "CÓDIGO POSTAL": 31820,
+            "LOCALIDAD": "ETXARRI-ARANATZ",
+            "TELÉFONO": 948567063,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de atencion especializada",
+            "NOMBRE": "CENTRO SANITARIO CONDE OLIVETO",
+            "DIRECCIÓN ": "PLAZA DE LA PAZ, S/N",
+            "CÓDIGO POSTAL": 31002,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848429100,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de atencion especializada",
+            "NOMBRE": "CENTRO SANITARIO DOCTOR SAN MARTIN",
+            "DIRECCIÓN ": "SAN FERMIN, 29",
+            "CÓDIGO POSTAL": 31004,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848429100,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de atencion especializada",
+            "NOMBRE": "CENTRO DE CONSULTAS PRINCIPE DE VIANA",
+            "DIRECCIÓN ": "IRUNLARREA, S/N",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848429100,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de atencion especializada",
+            "NOMBRE": "CENTRO DE TRANSFUSIÓN SANGUÍNEA DE NAVARRA",
+            "DIRECCIÓN ": "IRUNLARREA, S/N",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848422500,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de atencion especializada",
+            "NOMBRE": "AMBULATORIO DE TAFALLA",
+            "DIRECCIÓN ": "SAN MARTIN DE UNX, 11",
+            "CÓDIGO POSTAL": 31300,
+            "LOCALIDAD": "TAFALLA",
+            "TELÉFONO": 948704034,
+            "TELÉFONO CITA": 948704032,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de atencion especializada",
+            "NOMBRE": "AMBULATORIO SANTA ANA",
+            "DIRECCIÓN ": "JUAN ANTONIO FERNANDEZ, 12",
+            "CÓDIGO POSTAL": 31500,
+            "LOCALIDAD": "TUDELA",
+            "TELÉFONO": 948848066,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de atencion especializada",
+            "NOMBRE": "BANCO DE SANGRE DEL AREA DE TUDELA",
+            "DIRECCIÓN ": "CARRETERA DE TARAZONA, KM 3",
+            "CÓDIGO POSTAL": 31500,
+            "LOCALIDAD": "TUDELA",
+            "TELÉFONO": 948817000,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE BUZTINTXURI",
+            "DIRECCIÓN ": "AVENIDA DE GUIPUZCOA, 39",
+            "CÓDIGO POSTAL": 31012,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948139080,
+            "TELÉFONO CITA": 948139076,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE CASCO VIEJO ",
+            "DIRECCIÓN ": "CALLE COMPAÑIA, 8",
+            "CÓDIGO POSTAL": 31001,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948206410,
+            "TELÉFONO CITA": 948206633,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD II ENSANCHE",
+            "DIRECCIÓN ": "AOIZ, 35",
+            "CÓDIGO POSTAL": 31004,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848429295,
+            "TELÉFONO CITA": 848429296,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE MILAGROSA ",
+            "DIRECCIÓN ": "JULIAN GAYARRE, 1-A BAJO ",
+            "CÓDIGO POSTAL": 31005,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948290474,
+            "TELÉFONO CITA": 948290470,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE AZPILAGAÑA",
+            "DIRECCIÓN ": "LUIS MORONDO, 1",
+            "CÓDIGO POSTAL": 31006,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948290480,
+            "TELÉFONO CITA": 948290477,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ITURRAMA",
+            "DIRECCIÓN ": "SERAFIN OLAVE ESQUINA FUENTE DEL HIERRO ",
+            "CÓDIGO POSTAL": 31007,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948198363,
+            "TELÉFONO CITA": 948198360,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ERMITAGAÑA",
+            "DIRECCIÓN ": "ERMITAGAÑA, 20",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948198350,
+            "TELÉFONO CITA": 948198355,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE SAN JUAN",
+            "DIRECCIÓN ": "PLAZA OBISPO IRURITA, S/N",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948198344,
+            "TELÉFONO CITA": 948198588,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD UNIVERSIDAD DE NAVARRA",
+            "DIRECCIÓN ": "AVENIDA PIO XII, S/N ",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ECHAVACOIZ",
+            "DIRECCIÓN ": "SAN RAIMUNDO, S/N",
+            "CÓDIGO POSTAL": 31009,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948198338,
+            "TELÉFONO CITA": 948198340,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE BARAÑAIN I",
+            "DIRECCIÓN ": "AVDA. COMERCIAL, S/N ",
+            "CÓDIGO POSTAL": 31010,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948198330,
+            "TELÉFONO CITA": 948198585,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE BARAÑAIN II ",
+            "DIRECCIÓN ": "PLAZA CAIMITO DEL GUAYABAL, 1 ",
+            "CÓDIGO POSTAL": 31010,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948287529,
+            "TELÉFONO CITA": 948287540,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE SAN JORGE ",
+            "DIRECCIÓN ": "SANDUCELAY, S/N BAJO ",
+            "CÓDIGO POSTAL": 31012,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948136601,
+            "TELÉFONO CITA": 948136288,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ANSOAIN ",
+            "DIRECCIÓN ": "OSTOKI, 16",
+            "CÓDIGO POSTAL": 31013,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948136250,
+            "TELÉFONO CITA": 948136111,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE BERRIOZAR ",
+            "DIRECCIÓN ": "KALEBERRI, S/N",
+            "CÓDIGO POSTAL": 31013,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948309466,
+            "TELÉFONO CITA": 948309404,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ROCHAPEA",
+            "DIRECCIÓN ": "UZTARROZ, 24",
+            "CÓDIGO POSTAL": 31014,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948136255,
+            "TELÉFONO CITA": 948136252,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE CHANTREA",
+            "DIRECCIÓN ": "SAN CRISTOBAL, S/N ",
+            "CÓDIGO POSTAL": 31015,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948136272,
+            "TELÉFONO CITA": 948136270,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE MENDILLORRI ",
+            "DIRECCIÓN ": "CONCEJO DE SARRIGUREN, S/N ",
+            "CÓDIGO POSTAL": 31016,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948163982,
+            "TELÉFONO CITA": 948163922,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE PUENTE LA REINA",
+            "DIRECCIÓN ": "SAN PEDRO, S/N",
+            "CÓDIGO POSTAL": 31100,
+            "LOCALIDAD": "PUENTE LA REINA",
+            "TELÉFONO": 948348003,
+            "TELÉFONO CITA": 948348003,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE NOAIN ",
+            "DIRECCIÓN ": "CTRA. VIEJA AEROPUERTO, S/N",
+            "CÓDIGO POSTAL": 31110,
+            "LOCALIDAD": "NOÁIN",
+            "TELÉFONO": 948368156,
+            "TELÉFONO CITA": 948368155,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE VILLATUERTA ",
+            "DIRECCIÓN ": "AVDA. DEL CAMPO, 2 ",
+            "CÓDIGO POSTAL": 31132,
+            "LOCALIDAD": "VILLATUERTA",
+            "TELÉFONO": 948536007,
+            "TELÉFONO CITA": 948536007,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ORKOIEN ",
+            "DIRECCIÓN ": "CTRA. ECHAURI S/N",
+            "CÓDIGO POSTAL": 31160,
+            "LOCALIDAD": "ORKOIEN",
+            "TELÉFONO": 948321125,
+            "TELÉFONO CITA": 948321011,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ZIZUR ",
+            "DIRECCIÓN ": "PARQUE ERRENIEGA, 26 ",
+            "CÓDIGO POSTAL": 31180,
+            "LOCALIDAD": "ZIZUR ",
+            "TELÉFONO": 948286292,
+            "TELÉFONO CITA": 948286060,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ESTELLA ",
+            "DIRECCIÓN ": "PASEO DE LA INMACULADA, 39 ",
+            "CÓDIGO POSTAL": 31200,
+            "LOCALIDAD": "ESTELLA ",
+            "TELÉFONO": 948556287,
+            "TELÉFONO CITA": 948556350,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE LOS ARCOS ",
+            "DIRECCIÓN ": "DEL PESO, S/N ",
+            "CÓDIGO POSTAL": 31210,
+            "LOCALIDAD": "LOS ARCOS ",
+            "TELÉFONO": 948640860,
+            "TELÉFONO CITA": 948640800,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE VIANA ",
+            "DIRECCIÓN ": "PLAZA SOR SIMONA OROZ, S/N ",
+            "CÓDIGO POSTAL": 31230,
+            "LOCALIDAD": "VIANA ",
+            "TELÉFONO": 948646375,
+            "TELÉFONO CITA": 948646375,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE LARRAGA ",
+            "DIRECCIÓN ": "CAÑADA REAL, S/N ",
+            "CÓDIGO POSTAL": 31251,
+            "LOCALIDAD": "LARRAGA ",
+            "TELÉFONO": 948711770,
+            "TELÉFONO CITA": 948711770,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ALLO",
+            "DIRECCIÓN ": "CTRA. DEL NORTE, S/N ",
+            "CÓDIGO POSTAL": 31262,
+            "LOCALIDAD": "ALLO",
+            "TELÉFONO": 948523960,
+            "TELÉFONO CITA": 948523900,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ANCIN ",
+            "DIRECCIÓN ": "MAYOR, S/N",
+            "CÓDIGO POSTAL": 31281,
+            "LOCALIDAD": "ANCIN ",
+            "TELÉFONO": 948534602,
+            "TELÉFONO CITA": 948534602,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE TAFALLA ",
+            "DIRECCIÓN ": "SAN MARTIN DE UNX, 11",
+            "CÓDIGO POSTAL": 31300,
+            "LOCALIDAD": "TAFALLA ",
+            "TELÉFONO": 948704034,
+            "TELÉFONO CITA": 948704030,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE CARCASTILLO ",
+            "DIRECCIÓN ": "POSITO, S/N ",
+            "CÓDIGO POSTAL": 31310,
+            "LOCALIDAD": "CARCASTILLO ",
+            "TELÉFONO": 948725801,
+            "TELÉFONO CITA": 948725833,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE PERALTA ",
+            "DIRECCIÓN ": "AVDA. LA PAZ, 35 ",
+            "CÓDIGO POSTAL": 31350,
+            "LOCALIDAD": "PERALTA ",
+            "TELÉFONO": 948751737,
+            "TELÉFONO CITA": 948751616,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE OLITE ",
+            "DIRECCIÓN ": "ALCALDE MAILLATA, 9",
+            "CÓDIGO POSTAL": 31390,
+            "LOCALIDAD": "OLITE ",
+            "TELÉFONO": 948741701,
+            "TELÉFONO CITA": 948741732,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE SANGÜESA",
+            "DIRECCIÓN ": "CANTOLAGUA, S/N",
+            "CÓDIGO POSTAL": 31400,
+            "LOCALIDAD": "SANGÜESA",
+            "TELÉFONO": 948871441,
+            "TELÉFONO CITA": 948871443,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ISABA ",
+            "DIRECCIÓN ": "CTRA. ISABA, S/N ",
+            "CÓDIGO POSTAL": 31417,
+            "LOCALIDAD": "ISABA ",
+            "TELÉFONO": 948893444,
+            "TELÉFONO CITA": 948893444,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE AOIZ",
+            "DIRECCIÓN ": "DOMINGO ELIZONDO, S/N",
+            "CÓDIGO POSTAL": 31430,
+            "LOCALIDAD": "AOIZ",
+            "TELÉFONO": 948336600,
+            "TELÉFONO CITA": 948336600,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE TUDELA ESTE ",
+            "DIRECCIÓN ": "JUAN A. FERNANDEZ, 12",
+            "CÓDIGO POSTAL": 31500,
+            "LOCALIDAD": "TUDELA",
+            "TELÉFONO": 948848066,
+            "TELÉFONO CITA": 948848200,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE TUDELA OESTE",
+            "DIRECCIÓN ": "GAYARRE, 17 ",
+            "CÓDIGO POSTAL": 31500,
+            "LOCALIDAD": "TUDELA ",
+            "TELÉFONO": 948848190,
+            "TELÉFONO CITA": 948848060,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE VALTIERRA ",
+            "DIRECCIÓN ": "C/  SANTA CRUZ, 1-A",
+            "CÓDIGO POSTAL": 31514,
+            "LOCALIDAD": "VALTIERRA ",
+            "TELÉFONO": 948843260,
+            "TELÉFONO CITA": 948843200,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE CASCANTE",
+            "DIRECCIÓN ": "AVDA. CARIDAD, S/N ",
+            "CÓDIGO POSTAL": 31520,
+            "LOCALIDAD": "CASCANTE",
+            "TELÉFONO": 948844560,
+            "TELÉFONO CITA": 948844500,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE BUÑUEL",
+            "DIRECCIÓN ": "CRISTOBAL COLON, 19",
+            "CÓDIGO POSTAL": 31540,
+            "LOCALIDAD": "BUÑUEL",
+            "TELÉFONO": 948832032,
+            "TELÉFONO CITA": 948832000,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE SAN ADRIAN",
+            "DIRECCIÓN ": "LUIS GURPEGUI, S/N ",
+            "CÓDIGO POSTAL": 31570,
+            "LOCALIDAD": "SAN ADRIAN",
+            "TELÉFONO": 948672004,
+            "TELÉFONO CITA": 948672130,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE LODOSA",
+            "DIRECCIÓN ": "LOS FUEROS, S/N",
+            "CÓDIGO POSTAL": 31580,
+            "LOCALIDAD": "LODOSA",
+            "TELÉFONO": 948662360,
+            "TELÉFONO CITA": 948662300,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE CORELLA ALONSO LOPEZ ",
+            "DIRECCIÓN ": "Mª TERESA, S/N",
+            "CÓDIGO POSTAL": 31591,
+            "LOCALIDAD": "CORELLA ALONSO LOPEZ ",
+            "TELÉFONO": 948782135,
+            "TELÉFONO CITA": 948782010,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE CINTRUÉNIGO ",
+            "DIRECCIÓN ": "RIBERA, 2 ",
+            "CÓDIGO POSTAL": 31592,
+            "LOCALIDAD": "CINTRUÉNIGO ",
+            "TELÉFONO": 948815133,
+            "TELÉFONO CITA": 948815002,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE BURLADA ",
+            "DIRECCIÓN ": "LA FUENTE, S/N",
+            "CÓDIGO POSTAL": 31600,
+            "LOCALIDAD": "BURLADA ",
+            "TELÉFONO": 948136260,
+            "TELÉFONO CITA": 948136262,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE VILLAVA ",
+            "DIRECCIÓN ": "PZA. MIGUEL INDURAIN, S/N",
+            "CÓDIGO POSTAL": 31610,
+            "LOCALIDAD": "VILLAVA ",
+            "TELÉFONO": 948335022,
+            "TELÉFONO CITA": 948335075,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE HUARTE",
+            "DIRECCIÓN ": "ZARRONDOA, 1",
+            "CÓDIGO POSTAL": 31620,
+            "LOCALIDAD": "HUARTE",
+            "TELÉFONO": 948335080,
+            "TELÉFONO CITA": 948335033,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE AURITZ-BURGUETE",
+            "DIRECCIÓN ": "BEREXI, S/N ",
+            "CÓDIGO POSTAL": 31640,
+            "LOCALIDAD": "AURITZ-BURGUETE",
+            "TELÉFONO": 948760300,
+            "TELÉFONO CITA": 948760300,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE EZCAROZ ",
+            "DIRECCIÓN ": "ROCHAPEA, 14",
+            "CÓDIGO POSTAL": 31690,
+            "LOCALIDAD": "EZCAROZ ",
+            "TELÉFONO": 948890640,
+            "TELÉFONO CITA": 948890640,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ELIZONDO",
+            "DIRECCIÓN ": "F. JOAQUIN IRIARTE, 4",
+            "CÓDIGO POSTAL": 31700,
+            "LOCALIDAD": "ELIZONDO",
+            "TELÉFONO": 948581832,
+            "TELÉFONO CITA": 948581833,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE DONEZTEBE/SANTESTEBAN",
+            "DIRECCIÓN ": "BARRIO SAN MIGUEL, S/N ",
+            "CÓDIGO POSTAL": 31740,
+            "LOCALIDAD": "DONEZTEBE/SANTESTEBAN",
+            "TELÉFONO": 948456001,
+            "TELÉFONO CITA": 948456001,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE LESAKA",
+            "DIRECCIÓN ": "ANTOIU, 36",
+            "CÓDIGO POSTAL": 31770,
+            "LOCALIDAD": "LESAKA",
+            "TELÉFONO": 948638130,
+            "TELÉFONO CITA": 948638000,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE LARRAINTZAR ",
+            "DIRECCIÓN ": "SAN PEDRO, S/N",
+            "CÓDIGO POSTAL": 31797,
+            "LOCALIDAD": "LARRAINTZAR ",
+            "TELÉFONO": 948309350,
+            "TELÉFONO CITA": 948309350,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ALTSASU/ALSASUA",
+            "DIRECCIÓN ": "C/ ZELANDI S/N",
+            "CÓDIGO POSTAL": 31800,
+            "LOCALIDAD": "ALTSASU/ALSASUA",
+            "TELÉFONO": 948564965,
+            "TELÉFONO CITA": 948564966,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE ETXARRI-ARANATZ",
+            "DIRECCIÓN ": "LARRAÑETA S/N ",
+            "CÓDIGO POSTAL": 31820,
+            "LOCALIDAD": "ETXARRI-ARANATZ",
+            "TELÉFONO": 948567061,
+            "TELÉFONO CITA": 948567060,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE IRURTZUN",
+            "DIRECCIÓN ": "PLAZA DE LOS FUEROS, S/N ",
+            "CÓDIGO POSTAL": 31860,
+            "LOCALIDAD": "IRURTZUN",
+            "TELÉFONO": 948507035,
+            "TELÉFONO CITA": 948507005,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Centros de salud",
+            "NOMBRE": "CENTRO DE SALUD DE LEITZA",
+            "DIRECCIÓN ": "C/ AMAZABAL S/N",
+            "CÓDIGO POSTAL": 31880,
+            "LOCALIDAD": "LEITZA",
+            "TELÉFONO": 948510833,
+            "TELÉFONO CITA": 948510800,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Clínica de rehabilitación ",
+            "NOMBRE": "CLINICA DE REHABILITACION",
+            "DIRECCIÓN ": "AVDA. VILLAVA, 53",
+            "CÓDIGO POSTAL": 31015,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848422730,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Comunidad de tratamiento de drogodependencias ",
+            "NOMBRE": "COMUNIDAD TERAPEUTICA EGIARTE",
+            "DIRECCIÓN ": "JARAUTA, 2-4",
+            "CÓDIGO POSTAL": 31001,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948212040,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Comunidad de tratamiento de drogodependencias ",
+            "NOMBRE": "ASOCIACION ANTOX ",
+            "DIRECCIÓN ": "OLITE, 26 - 2º I ",
+            "CÓDIGO POSTAL": 31004,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948392150,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Comunidad de tratamiento de drogodependencias ",
+            "NOMBRE": "PROYECTO HOMBRE",
+            "DIRECCIÓN ": "AVENIDA DE ZARAGOZA, 23",
+            "CÓDIGO POSTAL": 31005,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948291865,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Comunidad de tratamiento de drogodependencias ",
+            "NOMBRE": "DIANOVA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31438,
+            "LOCALIDAD": "",
+            "TELÉFONO": 948760285,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARRE",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31002,
+            "LOCALIDAD": "ARRE",
+            "TELÉFONO": 948332335,
+            "TELÉFONO CITA": 948332335,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARTAZU",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31109,
+            "LOCALIDAD": "ARTAZU",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE IMARCOAIN ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31119,
+            "LOCALIDAD": "IMARCOAIN ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MAÑERU",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31130,
+            "LOCALIDAD": "MAÑERU",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE CIRAUQUI",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31131,
+            "LOCALIDAD": "CIRAUQUI",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LEGARDA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31133,
+            "LOCALIDAD": "LEGARDA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE UTERGA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31133,
+            "LOCALIDAD": "UTERGA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARTAJONA",
+            "DIRECCIÓN ": "JUAN LAZCARRO, 1 ",
+            "CÓDIGO POSTAL": 31140,
+            "LOCALIDAD": "ARTAJONA",
+            "TELÉFONO": 948364502,
+            "TELÉFONO CITA": 948364502,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MENDIGORRIA ",
+            "DIRECCIÓN ": "PLAZA DE LOS FUEROS, 1 ",
+            "CÓDIGO POSTAL": 31150,
+            "LOCALIDAD": "MENDIGORRIA ",
+            "TELÉFONO": 948343121,
+            "TELÉFONO CITA": 948343121,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE OBANOS",
+            "DIRECCIÓN ": "SAN IGNACIO, 7",
+            "CÓDIGO POSTAL": 31151,
+            "LOCALIDAD": "OBANOS",
+            "TELÉFONO": 948344029,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MURUZABAL ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31152,
+            "LOCALIDAD": "MURUZABAL ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ADIOS ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31153,
+            "LOCALIDAD": "ADIOS ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ENÉRIZ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31153,
+            "LOCALIDAD": "ENÉRIZ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AÑORBE",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31154,
+            "LOCALIDAD": "AÑORBE",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE UCAR",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31154,
+            "LOCALIDAD": "UCAR",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ORORBIA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31171,
+            "LOCALIDAD": "ORORBIA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AIZPUN",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31172,
+            "LOCALIDAD": "AIZPUN",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ANOZ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31172,
+            "LOCALIDAD": "ANOZ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARTETA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31172,
+            "LOCALIDAD": "ARTETA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AZANZA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31172,
+            "LOCALIDAD": "AZANZA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE GOÑI",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31172,
+            "LOCALIDAD": "GOÑI",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ILZARBE ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31172,
+            "LOCALIDAD": "ILZARBE ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MUNARRIZ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31172,
+            "LOCALIDAD": "MUNARRIZ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE OLLO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31172,
+            "LOCALIDAD": "OLLO",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE URDANOZ ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31172,
+            "LOCALIDAD": "URDANOZ ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE IBERO ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31173,
+            "LOCALIDAD": "IBERO ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ETXAURI ",
+            "DIRECCIÓN ": "PL. FRANCISCA SALINAS 1",
+            "CÓDIGO POSTAL": 31174,
+            "LOCALIDAD": "ETXAURI ",
+            "TELÉFONO": 948329252,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SALINAS DE ORO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31175,
+            "LOCALIDAD": "SALINAS DE ORO",
+            "TELÉFONO": 948357107,
+            "TELÉFONO CITA": 948536007,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AZCONA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31177,
+            "LOCALIDAD": "AZCONA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LEZAUN",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31177,
+            "LOCALIDAD": "LEZAUN",
+            "TELÉFONO": 948542252,
+            "TELÉFONO CITA": 948536007,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ABARZUZA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31178,
+            "LOCALIDAD": "ABARZUZA",
+            "TELÉFONO": 948520222,
+            "TELÉFONO CITA": 948536007,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ASTRAIN ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31190,
+            "LOCALIDAD": "ASTRAIN ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE CORDOVILLA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31191,
+            "LOCALIDAD": "CORDOVILLA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ESPARZA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31191,
+            "LOCALIDAD": "ESPARZA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ESQUIROZ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31191,
+            "LOCALIDAD": "ESQUIROZ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE GALAR ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31191,
+            "LOCALIDAD": "GALAR ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE POTASAS DE BERIAIN",
+            "DIRECCIÓN ": "RONDA SAN FRANCISCO JAVIER, S/N",
+            "CÓDIGO POSTAL": 31191,
+            "LOCALIDAD": "POTASAS DE BERIAIN",
+            "TELÉFONO": 948310443,
+            "TELÉFONO CITA": 948310443,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SALINAS ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31191,
+            "LOCALIDAD": "SALINAS ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SUBIZA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31191,
+            "LOCALIDAD": "SUBIZA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MUTILVA ",
+            "DIRECCIÓN ": "AVDA. PAMPLONA, 6",
+            "CÓDIGO POSTAL": 31192,
+            "LOCALIDAD": "MUTILVA ",
+            "TELÉFONO": 948249105,
+            "TELÉFONO CITA": 948249105,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MARCALAIN ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31193,
+            "LOCALIDAD": "MARCALAIN ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "PEDIATRIA HOSPITAL DE ESTELLA 1",
+            "DIRECCIÓN ": "SANTA SORIA, 23",
+            "CÓDIGO POSTAL": 31200,
+            "LOCALIDAD": "ESTELLA",
+            "TELÉFONO": 848435237,
+            "TELÉFONO CITA": 948555351,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "PEDIATRIA HOSPITAL DE ESTELLA 2",
+            "DIRECCIÓN ": "SANTA SORIA, 23",
+            "CÓDIGO POSTAL": 31200,
+            "LOCALIDAD": "ESTELLA",
+            "TELÉFONO": 848435236,
+            "TELÉFONO CITA": 848435002,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "PEDIATRIA HOSPITAL DE ESTELLA 3",
+            "DIRECCIÓN ": "SANTA SORIA, 23",
+            "CÓDIGO POSTAL": 31200,
+            "LOCALIDAD": "ESTELLA",
+            "TELÉFONO": 848435236,
+            "TELÉFONO CITA": 848435002,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MUÉS",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31219,
+            "LOCALIDAD": "MUÉS",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SORLADA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31219,
+            "LOCALIDAD": "SORLADA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SANSOL",
+            "DIRECCIÓN ": "BARRIO NUEVO, S/N",
+            "CÓDIGO POSTAL": 31220,
+            "LOCALIDAD": "SANSOL",
+            "TELÉFONO": 948648133,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE CABREDO ",
+            "DIRECCIÓN ": "MAYOR, S/N",
+            "CÓDIGO POSTAL": 31227,
+            "LOCALIDAD": "CABREDO ",
+            "TELÉFONO": 948444063,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE GENEVILLA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31227,
+            "LOCALIDAD": "GENEVILLA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LAPOBLACION ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31227,
+            "LOCALIDAD": "LAPOBLACION ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MARAÑON ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31227,
+            "LOCALIDAD": "MARAÑON ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MEANO ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31227,
+            "LOCALIDAD": "MEANO ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AGUILAR DE CODES",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31228,
+            "LOCALIDAD": "AGUILAR DE CODES",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARMAÑANZAS",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31228,
+            "LOCALIDAD": "ARMAÑANZAS",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AZUELO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31228,
+            "LOCALIDAD": "AZUELO",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ESPRONCEDA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31228,
+            "LOCALIDAD": "ESPRONCEDA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE TORRALBA DEL RIO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31228,
+            "LOCALIDAD": "TORRALBA DEL RIO",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE BARGOTA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31229,
+            "LOCALIDAD": "BARGOTA ",
+            "TELÉFONO": 948648215,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE DESOJO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31229,
+            "LOCALIDAD": "DESOJO",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE EL BUSTO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31229,
+            "LOCALIDAD": "EL BUSTO",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE TORRES DEL RIO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31229,
+            "LOCALIDAD": "TORRES DEL RIO",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARAS",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31239,
+            "LOCALIDAD": "ARAS",
+            "TELÉFONO": 948644066,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AYEGUI",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31240,
+            "LOCALIDAD": "AYEGUI",
+            "TELÉFONO": 948555351,
+            "TELÉFONO CITA": 948555351,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARBEIZA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31241,
+            "LOCALIDAD": "ARBEIZA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AZQUETA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31241,
+            "LOCALIDAD": "AZQUETA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE IGUZQUIZA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31241,
+            "LOCALIDAD": "IGUZQUIZA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LABEAGA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31241,
+            "LOCALIDAD": "LABEAGA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE METAUTEN",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31241,
+            "LOCALIDAD": "METAUTEN",
+            "TELÉFONO": 948540096,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE VILLAMAYOR DE MONJARDIN",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31242,
+            "LOCALIDAD": "VILLAMAYOR DE MONJARDIN",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARRONIZ ",
+            "DIRECCIÓN ": "PL. DE LOS FUEROS, 1 ",
+            "CÓDIGO POSTAL": 31243,
+            "LOCALIDAD": "ARRONIZ ",
+            "TELÉFONO": 948537559,
+            "TELÉFONO CITA": 948523900,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE BARBARIN",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31243,
+            "LOCALIDAD": "BARBARIN",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LUQUIN",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31243,
+            "LOCALIDAD": "LUQUIN",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE OTEIZA DE LA SOLANA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31250,
+            "LOCALIDAD": "OTEIZA DE LA SOLANA",
+            "TELÉFONO": 948543010,
+            "TELÉFONO CITA": 948536007,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE BERBINZANA",
+            "DIRECCIÓN ": "C/ RIBERA, S/N",
+            "CÓDIGO POSTAL": 31252,
+            "LOCALIDAD": "BERBINZANA",
+            "TELÉFONO": 948722119,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MIRANDA DE ARGA ",
+            "DIRECCIÓN ": "C/ DEHESA, S/N",
+            "CÓDIGO POSTAL": 31253,
+            "LOCALIDAD": "MIRANDA DE ARGA ",
+            "TELÉFONO": 948717416,
+            "TELÉFONO CITA": 948717416,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LERIN ",
+            "DIRECCIÓN ": "PL. AYUNTAMIENTO, 2",
+            "CÓDIGO POSTAL": 31260,
+            "LOCALIDAD": "LERIN ",
+            "TELÉFONO": 948540644,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ANDOSILLA ",
+            "DIRECCIÓN ": "PZA. SAN COSME Y SAN DAMIAN, S/N",
+            "CÓDIGO POSTAL": 31261,
+            "LOCALIDAD": "ANDOSILLA ",
+            "TELÉFONO": 948690390,
+            "TELÉFONO CITA": 948674853,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARELLANO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31263,
+            "LOCALIDAD": "ARELLANO",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE DICASTILLO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31263,
+            "LOCALIDAD": "DICASTILLO",
+            "TELÉFONO": 948527322,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ABERIN",
+            "DIRECCIÓN ": "--",
+            "CÓDIGO POSTAL": 31264,
+            "LOCALIDAD": "ABERIN",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MUNIAIN ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31264,
+            "LOCALIDAD": "MUNIAIN ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LARRAONA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31270,
+            "LOCALIDAD": "LARRAONA",
+            "TELÉFONO": 948543888,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE EULATE",
+            "DIRECCIÓN ": "MEDIO BARRIO, 13 ",
+            "CÓDIGO POSTAL": 31271,
+            "LOCALIDAD": "EULATE",
+            "TELÉFONO": 948543727,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SAN MARTIN",
+            "DIRECCIÓN ": "--",
+            "CÓDIGO POSTAL": 31272,
+            "LOCALIDAD": "SAN MARTIN",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ZUDAIRE ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31272,
+            "LOCALIDAD": "ZUDAIRE ",
+            "TELÉFONO": 948539035,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MURIETA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31280,
+            "LOCALIDAD": "MURIETA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ETAYO ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31281,
+            "LOCALIDAD": "ETAYO ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ACEDO ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31282,
+            "LOCALIDAD": "ACEDO ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MENDAZA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31282,
+            "LOCALIDAD": "MENDAZA ",
+            "TELÉFONO": 948521331,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE GALBARRA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31283,
+            "LOCALIDAD": "GALBARRA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ZUÑIGA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31284,
+            "LOCALIDAD": "ZUÑIGA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LARRION ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31290,
+            "LOCALIDAD": "LARRION ",
+            "TELÉFONO": 948540504,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ESTENOZ ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31291,
+            "LOCALIDAD": "ESTENOZ ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SESMA ",
+            "DIRECCIÓN ": "PZA. JUAN REDIN, 6 ",
+            "CÓDIGO POSTAL": 31293,
+            "LOCALIDAD": "SESMA ",
+            "TELÉFONO": 948698106,
+            "TELÉFONO CITA": 948685237,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE FIGAROL ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31311,
+            "LOCALIDAD": "FIGAROL ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MURILLO EL FRUTO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31313,
+            "LOCALIDAD": "MURILLO EL FRUTO",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SANTACARA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31314,
+            "LOCALIDAD": "SANTACARA ",
+            "TELÉFONO": 948746081,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MILAGRO ",
+            "DIRECCIÓN ": "AMAYA, S/N",
+            "CÓDIGO POSTAL": 31320,
+            "LOCALIDAD": "MILAGRO ",
+            "TELÉFONO": 948409030,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE VILLAFRANCA ",
+            "DIRECCIÓN ": "MOLINO EXTRAMUROS, S/N ",
+            "CÓDIGO POSTAL": 31330,
+            "LOCALIDAD": "VILLAFRANCA ",
+            "TELÉFONO": 948845123,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MARCILLA",
+            "DIRECCIÓN ": "PZA. DE LOS AUROROS, 2 ",
+            "CÓDIGO POSTAL": 31340,
+            "LOCALIDAD": "MARCILLA",
+            "TELÉFONO": 948757646,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE FUNES ",
+            "DIRECCIÓN ": "AVDA. NAVARRA, 1 ",
+            "CÓDIGO POSTAL": 31360,
+            "LOCALIDAD": "FUNES ",
+            "TELÉFONO": 948754574,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE FALCES",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31370,
+            "LOCALIDAD": "FALCES",
+            "TELÉFONO": 948714800,
+            "TELÉFONO CITA": 948734642,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE CAPARROSO ",
+            "DIRECCIÓN ": "PLAZA CUERNAVACA, S/N",
+            "CÓDIGO POSTAL": 31380,
+            "LOCALIDAD": "CAPARROSO ",
+            "TELÉFONO": 948710819,
+            "TELÉFONO CITA": 948710819,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MÉLIDA",
+            "DIRECCIÓN ": "NUEVA, S/N",
+            "CÓDIGO POSTAL": 31382,
+            "LOCALIDAD": "MÉLIDA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE RADA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31383,
+            "LOCALIDAD": "RADA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MURILLO EL CUENDE",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31391,
+            "LOCALIDAD": "MURILLO EL CUENDE",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE PITILLAS",
+            "DIRECCIÓN ": "CTRA. MURILLO EL CUENDE",
+            "CÓDIGO POSTAL": 31392,
+            "LOCALIDAD": "PITILLAS",
+            "TELÉFONO": 948745269,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE BEIRE ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31393,
+            "LOCALIDAD": "BEIRE ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE PUEYO ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31394,
+            "LOCALIDAD": "PUEYO ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE BARASOAIN ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31395,
+            "LOCALIDAD": "BARASOAIN ",
+            "TELÉFONO": 948720071,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE BIURRUN ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31396,
+            "LOCALIDAD": "BIURRUN ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE UNZUÉ ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31396,
+            "LOCALIDAD": "UNZUÉ ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE CAMPANAS",
+            "DIRECCIÓN ": "SAN FRANCISCO JAVIER, S/N",
+            "CÓDIGO POSTAL": 31397,
+            "LOCALIDAD": "CAMPANAS",
+            "TELÉFONO": 948360046,
+            "TELÉFONO CITA": 948368155,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE OLCOZ ",
+            "DIRECCIÓN ": "--",
+            "CÓDIGO POSTAL": 31398,
+            "LOCALIDAD": "OLCOZ ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE TIEBAS",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31398,
+            "LOCALIDAD": "TIEBAS",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE GABARDERAL",
+            "DIRECCIÓN ": "--",
+            "CÓDIGO POSTAL": 31409,
+            "LOCALIDAD": "GABARDERAL",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE YESA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31410,
+            "LOCALIDAD": "YESA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE JAVIER",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31411,
+            "LOCALIDAD": "JAVIER",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE BURGUI",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31412,
+            "LOCALIDAD": "BURGUI",
+            "TELÉFONO": 948477058,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE VIDANGOZ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31413,
+            "LOCALIDAD": "VIDANGOZ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE GARDE ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31414,
+            "LOCALIDAD": "GARDE ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE RONCAL",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31415,
+            "LOCALIDAD": "RONCAL",
+            "TELÉFONO": 948475134,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE URZAINQUI ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31416,
+            "LOCALIDAD": "URZAINQUI ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE UZTARROZ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31418,
+            "LOCALIDAD": "UZTARROZ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE URROZ ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31420,
+            "LOCALIDAD": "URROZ ",
+            "TELÉFONO": 948338055,
+            "TELÉFONO CITA": 948336600,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE OROZ-BETELU ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31439,
+            "LOCALIDAD": "OROZ-BETELU ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": 948336600,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LUMBIER ",
+            "DIRECCIÓN ": "TRINIDAD, S/N ",
+            "CÓDIGO POSTAL": 31440,
+            "LOCALIDAD": "LUMBIER ",
+            "TELÉFONO": 948880102,
+            "TELÉFONO CITA": 948880102,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE IRUROZQUI ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31448,
+            "LOCALIDAD": "IRUROZQUI ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE NAVASCUÉS ",
+            "DIRECCIÓN ": "ANTONIO AROSTEGUI, 5 ",
+            "CÓDIGO POSTAL": 31450,
+            "LOCALIDAD": "NAVASCUÉS ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": 948470133,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE IBILCIETA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31451,
+            "LOCALIDAD": "IBILCIETA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ICIZ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31451,
+            "LOCALIDAD": "ICIZ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE IZAL",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31451,
+            "LOCALIDAD": "IZAL",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ORONZ ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31451,
+            "LOCALIDAD": "ORONZ ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SARRIES ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31451,
+            "LOCALIDAD": "SARRIES ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE USCARRES",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31451,
+            "LOCALIDAD": "USCARRES",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE USTES ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31451,
+            "LOCALIDAD": "USTES ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE GÜESA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31452,
+            "LOCALIDAD": "GÜESA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE IGAL",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31452,
+            "LOCALIDAD": "IGAL",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ESPARZA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31453,
+            "LOCALIDAD": "ESPARZA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ASPURZ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31454,
+            "LOCALIDAD": "ASPURZ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE CASTILLO-NUEVO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31454,
+            "LOCALIDAD": "CASTILLO-NUEVO",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AIBAR ",
+            "DIRECCIÓN ": "SANTA MARIA, S/N ",
+            "CÓDIGO POSTAL": 31460,
+            "LOCALIDAD": "AIBAR ",
+            "TELÉFONO": 948877038,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LEACHE",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31460,
+            "LOCALIDAD": "LEACHE",
+            "TELÉFONO": 948877062,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MONREAL ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31471,
+            "LOCALIDAD": "MONREAL ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARTIEDA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31480,
+            "LOCALIDAD": "ARTIEDA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LIÉDENA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31487,
+            "LOCALIDAD": "LIÉDENA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE CASEDA",
+            "DIRECCIÓN ": "PL. DEL MERCADO, S/N ",
+            "CÓDIGO POSTAL": 31490,
+            "LOCALIDAD": "CASEDA",
+            "TELÉFONO": 948879234,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SADA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31491,
+            "LOCALIDAD": "SADA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AYESA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31492,
+            "LOCALIDAD": "AYESA ",
+            "TELÉFONO": 948733182,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE GALLIPIENZO NUEVO",
+            "DIRECCIÓN ": "--",
+            "CÓDIGO POSTAL": 31493,
+            "LOCALIDAD": "GALLIPIENZO NUEVO",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ESLAVA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31494,
+            "LOCALIDAD": "ESLAVA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LERGA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31494,
+            "LOCALIDAD": "LERGA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SAN MARTIN DE UNX",
+            "DIRECCIÓN ": "PZA. CONSISTORIAL",
+            "CÓDIGO POSTAL": 31495,
+            "LOCALIDAD": "SAN MARTIN DE UNX",
+            "TELÉFONO": 948738213,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE UJUÉ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31496,
+            "LOCALIDAD": "UJUÉ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE FUSTIÑANA ",
+            "DIRECCIÓN ": "VALLE DEL RONCAL, 2",
+            "CÓDIGO POSTAL": 31510,
+            "LOCALIDAD": "FUSTIÑANA ",
+            "TELÉFONO": 948840667,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE CABANILLAS",
+            "DIRECCIÓN ": "PLAZA DE LA CONSTITUCION, S/N",
+            "CÓDIGO POSTAL": 31511,
+            "LOCALIDAD": "CABANILLAS",
+            "TELÉFONO": 948810042,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE FONTELLAS ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31512,
+            "LOCALIDAD": "FONTELLAS ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARGUEDAS",
+            "DIRECCIÓN ": "CRUZ, 8 ",
+            "CÓDIGO POSTAL": 31513,
+            "LOCALIDAD": "ARGUEDAS",
+            "TELÉFONO": 948831534,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE CADREITA",
+            "DIRECCIÓN ": "AVDA. NAVARRA, S/N ",
+            "CÓDIGO POSTAL": 31515,
+            "LOCALIDAD": "CADREITA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MURCHANTE ",
+            "DIRECCIÓN ": "C/ JUSTICIA, 8",
+            "CÓDIGO POSTAL": 31521,
+            "LOCALIDAD": "MURCHANTE ",
+            "TELÉFONO": 948838422,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MONTEAGUDO",
+            "DIRECCIÓN ": "MAYOR, 4",
+            "CÓDIGO POSTAL": 31522,
+            "LOCALIDAD": "MONTEAGUDO",
+            "TELÉFONO": 948816750,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE TULEBRAS",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31522,
+            "LOCALIDAD": "TULEBRAS",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ABLITAS ",
+            "DIRECCIÓN ": "CAMINO DE BARILLAS, S/N",
+            "CÓDIGO POSTAL": 31523,
+            "LOCALIDAD": "ABLITAS ",
+            "TELÉFONO": 948813016,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE BARILLAS",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31523,
+            "LOCALIDAD": "BARILLAS",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE CORTES",
+            "DIRECCIÓN ": "SAN MIGUEL, 17",
+            "CÓDIGO POSTAL": 31530,
+            "LOCALIDAD": "CORTES",
+            "TELÉFONO": 948800551,
+            "TELÉFONO CITA": 948800664,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE RIBAFORADA",
+            "DIRECCIÓN ": "CARLOS III, S/N",
+            "CÓDIGO POSTAL": 31550,
+            "LOCALIDAD": "RIBAFORADA",
+            "TELÉFONO": 948864426,
+            "TELÉFONO CITA": 948864071,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AZAGRA",
+            "DIRECCIÓN ": "GARCIA ORCOYEN, 2",
+            "CÓDIGO POSTAL": 31560,
+            "LOCALIDAD": "AZAGRA",
+            "TELÉFONO": 948692509,
+            "TELÉFONO CITA": 948692509,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE CARCAR",
+            "DIRECCIÓN ": "SALVADOR ORDOÑEZ, 3",
+            "CÓDIGO POSTAL": 31579,
+            "LOCALIDAD": "CARCAR",
+            "TELÉFONO": 948690343,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MENDAVIA",
+            "DIRECCIÓN ": "C/ VENANCIO BENITO, 4",
+            "CÓDIGO POSTAL": 31587,
+            "LOCALIDAD": "MENDAVIA",
+            "TELÉFONO": 948685237,
+            "TELÉFONO CITA": 948685237,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LAZAGURRIA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31588,
+            "LOCALIDAD": "LAZAGURRIA",
+            "TELÉFONO": 948443063,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SARTAGUDA ",
+            "DIRECCIÓN ": "PZA. DE LOS FUEROS, 1",
+            "CÓDIGO POSTAL": 31589,
+            "LOCALIDAD": "SARTAGUDA ",
+            "TELÉFONO": 948697400,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE CASTEJON",
+            "DIRECCIÓN ": "VICTOR ALFARO, S/N ",
+            "CÓDIGO POSTAL": 31590,
+            "LOCALIDAD": "CASTEJON",
+            "TELÉFONO": 948770100,
+            "TELÉFONO CITA": 948770165,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE FITERO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31593,
+            "LOCALIDAD": "FITERO",
+            "TELÉFONO": 948776406,
+            "TELÉFONO CITA": 948776433,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE GORRAIZ ",
+            "DIRECCIÓN ": "URBICAIN, S/N ",
+            "CÓDIGO POSTAL": 31620,
+            "LOCALIDAD": "GORRAIZ ",
+            "TELÉFONO": 948357470,
+            "TELÉFONO CITA": 948357470,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ZUBIRI",
+            "DIRECCIÓN ": "AVDA. RONCESVALLES 13",
+            "CÓDIGO POSTAL": 31630,
+            "LOCALIDAD": "ZUBIRI",
+            "TELÉFONO": 948304106,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE EUGI",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31638,
+            "LOCALIDAD": "EUGI",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ZILBETI ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31639,
+            "LOCALIDAD": "ZILBETI ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ORREAGA/RONCESVALLES ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31650,
+            "LOCALIDAD": "ORREAGA/RONCESVALLES ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LUZAIDE/VALCARLOS",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31660,
+            "LOCALIDAD": "LUZAIDE/VALCARLOS",
+            "TELÉFONO": 948790213,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ORBAITZETA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31670,
+            "LOCALIDAD": "ORBAITZETA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARIBE ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31671,
+            "LOCALIDAD": "ARIBE ",
+            "TELÉFONO": 948764018,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE HIRIBERRI/VILLANUEVA DE AEZKOA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31671,
+            "LOCALIDAD": "HIRIBERRI/VILLANUEVA DE AEZKOA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ORBARA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31671,
+            "LOCALIDAD": "ORBARA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE OCHAGAVIA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31680,
+            "LOCALIDAD": "OCHAGAVIA ",
+            "TELÉFONO": 948890004,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE IZALZU",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31689,
+            "LOCALIDAD": "IZALZU",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE JAURRIETA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31691,
+            "LOCALIDAD": "JAURRIETA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ABAURREGAINA/ABAURREA ALTA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31692,
+            "LOCALIDAD": "ABAURREGAINA/ABAURREA ALTA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ABAURREPEA/ABAURREA BAJA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31692,
+            "LOCALIDAD": "ABAURREPEA/ABAURREA BAJA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE GARAIOA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31692,
+            "LOCALIDAD": "GARAIOA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE GARRALDA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31693,
+            "LOCALIDAD": "GARRALDA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AURRIZBERRI/ESPINAL",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31694,
+            "LOCALIDAD": "AURRIZBERRI/ESPINAL",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE BIZKARRETA-GERENDIAIN",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31695,
+            "LOCALIDAD": "BIZKARRETA-GERENDIAIN",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE MEZKIRITZ ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31695,
+            "LOCALIDAD": "MEZKIRITZ ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LINTZOAIN ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31696,
+            "LOCALIDAD": "LINTZOAIN ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AINTZIOA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31697,
+            "LOCALIDAD": "AINTZIOA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ERRO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31697,
+            "LOCALIDAD": "ERRO",
+            "TELÉFONO": 948768010,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LARRASOAÑA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31698,
+            "LOCALIDAD": "LARRASOAÑA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ZUGARRAMURDI",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31710,
+            "LOCALIDAD": "ZUGARRAMURDI",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE URDAZUBI/URDAX",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31711,
+            "LOCALIDAD": "URDAZUBI/URDAX",
+            "TELÉFONO": 948599130,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARIZKUN ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31713,
+            "LOCALIDAD": "ARIZKUN ",
+            "TELÉFONO": 948453039,
+            "TELÉFONO CITA": 948453039,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ERRATZU ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31714,
+            "LOCALIDAD": "ERRATZU ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE AMAIUR-MAYA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31715,
+            "LOCALIDAD": "AMAIUR-MAYA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ORONOZ-MUGAIRI",
+            "DIRECCIÓN ": "AVDA. MARTIN URRUTIA, 17 ",
+            "CÓDIGO POSTAL": 31720,
+            "LOCALIDAD": "ORONOZ-MUGAIRI",
+            "TELÉFONO": 948592024,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE IRURITA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31730,
+            "LOCALIDAD": "IRURITA ",
+            "TELÉFONO": 948452183,
+            "TELÉFONO CITA": 948452183,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ELGORRIAGA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31744,
+            "LOCALIDAD": "ELGORRIAGA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ITUREN",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31745,
+            "LOCALIDAD": "ITUREN",
+            "TELÉFONO": 948450183,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ERATSUN ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31746,
+            "LOCALIDAD": "ERATSUN ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ZUBIETA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31746,
+            "LOCALIDAD": "ZUBIETA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SALDIAS ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31747,
+            "LOCALIDAD": "SALDIAS ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE EZKURRA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31749,
+            "LOCALIDAD": "EZKURRA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": 948515068,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE URROTZ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31752,
+            "LOCALIDAD": "URROTZ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LABAIEN ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31753,
+            "LOCALIDAD": "LABAIEN ",
+            "TELÉFONO": 948450035,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARANO ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31754,
+            "LOCALIDAD": "ARANO ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE GOIZUETA",
+            "DIRECCIÓN ": "PLAZA AYUNTAMIENTO, 4",
+            "CÓDIGO POSTAL": 31754,
+            "LOCALIDAD": "GOIZUETA",
+            "TELÉFONO": 948514207,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ETXALAR ",
+            "DIRECCIÓN ": "IÑARRETA 22 ",
+            "CÓDIGO POSTAL": 31760,
+            "LOCALIDAD": "ETXALAR ",
+            "TELÉFONO": 948635105,
+            "TELÉFONO CITA": 948638000,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE BERA/VERA DE BIDASOA ",
+            "DIRECCIÓN ": "LEGUIA, 24",
+            "CÓDIGO POSTAL": 31780,
+            "LOCALIDAD": "BERA/VERA DE BIDASOA ",
+            "TELÉFONO": 948625040,
+            "TELÉFONO CITA": 948625021,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARANTZA ",
+            "DIRECCIÓN ": "SALBATORE KARRIKA, S/N ",
+            "CÓDIGO POSTAL": 31790,
+            "LOCALIDAD": "ARANTZA ",
+            "TELÉFONO": 948634131,
+            "TELÉFONO CITA": 948638000,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE IGANTZI ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31790,
+            "LOCALIDAD": "IGANTZI ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": 948638000,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE SUNBILLA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31791,
+            "LOCALIDAD": "SUNBILLA",
+            "TELÉFONO": 948450283,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ALMANDOZ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31796,
+            "LOCALIDAD": "ALMANDOZ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE OLAGÜE",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31798,
+            "LOCALIDAD": "OLAGÜE",
+            "TELÉFONO": 948307041,
+            "TELÉFONO CITA": 948309350,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE OLAZTI/OLAZAGUTIA",
+            "DIRECCIÓN ": "CAMINO ITURRITXO, 2",
+            "CÓDIGO POSTAL": 31809,
+            "LOCALIDAD": "OLAZTI/OLAZAGUTIA",
+            "TELÉFONO": 948467160,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ZIORDIA ",
+            "DIRECCIÓN ": "SANTA MARIA, 76",
+            "CÓDIGO POSTAL": 31809,
+            "LOCALIDAD": "ZIORDIA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE BAKAIKU ",
+            "DIRECCIÓN ": "PLAZA SANTIO, S/N",
+            "CÓDIGO POSTAL": 31810,
+            "LOCALIDAD": "BAKAIKU ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ITURMENDI ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31810,
+            "LOCALIDAD": "ITURMENDI ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE URDIAIN ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31810,
+            "LOCALIDAD": "URDIAIN ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE DORRAO-TORRANO",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31829,
+            "LOCALIDAD": "DORRAO-TORRANO",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LIZARRAGA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31829,
+            "LOCALIDAD": "LIZARRAGA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE UNANU ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31829,
+            "LOCALIDAD": "UNANU ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LAKUNTZA",
+            "DIRECCIÓN ": "MIKEL ARREGUI, S/N",
+            "CÓDIGO POSTAL": 31830,
+            "LOCALIDAD": "LAKUNTZA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARBIZU",
+            "DIRECCIÓN ": "HERRIKO EMPARANTZA, S/N",
+            "CÓDIGO POSTAL": 31839,
+            "LOCALIDAD": "ARBIZU",
+            "TELÉFONO": 948460017,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARRUAZU ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31840,
+            "LOCALIDAD": "ARRUAZU ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE UHARTE-ARAKIL ",
+            "DIRECCIÓN ": "MENDIKOA, 20",
+            "CÓDIGO POSTAL": 31840,
+            "LOCALIDAD": "UHARTE-ARAKIL ",
+            "TELÉFONO": 948464220,
+            "TELÉFONO CITA": 948464220,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE IRAÑETA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31849,
+            "LOCALIDAD": "IRAÑETA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE HIRIBERRI/VILLANUEVA ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31850,
+            "LOCALIDAD": "HIRIBERRI/VILLANUEVA ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE IHABAR",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31850,
+            "LOCALIDAD": "IHABAR",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE JAUNTSARATS ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31866,
+            "LOCALIDAD": "JAUNTSARATS ",
+            "TELÉFONO": 948503125,
+            "TELÉFONO CITA": 948309350,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ETXARREN",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31868,
+            "LOCALIDAD": "ETXARREN",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE EXTALEKU",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31869,
+            "LOCALIDAD": "EXTALEKU",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE LEKUNBERRI",
+            "DIRECCIÓN ": "PLAZAOLA, 22",
+            "CÓDIGO POSTAL": 31870,
+            "LOCALIDAD": "LEKUNBERRI",
+            "TELÉFONO": 948504208,
+            "TELÉFONO CITA": 948504208,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARESO ",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31876,
+            "LOCALIDAD": "ARESO ",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE BETELU",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31890,
+            "LOCALIDAD": "BETELU",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ARRIBE",
+            "DIRECCIÓN ": "MAYOR, S/N",
+            "CÓDIGO POSTAL": 31891,
+            "LOCALIDAD": "ARRIBE",
+            "TELÉFONO": 948513040,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE ERICE DE IZA",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 31892,
+            "LOCALIDAD": "ERICE DE IZA",
+            "TELÉFONO": 948600438,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Consultorio",
+            "NOMBRE": "CONSULTORIO DE NAVARDUN",
+            "DIRECCIÓN ": null,
+            "CÓDIGO POSTAL": 50000,
+            "LOCALIDAD": "NAVARDUN",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Hospital de día",
+            "NOMBRE": "CENTRO DE DIA ",
+            "DIRECCIÓN ": "IRUNLARREA, S/N",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948198654,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Hospital de día",
+            "NOMBRE": "HOSPITAL DE DIA AREA I ",
+            "DIRECCIÓN ": "HOSPITAL DE NAVARRA, PABELLON BLANCO",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948198595,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Hospital de día",
+            "NOMBRE": "HOSPITAL DE DIA AREA II",
+            "DIRECCIÓN ": "MAGDALENA, 1",
+            "CÓDIGO POSTAL": 31015,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948136266,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Hospital de día",
+            "NOMBRE": "HOSPITAL DE DIA INFANTO JUVENIL NATIVIDAD ZUBIETA",
+            "DIRECCIÓN ": "SAN CRISTOBAL, S/N ",
+            "CÓDIGO POSTAL": 31015,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948136666,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Hospital de día",
+            "NOMBRE": "HOSPITAL DE DIA TUDELA ",
+            "DIRECCIÓN ": "GAYARRE, S/N",
+            "CÓDIGO POSTAL": 31500,
+            "LOCALIDAD": "TUDELA",
+            "TELÉFONO": 948848187,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Hospitales y clínicas",
+            "NOMBRE": "CLINICA UNIVERSIDAD DE NAVARRA",
+            "DIRECCIÓN ": "AV. PIO XII, 36 APDO. DE CORREOS 192",
+            "CÓDIGO POSTAL": 31002,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948255400,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Hospitales y clínicas",
+            "NOMBRE": "CLINICA SAN FERMIN, S.A.",
+            "DIRECCIÓN ": "AV. GALICIA, 2-A",
+            "CÓDIGO POSTAL": 31003,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948235850,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Privado"
+        },
+        {
+            "TIPO": "Hospitales y clínicas",
+            "NOMBRE": "CLINICA ARCANGEL SAN MIGUEL, S.A.",
+            "DIRECCIÓN ": "BELOSO ALTO, 4",
+            "CÓDIGO POSTAL": 31006,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948296000,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Hospitales y clínicas",
+            "NOMBRE": "HOSPITAL SAN JUAN DE DIOS",
+            "DIRECCIÓN ": "BELOSO ALTO, 3",
+            "CÓDIGO POSTAL": 31006,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948231800,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Hospitales y clínicas",
+            "NOMBRE": "COMPLEJO HOSPITALARIO DE NAVARRA",
+            "DIRECCIÓN ": "IRUNLARREA, S/N",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": null,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Hospitales y clínicas",
+            "NOMBRE": "HOSPITAL DE NAVARRA",
+            "DIRECCIÓN ": "IRUNLARREA, 3",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848422100,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Hospitales y clínicas",
+            "NOMBRE": "HOSPITAL VIRGEN DEL CAMINO",
+            "DIRECCIÓN ": "IRUNLARREA, 4",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848429400,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Hospitales y clínicas",
+            "NOMBRE": "HOSPITAL GARCIA ORCOYEN DE ESTELLA",
+            "DIRECCIÓN ": "SANTA SORIA, 22",
+            "CÓDIGO POSTAL": 31200,
+            "LOCALIDAD": "ESTELLA",
+            "TELÉFONO": 848435000,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Hospitales y clínicas",
+            "NOMBRE": "CLINICA UBARMIN",
+            "DIRECCIÓN ": "ELCANO, S/N",
+            "CÓDIGO POSTAL": 31486,
+            "LOCALIDAD": "ELCANO",
+            "TELÉFONO": 848428111,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Hospitales y clínicas",
+            "NOMBRE": "HOSPITAL REINA SOFIA DE TUDELA",
+            "DIRECCIÓN ": "CTRA. TARAZONA, KM 3",
+            "CÓDIGO POSTAL": 31500,
+            "LOCALIDAD": "TUDELA",
+            "TELÉFONO": 848434000,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Hospitales y clínicas",
+            "NOMBRE": "HOSPITAL SAN JUAN DE DIOS (U. A. TUDELA)",
+            "DIRECCIÓN ": "TORRE MONREAL, 13 - 1º",
+            "CÓDIGO POSTAL": 31500,
+            "LOCALIDAD": "TUDELA",
+            "TELÉFONO": 948414031,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Residencia asistida enfermos mentales",
+            "NOMBRE": "CLINICA PSIQUIATRICA PADRE MENNI",
+            "DIRECCIÓN ": "MARCELO CELAYETA, 10 ",
+            "CÓDIGO POSTAL": 31014,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948140611,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Residencia asistida enfermos mentales",
+            "NOMBRE": "CENTRO HOSPITALARIO BENITO MENNI",
+            "DIRECCIÓN ": "MENDINUETA, S/N",
+            "CÓDIGO POSTAL": 31700,
+            "LOCALIDAD": "ELIZONDO",
+            "TELÉFONO": 948452162,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Residencia/Centro de día psicogeriátrico",
+            "NOMBRE": "CENTRO PSICOGERIATRICO SAN FRANCISCO JAVIER ",
+            "DIRECCIÓN ": "AVDA. VILLAVA, 53",
+            "CÓDIGO POSTAL": 31015,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848422700,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Residencia/Centro de día psicogeriátrico",
+            "NOMBRE": "FUNDACION ARGIBIDE ",
+            "DIRECCIÓN ": "APARTADO DE CORREOS, 435 ",
+            "CÓDIGO POSTAL": 31080,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948266511,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Unidad de hospitalización psiquiátrica",
+            "NOMBRE": "UNIDAD DE HOSPITALIZACION PSIQUIATRICA I",
+            "DIRECCIÓN ": "HOSPITAL DE NAVARRA, PABELLON M-5 ",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848422488,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Unidad de hospitalización psiquiátrica",
+            "NOMBRE": "UNIDAD DE HOSPITALIZACION PSIQUIATRICA II ",
+            "DIRECCIÓN ": "HOSPITAL DE NAVARRA, PABELLON E",
+            "CÓDIGO POSTAL": 31008,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 848422254,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Servicio Navarro de Salud"
+        },
+        {
+            "TIPO": "Unidad de hospitalización psiquiátrica",
+            "NOMBRE": "UHP MEDIA ESTANCIA PADRE MENNI ",
+            "DIRECCIÓN ": "MARCELO CELAYETA, 10 ",
+            "CÓDIGO POSTAL": 31014,
+            "LOCALIDAD": "PAMPLONA",
+            "TELÉFONO": 948140611,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        },
+        {
+            "TIPO": "Unidad de hospitalización psiquiátrica",
+            "NOMBRE": "CENTRO PSICOGERIATRICO JOSEFINA ARREGUI ",
+            "DIRECCIÓN ": "TRAVESIA ZELAIA, S/N",
+            "CÓDIGO POSTAL": 31800,
+            "LOCALIDAD": "ALTSASU/ALSASUA",
+            "TELÉFONO": 948563850,
+            "TELÉFONO CITA": null,
+            "TITULARIDAD": "Concertado"
+        }
+    ]
+}
