@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashActivity"
-    android:background="@color/black">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,17 +15,26 @@
         tools:layout_editor_absoluteX="216dp"
         tools:layout_editor_absoluteY="365dp">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="151dp"
+            android:layout_height="113dp"
+            android:layout_marginBottom="40dp"
+            app:srcCompat="@drawable/logo_politecnico" />
+
         <ProgressBar
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleLarge"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="100dp"
+            />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="178dp"
             android:text="MasterChef"
+            android:padding="30dp"
             android:textAlignment="center"
             android:textSize="36sp"
             android:textStyle="bold|italic" />

@@ -23,13 +23,15 @@ import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
-    EditText editUser, editPassword;
+    TextInputLayout editUser, editPassword;
     Button btnLogin;
 
     String usuario, password;
@@ -38,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
 
-        editUser = findViewById(R.id.editUsuario);
+        editUser = findViewById(R.id.editCorreo);
         editPassword = findViewById(R.id.editPassword);
         btnLogin = findViewById(R.id.btnLogin);
 
@@ -52,14 +54,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                usuario = editUser.getText().toString();
-                password = editPassword.getText().toString();
+                usuario = editUser.getEditText().toString();
+                password = editPassword.getEditText().toString();
 
                 if (!usuario.isEmpty() && !password.isEmpty()) {
                     //en este caso ponemos 10.0.2.2 en vez de localhost si no no lo reconoce...
                     validarUsuario("http://10.0.2.2/masterchef/validar_usuario.php");
                 } else
-                    Toast.makeText(MainActivity.this, "No se permiten los campos vacios", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, "No se permiten los campos vacios", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -77,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(i);
                 } else {
 
-                    Toast.makeText(MainActivity.this, "Usuario y/o contraseña incorrectos", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, "Usuario y/o contraseña incorrectos", Toast.LENGTH_LONG).show();
                 }
             }
         }, new Response.ErrorListener() {
@@ -98,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                     message = "Tiempo de espera agotado . compruebe la conecxion a interner";
                 }
 
-                Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginActivity.this, message, Toast.LENGTH_LONG).show();
             }
         }
 
@@ -135,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
     private void getPreferences() {
 
         SharedPreferences preferences = getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
-        editUser.setText(preferences.getString("usuario", ""));
-        editPassword.setText(preferences.getString("password", ""));
+        editUser.getEditText().setText(preferences.getString("usuario", ""));
+        editPassword.getEditText().setText(preferences.getString("password", ""));
     }
 }

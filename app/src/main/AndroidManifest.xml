@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.politecnico.masterchef" >
+    package="com.politecnico.masterchef">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,14 +11,13 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LoginHttp" >
-        <activity android:name=".EventosActivity" >
-        </activity>
+        android:theme="@style/Theme.LoginHttp">
+        <activity android:name=".RegistroActivity"></activity>
+        <activity android:name=".EventosActivity"></activity>
         <activity android:name=".DatabaseActivity" />
-        <activity android:name=".MainActivity"
-            />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".WelcomeActivity" />
-        <activity android:name=".SplashActivity" >
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -30,7 +30,7 @@ public class WelcomeActivity extends AppCompatActivity {
                 SharedPreferences preferences = getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
                 preferences.edit().clear().commit();
 
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(i);
                 finish();
             }
