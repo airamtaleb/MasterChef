@@ -56,10 +56,11 @@
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
                 android:hint="Contraseña"
-                android:inputType="textPassword"
+                app:passwordToggleEnabled="true"
                 android:paddingLeft="5dp"
                 app:startIconDrawable="@drawable/icon_lock">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="textPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>

@@ -25,25 +25,25 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/direccion"
+            android:id="@+id/fecha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="email@email.com"
+            android:text="17/02/2021"
             android:textColor="#000"
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/poblacion"
+            android:id="@+id/hora"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="e9999999999"
+            android:text="10:00"
             android:textColor="#000"
             android:textSize="15sp" />
         <TextView
-            android:id="@+id/telefono"
+            android:id="@+id/descripcion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="e9999999999"
+            android:text="Descripcion del evento"
             android:textColor="#000"
             android:textSize="15sp" />
     </LinearLayout>

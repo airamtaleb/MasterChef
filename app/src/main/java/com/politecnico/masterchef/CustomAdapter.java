@@ -9,23 +9,18 @@ import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.security.spec.ECField;
 import java.util.ArrayList;
 
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
 
-    ArrayList<String> nombres;
-    ArrayList<String> direcciones;
-    ArrayList<String> poblaciones;
-    ArrayList<String> telefonos;
+    ArrayList<Evento> listadoEventos;
     Context context;
 
-    public CustomAdapter(Context context, ArrayList<String> nombres, ArrayList<String> direcciones, ArrayList<String> poblaciones, ArrayList<String> telefonos) {
+    public CustomAdapter(Context context, ArrayList<Evento> listadoEventos) {
         this.context = context;
-        this.nombres = nombres;
-        this.direcciones = direcciones;
-        this.poblaciones = poblaciones;
-        this.telefonos = telefonos;
+        this.listadoEventos = listadoEventos;
     }
 
     @Override
@@ -39,17 +34,19 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         // set the data in items
-        holder.nombre.setText(nombres.get(position));
-        holder.direccion.setText(direcciones.get(position));
-        holder.poblacion.setText(poblaciones.get(position));
-        holder.telefono.setText(telefonos.get(position));
+        Evento evento1 = listadoEventos.get(position);
+        holder.nombre.setText(evento1.getNombre());
+        holder.fecha.setText(evento1.getFecha());
+        holder.hora.setText(evento1.getHora());
+        holder.descripcion.setText(evento1.getDescripcion());
+
 
         // implement setOnClickListener event on item view.
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // display a toast with person name on item click
-                Toast.makeText(context, telefonos.get(position), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "prueba", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -58,20 +55,20 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     @Override
     public int getItemCount() {
-        return nombres.size();
+        return listadoEventos.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView nombre, direccion, poblacion, telefono;// init the item view's
+        TextView nombre, fecha, hora, descripcion;// init the item view's
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
             // get the reference of item view's
             nombre = (TextView) itemView.findViewById(R.id.nombre);
-            direccion = (TextView) itemView.findViewById(R.id.direccion);
-            poblacion = (TextView) itemView.findViewById(R.id.poblacion);
-            telefono = (TextView) itemView.findViewById(R.id.telefono);
+            fecha = (TextView) itemView.findViewById(R.id.fecha);
+            hora = (TextView) itemView.findViewById(R.id.hora);
+            descripcion = (TextView) itemView.findViewById(R.id.descripcion);
 
         }
     }
