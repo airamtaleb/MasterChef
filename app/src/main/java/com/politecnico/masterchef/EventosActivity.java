@@ -33,9 +33,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-public class EventosActivity extends AppCompatActivity {
+public class EventosActivity extends BaseAppCompatMenu {
 
-    ArrayList<Evento> listadoEventos = new ArrayList<>();;
+    ArrayList<Evento> listadoEventos = new ArrayList<>();
     //String idEvento, nombre, fecha, hora, estado, descripcion, lugar;
 
     RequestQueue requestQueue;
@@ -98,39 +98,6 @@ public class EventosActivity extends AppCompatActivity {
 
     }
 
-    //metodo para mostrar y ocultar menu
-    public boolean onCreateOptionsMenu(Menu menu){
 
-        getMenuInflater().inflate(R.menu.overflow, menu);
-        return true;
-    }
-
-
-    //metodo para asignar las funciones a las opciones del menu
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-
-        if (id == R.id.item1) {
-
-            SharedPreferences preferences = getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
-            preferences.edit().clear().commit();
-            Intent i = new Intent(getApplicationContext(), LoginActivity.class);
-            startActivity(i);
-            finish();
-
-
-        }else if(id == R.id.item2) {
-
-            finishAffinity();
-
-        }else if(id == R.id.item3) {
-
-            Intent i = new Intent(getApplicationContext(), DatabaseActivity.class);
-            startActivity(i);
-
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
 }
