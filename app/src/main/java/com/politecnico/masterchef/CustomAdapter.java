@@ -1,7 +1,9 @@
 package com.politecnico.masterchef;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,7 @@ import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.Serializable;
 import java.security.spec.ECField;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -17,7 +20,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
+public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder>  {
 
     ArrayList<Evento> listadoEventos;
     Context context;
@@ -56,6 +59,16 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             public void onClick(View view) {
                 // display a toast with person name on item click
                 Toast.makeText(context, "prueba", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(context.getApplicationContext(), DetallesEventoActivity.class);
+
+                //seleccionamos el evento
+               Evento  eventoSeleccionado = listadoEventos.get(position);
+
+                //pasar contenido por intent//implement serializable para objetos
+                i.putExtra("evento", (Serializable) eventoSeleccionado);
+
+
+                context.startActivity(i);
             }
         });
 

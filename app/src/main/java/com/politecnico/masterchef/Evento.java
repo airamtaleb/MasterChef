@@ -1,6 +1,8 @@
 package com.politecnico.masterchef;
 
-public class Evento {
+import java.io.Serializable;
+
+public class Evento implements Serializable {
     String idEvento, nombre, fecha, hora, estado, descripcion, lugar;
 
     public Evento() {
