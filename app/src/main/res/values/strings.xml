@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MasterChef</string>
+    <string name="item1">Cerrar sesion</string>
+    <string name="item2">Salir</string>
+    <string name="item3">Acceso al sistema</string>
+
 </resources>

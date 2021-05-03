@@ -4,6 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -20,6 +23,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import android.view.Menu;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,7 +35,6 @@ import java.util.ArrayList;
 
 public class EventosActivity extends AppCompatActivity {
 
-    Button btnLogout , btnAcces;
     ArrayList<Evento> listadoEventos = new ArrayList<>();;
     //String idEvento, nombre, fecha, hora, estado, descripcion, lugar;
 
@@ -42,33 +45,16 @@ public class EventosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eventos);
 
-        btnLogout=findViewById(R.id.btnLogout);
-        btnAcces= findViewById(R.id.btnAcces);
 
-        btnLogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SharedPreferences preferences = getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
-                preferences.edit().clear().commit();
-
-
-                finish();
-            }
-        });
-
-        btnAcces.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), DatabaseActivity.class);
-                startActivity(i);
-            }
-        });
 
         cargarEventos("http://10.0.2.2/masterchef/cargarEventos.php");
         // get the reference of RecyclerView
         // set the Adapter to RecyclerView
 
+
     }
+
+
 
     private void setSupportActionBar(Toolbar myToolbar) {
     }
@@ -110,6 +96,41 @@ public class EventosActivity extends AppCompatActivity {
         requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(jsonArrayRequest);
 
+    }
+
+    //metodo para mostrar y ocultar menu
+    public boolean onCreateOptionsMenu(Menu menu){
+
+        getMenuInflater().inflate(R.menu.overflow, menu);
+        return true;
+    }
+
+
+    //metodo para asignar las funciones a las opciones del menu
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+
+        if (id == R.id.item1) {
+
+            SharedPreferences preferences = getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
+            preferences.edit().clear().commit();
+            Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(i);
+            finish();
+
+
+        }else if(id == R.id.item2) {
+
+            finishAffinity();
+
+        }else if(id == R.id.item3) {
+
+            Intent i = new Intent(getApplicationContext(), DatabaseActivity.class);
+            startActivity(i);
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }
