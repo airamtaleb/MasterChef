@@ -1,7 +1,7 @@
  <?php
 include 'conexion.php';
 
-$sentencia=$conexion->prepare("SELECT * FROM eventos");
+$sentencia=$conexion->prepare("SELECT * FROM eventos ORDER BY Estado, Fecha");
 $sentencia->execute();
 
 $resultado = $sentencia->get_result();

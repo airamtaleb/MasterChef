@@ -71,4 +71,5 @@ public class Evento {
     public void setLugar(String lugar) {
         this.lugar = lugar;
     }
+
 }

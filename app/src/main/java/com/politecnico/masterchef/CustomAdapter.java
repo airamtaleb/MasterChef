@@ -1,6 +1,7 @@
 package com.politecnico.masterchef;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.security.spec.ECField;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
@@ -39,6 +43,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.fecha.setText(evento1.getFecha());
         holder.hora.setText(evento1.getHora());
         holder.descripcion.setText(evento1.getDescripcion());
+        if (evento1.getEstado().equals("En curso")){
+            holder.itemView.setBackgroundColor(Color.GREEN);
+        } else if (evento1.getEstado().equals("Finalizado")){
+            holder.itemView.setBackgroundColor(Color.DKGRAY);
+        }
 
 
         // implement setOnClickListener event on item view.
