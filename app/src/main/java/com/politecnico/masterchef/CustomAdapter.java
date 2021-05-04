@@ -58,15 +58,14 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             @Override
             public void onClick(View view) {
                 // display a toast with person name on item click
-                Toast.makeText(context, "prueba", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(context, "prueba", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(context.getApplicationContext(), DetallesEventoActivity.class);
 
                 //seleccionamos el evento
                Evento  eventoSeleccionado = listadoEventos.get(position);
 
-                //pasar contenido por intent//implement serializable para objetos
+                //pasar contenido por intent// clase evento implement serializable para pasar objetos
                 i.putExtra("evento", (Serializable) eventoSeleccionado);
-
 
                 context.startActivity(i);
             }

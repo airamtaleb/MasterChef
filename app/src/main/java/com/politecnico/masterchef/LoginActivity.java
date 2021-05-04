@@ -3,10 +3,15 @@ package com.politecnico.masterchef;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
+import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,6 +42,8 @@ public class LoginActivity extends AppCompatActivity {
     String usuario, password;
 
     RequestQueue requestQueue;
+
+    TextView enlace;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +80,28 @@ public class LoginActivity extends AppCompatActivity {
                     validarUsuario("http://10.0.2.2/masterchef/validar_usuario.php");
                 } else
                     Toast.makeText(LoginActivity.this, "No se permiten los campos vacios", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        //enlace escrito
+        //cambiar color un aparte
+        SpannableStringBuilder builder = new SpannableStringBuilder();
+
+        SpannableString str1= new SpannableString("Si no esta registrado pulse ");
+        str1.setSpan(new ForegroundColorSpan(Color.BLACK), 0, str1.length(), 0);
+        builder.append(str1);
+
+        SpannableString str2= new SpannableString("AQUI");
+        str2.setSpan(new ForegroundColorSpan(Color.BLUE), 0, str2.length(), 0);
+        builder.append(str2);
+
+        enlace = findViewById(R.id.textEnlace);
+        enlace.setText(builder, TextView.BufferType.SPANNABLE);
+        enlace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
+                startActivity(i);
             }
         });
 
