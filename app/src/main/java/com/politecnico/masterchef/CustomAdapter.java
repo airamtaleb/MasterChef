@@ -2,6 +2,7 @@ package com.politecnico.masterchef;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -47,9 +48,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.hora.setText(evento1.getHora());
         holder.descripcion.setText(evento1.getDescripcion());
         if (evento1.getEstado().equals("En curso")){
-            holder.itemView.setBackgroundColor(Color.GREEN);
+            holder.itemView.setBackgroundTintList(ColorStateList.valueOf(Color.GREEN));
+
         } else if (evento1.getEstado().equals("Finalizado")){
-            holder.itemView.setBackgroundColor(Color.DKGRAY);
+            holder.itemView.setBackgroundTintList(ColorStateList.valueOf(Color.GRAY));
         }
 
 

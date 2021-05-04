@@ -100,7 +100,7 @@ public class LoginActivity extends AppCompatActivity {
         enlace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
+                Intent i = new Intent(getApplicationContext(), RegistroActivity.class);
                 startActivity(i);
             }
         });
