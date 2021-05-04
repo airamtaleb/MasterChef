@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class VotacionActivity extends AppCompatActivity {
+public class VotacionActivity extends BaseAppCompatMenu {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
