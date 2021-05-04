@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -54,6 +55,21 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             holder.itemView.setBackgroundTintList(ColorStateList.valueOf(Color.GRAY));
         }
 
+        holder.apuntarse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast t= Toast.makeText(context, "Solicitada participacion", Toast.LENGTH_SHORT);
+                t.show();
+            }
+        });
+
+        holder.cancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast t= Toast.makeText(context, "Cancelada participacion", Toast.LENGTH_SHORT);
+                t.show();
+            }
+        });
 
         // implement setOnClickListener event on item view.
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +89,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             }
         });
 
+
+
     }
 
 
@@ -83,6 +101,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView nombre, fecha, hora, descripcion;// init the item view's
+        Button apuntarse, cancelar;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -92,6 +111,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             fecha = (TextView) itemView.findViewById(R.id.fecha);
             hora = (TextView) itemView.findViewById(R.id.hora);
             descripcion = (TextView) itemView.findViewById(R.id.descripcion);
+
+            apuntarse = (Button) itemView.findViewById(R.id.btnApuntarse);
+            cancelar = (Button) itemView.findViewById(R.id.btnCancelarParticipacion);
 
         }
     }
