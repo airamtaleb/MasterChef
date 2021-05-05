@@ -2,9 +2,11 @@ package com.politecnico.masterchef;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,22 +16,37 @@ import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
 import java.io.Serializable;
 import java.security.spec.ECField;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.prefs.Preferences;
 
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder>  {
 
     ArrayList<Evento> listadoEventos;
-    Context context;
+    private Context context;
+    String usuario;
+    RequestQueue requestQueue;
 
     public CustomAdapter(Context context, ArrayList<Evento> listadoEventos) {
         this.context = context;
         this.listadoEventos = listadoEventos;
+        SharedPreferences preferences = context.getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
+        usuario = preferences.getString("id", "");
     }
 
     @Override
@@ -43,6 +60,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         // set the data in items
+
         Evento evento1 = listadoEventos.get(position);
         holder.nombre.setText(evento1.getNombre());
         holder.fecha.setText(evento1.getFecha());
@@ -58,16 +76,18 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.apuntarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast t= Toast.makeText(context, "Solicitada participacion", Toast.LENGTH_SHORT);
-                t.show();
+                apuntarJuez("http://10.0.2.2/masterchef/apuntarseJuez.php", usuario, evento1.getIdEvento());
+                //Toast t= Toast.makeText(context, "Solicitada participacion: "+usuario, Toast.LENGTH_SHORT);
+                //t.show();
             }
         });
 
         holder.cancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast t= Toast.makeText(context, "Cancelada participacion", Toast.LENGTH_SHORT);
-                t.show();
+                anularParticipacionJuez("http://10.0.2.2/masterchef/anularParticipacion.php", usuario, evento1.getIdEvento());
+                //Toast t= Toast.makeText(context, "Cancelada participacion", Toast.LENGTH_SHORT);
+                //t.show();
             }
         });
 
@@ -116,5 +136,57 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             cancelar = (Button) itemView.findViewById(R.id.btnCancelarParticipacion);
 
         }
+    }
+
+    private void apuntarJuez(String URL, String idjuez, String idevento) {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Toast.makeText(context, "Juez Apuntado al Evento", Toast.LENGTH_LONG).show();
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                Toast.makeText(context, volleyError.toString(), Toast.LENGTH_LONG).show();
+            }
+        }
+
+        ) {
+            protected Map<String, String> getParams() throws AuthFailureError {
+                //utilizar objetos en vez de String para tener campos con otro tipo de valores//pendiente
+                Map<String, String> param = new HashMap<String, String>();
+                param.put("idjuez", idjuez);
+                param.put("idevento", idevento);
+                return param;
+            }
+        };
+        requestQueue = Volley.newRequestQueue(context);
+        requestQueue.add(stringRequest);
+    }
+
+    private void anularParticipacionJuez(String URL, String idjuez, String idevento) {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Toast.makeText(context, "Cancelada participacion en el Evento", Toast.LENGTH_LONG).show();
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                Toast.makeText(context, volleyError.toString(), Toast.LENGTH_LONG).show();
+            }
+        }
+
+        ) {
+            protected Map<String, String> getParams() throws AuthFailureError {
+                //utilizar objetos en vez de String para tener campos con otro tipo de valores//pendiente
+                Map<String, String> param = new HashMap<String, String>();
+                param.put("idjuez", idjuez);
+                param.put("idevento", idevento);
+                return param;
+            }
+        };
+        requestQueue = Volley.newRequestQueue(context);
+        requestQueue.add(stringRequest);
     }
 }

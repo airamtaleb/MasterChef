@@ -31,6 +31,10 @@ import com.android.volley.toolbox.Volley;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
     TextInputLayout editUser, editPassword;
     Button btnLogin, btnIrRegistro;
 
-    String usuario, password;
+    String usuario, password, idjuez;
 
     RequestQueue requestQueue;
 
@@ -114,9 +118,16 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 if (!response.isEmpty()) {
-                    guardarSharedPreferences();
+                    try {
+                        JSONObject jsonObject = new JSONObject(response);
+                        idjuez = jsonObject.getString("ID_juez");
+                        guardarSharedPreferences();
+                    } catch (JSONException e) {
+                        Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+
                     Intent i = new Intent(getApplicationContext(), EventosActivity.class);
-                   startActivity(i);
+                    startActivity(i);
                 } else {
 
                     Toast.makeText(LoginActivity.this, "Usuario y/o contraseña incorrectos", Toast.LENGTH_LONG).show();
@@ -166,7 +177,7 @@ public class LoginActivity extends AppCompatActivity {
     private void guardarSharedPreferences() {
         SharedPreferences preferences = getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
-
+        editor.putString("id", idjuez);
         editor.putString("usuario", usuario);
         editor.putString("password", password);
         editor.putBoolean("sesion", true);
