@@ -3,7 +3,7 @@ include 'conexion.php';
 $usu_usuario=$_POST['usuario'];
 $usu_password=$_POST['password'];
 
-$sentencia=$conexion->prepare("SELECT * FROM jueces WHERE correo=? AND clave=?");
+$sentencia=$conexion->prepare("SELECT * FROM Jueces WHERE correo=? AND clave=?");
 $sentencia->bind_param('ss',$usu_usuario,$usu_password);
 $sentencia->execute();
 
