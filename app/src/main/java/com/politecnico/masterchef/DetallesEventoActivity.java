@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.io.Serializable;
+
 public class DetallesEventoActivity extends BaseAppCompatMenu {
 
     TextView txtvNombre, txtvFecha ,txtvHora ,txtvEstado ,txtvDescripcion ,txtvLugar ;
@@ -58,6 +60,10 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
+                //seleccionamos el evento
+                //pasar contenido por intent// clase evento implement serializable para pasar objetos
+                String idevento = evento.getIdEvento()+"";
+                i.putExtra("id_evento", idevento);
                 startActivity(i);
             }
         });

@@ -100,7 +100,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                 Intent i = new Intent(context.getApplicationContext(), DetallesEventoActivity.class);
 
                 //seleccionamos el evento
-               Evento  eventoSeleccionado = listadoEventos.get(position);
+                Evento  eventoSeleccionado = listadoEventos.get(position);
 
                 //pasar contenido por intent// clase evento implement serializable para pasar objetos
                 i.putExtra("evento", (Serializable) eventoSeleccionado);
