@@ -1,178 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VotacionActivity"
     android:gravity="center"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="50dp"
-        android:text="Pantalla de votacion" />
+    android:orientation="vertical"
+    tools:context=".VotacionActivity">
 
     <Spinner
         android:id="@+id/spinnerGrupos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"/>
+        android:layout_marginTop="15dp"
+        android:padding="10dp" />
 
-    <TextView
-        android:id="@+id/textViewPresentacion"
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="5dp"
-        android:text="Presentacion" />
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <SeekBar
-            android:id="@+id/seekBarPresentacion"
-            android:layout_width="200dp"
-            android:layout_height="60dp" />
-
-        <EditText
-            android:id="@+id/votoPresentacion"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:inputType="number"
-            android:text="0" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/100" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textViewPresentacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Presentacion" />
 
-    <TextView
-        android:id="@+id/textViewServicio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="5dp"
-        android:text="Servicio" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+                <SeekBar
+                    android:id="@+id/seekBarPresentacion"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp" />
 
-        <SeekBar
-            android:id="@+id/seekBarServicio"
-            android:layout_width="200dp"
-            android:layout_height="60dp" />
+                <EditText
+                    android:id="@+id/votoPresentacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="0" />
 
-        <EditText
-            android:id="@+id/votoServicio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:inputType="number"
-            android:text="0" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/100" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/100" />
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewSabor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="5dp"
-        android:text="Sabor" />
+            <TextView
+                android:id="@+id/textViewServicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Servicio" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-        <SeekBar
-            android:id="@+id/seekBarSabor"
-            android:layout_width="200dp"
-            android:layout_height="60dp" />
+                <SeekBar
+                    android:id="@+id/seekBarServicio"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp" />
 
-        <EditText
-            android:id="@+id/votoSabor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:inputType="number"
-            android:text="0" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/100" />
+                <EditText
+                    android:id="@+id/votoServicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="0" />
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/100" />
 
-    <TextView
-        android:id="@+id/textViewTriptico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="5dp"
-        android:text="Triptico" />
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewSabor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Sabor" />
 
-        <SeekBar
-            android:id="@+id/seekBarTriptico"
-            android:layout_width="200dp"
-            android:layout_height="60dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/votoTriptico"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:inputType="number"
-            android:text="0" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/100" />
+                <SeekBar
+                    android:id="@+id/seekBarSabor"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp" />
 
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/votoSabor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/100" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewTriptico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Triptico" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <SeekBar
+                    android:id="@+id/seekBarTriptico"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp" />
+
+                <EditText
+                    android:id="@+id/votoTriptico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/100" />
+
+            </LinearLayout>
 
 
+            <TextView
+                android:id="@+id/textViewImagenPersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Imagen Personal" />
 
-    <TextView
-        android:id="@+id/textViewImagenPersonal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="5dp"
-        android:text="Imagen Personal" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+                <SeekBar
+                    android:id="@+id/seekBarImagenPersonal"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp" />
 
-        <SeekBar
-            android:id="@+id/seekBarImagenPersonal"
-            android:layout_width="200dp"
-            android:layout_height="60dp" />
+                <EditText
+                    android:id="@+id/votoImagenPersonal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="0" />
 
-        <EditText
-            android:id="@+id/votoImagenPersonal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:inputType="number"
-            android:text="0" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/100" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/100" />
 
-    </LinearLayout>
+            </LinearLayout>
 
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bordes_redondos"
+                android:text="Guardar"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bordes_redondos"
+                android:text="Enviar"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bordes_redondos"
+                android:text="Volver"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnCargar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bordes_redondos"
+                android:text="Cargar"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

@@ -58,18 +58,11 @@ public class LoginActivity extends AppCompatActivity {
         editUser = findViewById(R.id.editCorreo);
         editPassword = findViewById(R.id.editPassword);
         btnLogin = findViewById(R.id.btnLogin);
-        btnIrRegistro = findViewById(R.id.btnIrRegistro);
+
 
         //comprobar si hay datos en sharedPreferences
         getPreferences();
 
-        btnIrRegistro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), RegistroActivity.class);
-                startActivity(i);
-            }
-        });
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override

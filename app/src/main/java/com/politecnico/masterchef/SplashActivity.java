@@ -23,6 +23,9 @@ public class SplashActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         progressBar.setVisibility(View.VISIBLE);
 
+        //quitar ActionBar
+        getSupportActionBar().hide();
+
 
         new Handler().postDelayed(new Runnable() {
             @Override

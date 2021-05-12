@@ -71,6 +71,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
         } else if (evento1.getEstado().equals("Finalizado")){
             holder.itemView.setBackgroundTintList(ColorStateList.valueOf(Color.GRAY));
+            //holder.apuntarse.setEnabled(false);
+            //holder.cancelar.setEnabled(false);
         }
 
         holder.apuntarse.setOnClickListener(new View.OnClickListener() {

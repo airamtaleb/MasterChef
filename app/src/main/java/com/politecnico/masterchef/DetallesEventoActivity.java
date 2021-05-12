@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.SpannableString;
@@ -60,9 +61,9 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
 
 
         txtvNombre.setText(evento.getNombre());
-        txtvFecha.setText(evento.getFecha());
-        txtvHora.setText(evento.getHora());
-        txtvEstado.setText(evento.getEstado());
+        txtvFecha.setText("Fecha: " +evento.getFecha());
+        txtvHora.setText("Hora: "+evento.getHora());
+        txtvEstado.setText("Estado: "+evento.getEstado());
         txtvDescripcion.setText(evento.getDescripcion());
         txtvLugar.setText(evento.getLugar());
 
@@ -77,6 +78,16 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
         });
 
         btnAccederEvento = findViewById(R.id.btnAccederEvento);
+
+        if (evento.getEstado().equals("En curso")){
+            //
+
+        } else if (evento.getEstado().equals("Finalizado")){
+
+            //btnAccederEvento.setEnabled(false);
+
+        }
+
         btnAccederEvento.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
