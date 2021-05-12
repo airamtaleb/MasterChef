@@ -141,6 +141,7 @@ public class LoginActivity extends AppCompatActivity {
                     message = "Imposible conectarse a la red. Comprueba la conexion";
                 } else if (error instanceof ServerError) {
                     message = "Imposibñle conectarse con el servidor";
+                    error.printStackTrace();
                 } else if (error instanceof AuthFailureError) {
                     message = "Error de autenticacion. Compruebe la conexion";
                 } else if (error instanceof ParseError) {
