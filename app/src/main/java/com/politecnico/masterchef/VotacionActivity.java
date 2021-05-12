@@ -51,24 +51,23 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
         spinner = (Spinner) findViewById(R.id.spinnerGrupos);
 
-        cargarGrupos("http://10.0.2.2/masterchef/cargarGruposEventos.php",idevento);
+        cargarGrupos("http://10.0.2.2/masterchef/cargarGruposEvento.php?idevento="+idevento);
 
         definirEditYSeeks();
 
     }
 
-    private void cargarGrupos(String URL, String id_evento) {
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
-            List<String> grupos = new ArrayList<>();
+    private void cargarGrupos(String URL) {
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,URL,null, new Response.Listener<JSONArray>() {
+
             @Override
-            public void onResponse(String response) {
-                try {
-                    JSONArray jsonArray = new JSONArray(response);
+            public void onResponse(JSONArray response) {
+                List<String> grupos = new ArrayList<>();
                     for (int i = 0; i < response.length(); i++) {
                         String g  = "";
-
+                            JSONObject jsonObject;
                             try {
-                                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                                jsonObject = response.getJSONObject(i);
                                 g=jsonObject.getString("Nombre_equipo");
                             } catch (JSONException e) {
                                 Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
@@ -76,9 +75,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
                             grupos.add(g);
 
                     }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+
                 ArrayAdapter<String> spinnerAdapter =
                         new ArrayAdapter<String>(VotacionActivity.this, android.R.layout.simple_spinner_item, grupos);
                 spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -90,19 +87,9 @@ public class VotacionActivity extends BaseAppCompatMenu {
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(getApplicationContext(), "ERROR DE CONEXIÓN", Toast.LENGTH_SHORT).show();
             }
-        }
-
-        ) {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                //utilizar objetos en vez de String para tener campos con otro tipo de valores//pendiente
-                Map<String, String> param = new HashMap<String, String>();
-                param.put("idevento", id_evento);
-                return param;
-            }
-        };
+        } ) ;
         requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
+        requestQueue.add(jsonArrayRequest);
 
     }
 

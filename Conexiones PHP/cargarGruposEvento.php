@@ -1,8 +1,9 @@
  <?php
 include 'conexion.php';
-$idevento=$_POST['id_evento'];
+$idevento=$_GET['idevento'];
 
-$sentencia=$conexion->prepare("SELECT * FROM Equipos WHERE ID_evento=$idevento");
+$sentencia=$conexion->prepare("SELECT * FROM Equipos WHERE ID_evento=?");
+$sentencia->bind_param('s',$idevento);
 $sentencia->execute();
 
 $resultado = $sentencia->get_result();
