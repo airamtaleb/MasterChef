@@ -23,6 +23,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
@@ -93,14 +96,26 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
             @Override
             public void onResponse(String response) {
                 if (!response.isEmpty()) {
-                    Toast.makeText(DetallesEventoActivity.this, "Juez validado para el evento", Toast.LENGTH_LONG).show();
-                    //pasar contenido por intent// clase evento implement serializable para pasar objetos
-                    Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
-                    i.putExtra("id_evento", idevento);
-                    startActivity(i);
+                    String estado="";
+                    try {
+                        JSONObject jsonObject = new JSONObject(response);
+                        estado = jsonObject.getString("Solicitud");
+                    } catch (JSONException e) {
+                        Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                    if (estado.equals("Admitido")) {
+                        Toast.makeText(DetallesEventoActivity.this, "Juez validado para el evento", Toast.LENGTH_LONG).show();
+                        //pasar contenido por intent// clase evento implement serializable para pasar objetos
+                        Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
+                        i.putExtra("id_evento", idevento);
+                        startActivity(i);
+                    } else if (estado.equals("En espera")) {
+                        Toast.makeText(DetallesEventoActivity.this, "Autorizacion en sin confirmar", Toast.LENGTH_LONG).show();
+                    } else if (estado.equals("Denegado")) {
+                        Toast.makeText(DetallesEventoActivity.this, "Juez NO autorizado en el evento", Toast.LENGTH_LONG).show();
+                    }
                 }else {
-
-                    Toast.makeText(DetallesEventoActivity.this, "Juez no autorizado en el evento", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(DetallesEventoActivity.this, "Juez no autorizado en el evento", Toast.LENGTH_LONG).show();
                 }
             }
         }, new Response.ErrorListener() {
