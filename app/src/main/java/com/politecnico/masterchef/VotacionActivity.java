@@ -17,11 +17,13 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
@@ -29,7 +31,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class VotacionActivity extends BaseAppCompatMenu {
 
@@ -49,7 +53,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
     String usuario;
 
-
+    JSONArray array;
     String nombreEquipoAnterior = null;
 
     @Override
@@ -131,14 +135,44 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
                 SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
 
-                JSONArray array = sqlite.cargarVotaciones(getIntent().getStringExtra("id_evento"), usuario);
+                array = sqlite.cargarVotaciones(getIntent().getStringExtra("id_evento"), usuario);
 
+                String prevision = "";
+
+                for (int i = 0; i < array.length(); i++) {
+                    JSONObject jsonObject = null;
+
+                    try {
+                        jsonObject = array.getJSONObject(i);
+                        prevision += "Equipo: " + jsonObject.getString("Nombre_equipo").toString() + "\n"
+                                + " - " + jsonObject.getString("Presentacion").toString() + " - "
+                                + " - " + jsonObject.getString("Servicio").toString() + " - "
+                                + " - " + jsonObject.getString("Sabor").toString() + " - "
+                                + " - " + jsonObject.getString("Triptico").toString() + " - "
+                                + " - " + jsonObject.getString("Imagen").toString() + "\n";
+                    } catch (JSONException e) {
+                        Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
+                        e.printStackTrace();
+                    }
+                }
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(VotacionActivity.this);
 
                 builder.setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        // User clicked OK button
+                        String registros = array.toString();
+                        añadirRegistro("http://10.0.2.2/masterchef/insertarVotacion.php", registros);
+                        /*
+                        for (int i = 0; i < array.length(); i++) {
+                            JSONObject jsonObject = null;
+                            try {
+                                jsonObject = array.getJSONObject(i);
+
+                            } catch (JSONException e) {
+                                Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
+                                e.printStackTrace();
+                            }
+                        }*/
                     }
                 });
 
@@ -148,8 +182,8 @@ public class VotacionActivity extends BaseAppCompatMenu {
                     }
                 });
 
-                builder.setMessage("mensaje")
-                        .setTitle("dialogo");
+                builder.setMessage(prevision)
+                        .setTitle("¿Enviar votaciones?");
 
                 AlertDialog dialog = builder.create();
                 dialog.show();
@@ -182,6 +216,31 @@ public class VotacionActivity extends BaseAppCompatMenu {
             }
         });
 
+    }
+
+    private void añadirRegistro(String URL, String registros) {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Toast.makeText(VotacionActivity.this, "Valoraciones insertadas", Toast.LENGTH_LONG).show();
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                Toast.makeText(VotacionActivity.this, volleyError.toString(), Toast.LENGTH_LONG).show();
+            }
+        }
+
+        ) {
+            protected Map<String, String> getParams() throws AuthFailureError {
+                //utilizar objetos en vez de String para tener campos con otro tipo de valores//pendiente
+                Map<String, String> param = new HashMap<>();
+                param.put("registros", registros);
+                return param;
+            }
+        };
+        requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
     }
 
     private void guardarVotosEquipo(String nombre) {
@@ -241,7 +300,6 @@ public class VotacionActivity extends BaseAppCompatMenu {
         requestQueue.add(jsonArrayRequest);
 
     }
-
 
     private void definirEditYSeeks() {
         // Defincicion y metodos de SeekBars y EditText
