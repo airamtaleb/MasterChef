@@ -27,11 +27,11 @@ public class SQLiteAdmin {
 
 
 
-    public Votacion leerDatos(String nombre_equipo, String id_evento){
+    public Votacion leerDatos(String nombre_equipo, String id_evento,String id_juez){
 
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-        String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO +" = '"+ nombre_equipo +"'  AND " + Contract.Entry.ID_EVENTO +" = '"+ id_evento +"'" ;
+        String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO +" = '"+ nombre_equipo +"'  AND " + Contract.Entry.ID_EVENTO +" = '"+ id_evento +"' AND " + Contract.Entry.ID_JUEZ +" = '"+ id_juez +"'";
         Cursor cursor = db.rawQuery(query, null);
 
         Votacion votacion = new Votacion();
@@ -56,25 +56,46 @@ public class SQLiteAdmin {
     public void guardarDatos(Votacion votacion) {
 
         this.votacion = votacion;
-
-        // Gets the data repository in write mode
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-        // Create a new map of values, where column names are the keys
-        ContentValues values = new ContentValues();
-        values.put(Contract.Entry.NOMBRE_EQUIPO, votacion.getNombre_equipo());
-        values.put(Contract.Entry.ID_JUEZ, votacion.getId_juez());
-        values.put(Contract.Entry.ID_EVENTO, votacion.getId_evento());
-        values.put(Contract.Entry.PRESENTACION, votacion.getPresentacion());
-        values.put(Contract.Entry.SERVICIO, votacion.getServicio());
-        values.put(Contract.Entry.SABOR, votacion.getSabor());
-        values.put(Contract.Entry.IMAGEN, votacion.getImagen());
-        values.put(Contract.Entry.TRIPTICO, votacion.getTriptico());
+        String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO +" = '"+ votacion.getNombre_equipo() +"'  AND " + Contract.Entry.ID_EVENTO +" = '"+ votacion.getId_evento() +"'" ;
+        Cursor cursor = db.rawQuery(query, null);
+
+        int count = cursor.getCount();
+
+        if (count == 0) {
 
 
-        // Insert the new row, returning the primary key value of the new row
-        long newRowId = db.insert(Contract.Entry.TABLE_NAME, null, values);
+            // Create a new map of values, where column names are the keys
+            ContentValues values = new ContentValues();
+            values.put(Contract.Entry.NOMBRE_EQUIPO, votacion.getNombre_equipo());
+            values.put(Contract.Entry.ID_JUEZ, votacion.getId_juez());
+            values.put(Contract.Entry.ID_EVENTO, votacion.getId_evento());
+            values.put(Contract.Entry.PRESENTACION, votacion.getPresentacion());
+            values.put(Contract.Entry.SERVICIO, votacion.getServicio());
+            values.put(Contract.Entry.SABOR, votacion.getSabor());
+            values.put(Contract.Entry.IMAGEN, votacion.getImagen());
+            values.put(Contract.Entry.TRIPTICO, votacion.getTriptico());
 
+
+            // Insert the new row, returning the primary key value of the new row
+            long newRowId = db.insert(Contract.Entry.TABLE_NAME, null, values);
+
+        }else{
+
+
+            //db.execSQL(); "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO +" = '"+ votacion.getNombre_equipo() +"'  AND " + Contract.Entry.ID_EVENTO +" = '"+ votacion.getId_evento() +"'" ;
+
+            db.execSQL("UPDATE "+  Contract.Entry.TABLE_NAME + " SET "
+                    + Contract.Entry.PRESENTACION +" = '"+ votacion.getPresentacion()  +  "' , "
+                    + Contract.Entry.SERVICIO +" = '"+ votacion.getServicio()  +  "' ,"
+                    + Contract.Entry.SABOR +" = '"+ votacion.getSabor()  +  "' ,"
+                    + Contract.Entry.IMAGEN +" = '"+ votacion.getImagen()  +  "' ,"
+                    + Contract.Entry.TRIPTICO +" = '"+ votacion.getTriptico()  +  "' "
+                    + " WHERE " + Contract.Entry.NOMBRE_EQUIPO +" = '"+ votacion.getNombre_equipo() +"'  AND " + Contract.Entry.ID_EVENTO +" = '"+ votacion.getId_evento() +"' AND " + Contract.Entry.ID_JUEZ +" = '"+ votacion.getId_juez() +"'") ;
+
+
+        }
     }
 
 }

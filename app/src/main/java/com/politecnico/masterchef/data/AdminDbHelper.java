@@ -7,8 +7,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class AdminDbHelper extends SQLiteOpenHelper {
 
     // If you change the database schema, you must increment the database version. //reiniciar BBDD mediante onUpgrade
-    public static final int DATABASE_VERSION = 2;
-    public static final String DATABASE_NAME = "votaciones.db";
+    public static final int DATABASE_VERSION = 1;
+    public static final String DATABASE_NAME = "votaciones2.db";
 
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + Contract.Entry.TABLE_NAME + " (" +
@@ -41,7 +41,7 @@ public class AdminDbHelper extends SQLiteOpenHelper {
         // to simply to discard the data and start over
 
         //borrar
-       // db.execSQL(SQL_DELETE_ENTRIES);
+        //db.execSQL(SQL_DELETE_ENTRIES);
         onCreate(db);
     }
 

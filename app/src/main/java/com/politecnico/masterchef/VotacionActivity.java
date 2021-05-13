@@ -1,10 +1,15 @@
 package com.politecnico.masterchef;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,9 +43,14 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
     RequestQueue requestQueue;
 
-    Votacion datosVotacion ;
+    Votacion datosVotacion;
 
-    Button btnGuardar, btnVolver;
+    Button btnGuardar, btnVolver, btnEnviar;
+
+    String usuario;
+
+
+    String nombreEquipoAnterior = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,42 +58,96 @@ public class VotacionActivity extends BaseAppCompatMenu {
         setContentView(R.layout.activity_votacion);
         String idevento = getIntent().getStringExtra("id_evento");
 
+        SharedPreferences preferences = VotacionActivity.this.getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
+        usuario = preferences.getString("id", "");
+
         spinner = (Spinner) findViewById(R.id.spinnerGrupos);
 
         cargarGrupos("http://10.0.2.2/masterchef/cargarGruposEvento.php?idevento=" + idevento);
 
+
         definirEditYSeeks();
 
 
-        //comprobar si hay datos
-       // SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
-        // spinner o grupos obtiene siempre null ///ideas
-        //Votacion votacion = sqlite.leerDatos(spinner.getSelectedItem().toString(), getIntent().getStringExtra("id_evento"));
-        //Votacion votacion = sqlite.leerDatos(grupos.get(0), getIntent().getStringExtra("id_evento"));
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-       // if (votacion.getNombre_equipo()!=null) {
-        //    Toast.makeText(VotacionActivity.this, votacion.getNombre_equipo() + " evento " + votacion.getId_evento() + votacion.getPresentacion(), Toast.LENGTH_LONG).show();
-       // }
+                if (nombreEquipoAnterior != null) {
+
+
+                    guardarVotosEquipo(nombreEquipoAnterior);
+
+                }
+
+
+                SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
+                Votacion votacion = sqlite.leerDatos(spinner.getSelectedItem().toString(), getIntent().getStringExtra("id_evento"), usuario);
+
+                if (votacion.getPresentacion() == null) {
+
+                    votoPresentacion.setText("" + 0);
+                    votoServicio.setText("" + 0);
+                    votoSabor.setText("" + 0);
+                    votoImagenPersonal.setText("" + 0);
+                    votoTriptico.setText("" + 0);
+
+                } else {
+
+                    votoPresentacion.setText(votacion.getPresentacion());
+                    votoServicio.setText(votacion.getServicio());
+                    votoSabor.setText(votacion.getSabor());
+                    votoImagenPersonal.setText(votacion.getImagen());
+                    votoTriptico.setText(votacion.getTriptico());
+
+                }
+
+                nombreEquipoAnterior = spinner.getSelectedItem().toString();
+
+            }
+
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
 
         btnGuardar = findViewById(R.id.btnGuardar);
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-               datosVotacion = new Votacion();
-               datosVotacion.setNombre_equipo(spinner.getSelectedItem().toString());
-               datosVotacion.setId_juez(getIntent().getStringExtra("id_juez"));
-               datosVotacion.setId_evento(getIntent().getStringExtra("id_evento"));
-               datosVotacion.setPresentacion(votoPresentacion.getText().toString());
-               datosVotacion.setServicio(votoServicio.getText().toString());
-               datosVotacion.setSabor(votoSabor.getText().toString());
-               datosVotacion.setImagen(votoImagenPersonal.getText().toString());
-               datosVotacion.setTriptico(votoTriptico.getText().toString());
+                guardarVotosEquipo(spinner.getSelectedItem().toString());
 
-               SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
-               sqlite.guardarDatos(datosVotacion);
+            }
+        });
 
-               Toast.makeText(VotacionActivity.this, "Votacion guardada", Toast.LENGTH_LONG).show();
+        btnEnviar = findViewById(R.id.btnEnviar);
+        btnEnviar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(VotacionActivity.this);
+
+                builder.setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // User clicked OK button
+                    }
+                });
+
+                builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // User clicked OK button
+                    }
+                });
+
+                builder.setMessage("mensaje")
+                        .setTitle("dialogo");
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
 
             }
         });
@@ -106,12 +170,34 @@ public class VotacionActivity extends BaseAppCompatMenu {
             public void onClick(View v) {
 
                 SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
-                Votacion votacion = sqlite.leerDatos(spinner.getSelectedItem().toString(), getIntent().getStringExtra("id_evento"));
+                Votacion votacion = sqlite.leerDatos(spinner.getSelectedItem().toString(), getIntent().getStringExtra("id_evento"), usuario);
 
-                Toast.makeText(VotacionActivity.this, votacion.getNombre_equipo() + " evento "+  votacion.getId_evento()+ "presentacion  "+ votacion.getPresentacion(), Toast.LENGTH_LONG).show();
+                Toast.makeText(VotacionActivity.this, votacion.getNombre_equipo() + " evento " + votacion.getId_evento() + "presentacion  " + votacion.getPresentacion(), Toast.LENGTH_LONG).show();
 
             }
         });
+
+    }
+
+    private void guardarVotosEquipo(String nombre) {
+
+
+        datosVotacion = new Votacion();
+        datosVotacion.setNombre_equipo(nombre);
+
+
+        datosVotacion.setId_juez(usuario);
+        datosVotacion.setId_evento(getIntent().getStringExtra("id_evento"));
+        datosVotacion.setPresentacion(votoPresentacion.getText().toString());
+        datosVotacion.setServicio(votoServicio.getText().toString());
+        datosVotacion.setSabor(votoSabor.getText().toString());
+        datosVotacion.setImagen(votoImagenPersonal.getText().toString());
+        datosVotacion.setTriptico(votoTriptico.getText().toString());
+
+        SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
+        sqlite.guardarDatos(datosVotacion);
+
+        Toast.makeText(VotacionActivity.this, "Votacion guardada", Toast.LENGTH_LONG).show();
 
     }
 
@@ -120,7 +206,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
             @Override
             public void onResponse(JSONArray response) {
-                 grupos = new ArrayList<>();
+                grupos = new ArrayList<>();
                 for (int i = 0; i < response.length(); i++) {
                     String g = "";
                     JSONObject jsonObject;
@@ -415,7 +501,6 @@ public class VotacionActivity extends BaseAppCompatMenu {
         }
 
      */
-
 
 
 }
