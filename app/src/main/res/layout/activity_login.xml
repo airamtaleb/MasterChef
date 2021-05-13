@@ -78,18 +78,6 @@
                 android:textColor="#FFF"
                 android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/btnIrRegistro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="15dp"
-                android:background="@drawable/bordes_redondos"
-                android:text="Ir a registro"
-                android:textColor="#FFF"
-                android:textSize="18sp"
-                />
 
             <TextView
                 android:id="@+id/textEnlace"
@@ -97,6 +85,7 @@
                 android:layout_height="wrap_content"
                 android:text="Si no esta registrado pulse aqui"
                 android:textSize="15sp"
+                android:layout_marginTop="40dp"
                 android:clickable="true"/>
 
 

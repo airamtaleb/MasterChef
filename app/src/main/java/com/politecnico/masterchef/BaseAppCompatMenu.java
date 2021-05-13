@@ -43,8 +43,9 @@ public class BaseAppCompatMenu extends AppCompatActivity {
 
         }else if(id == R.id.item3) {
 
-            Intent i = new Intent(getApplicationContext(), DatabaseActivity.class);
+            Intent i = new Intent(getApplicationContext(), EventosActivity.class);
             startActivity(i);
+            finish();
 
         }
         return super.onOptionsItemSelected(item);

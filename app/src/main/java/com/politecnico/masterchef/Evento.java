@@ -18,6 +18,8 @@ public class Evento implements Serializable {
         this.lugar = lugar;
     }
 
+
+
     public String getIdEvento() {
         return idEvento;
     }

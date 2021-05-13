@@ -18,10 +18,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.volley.NetworkResponse;
+import com.android.volley.ParseError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
@@ -33,6 +36,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 public class EventosActivity extends BaseAppCompatMenu {
@@ -86,10 +90,14 @@ public class EventosActivity extends BaseAppCompatMenu {
     private void setSupportActionBar(Toolbar myToolbar) {
     }
 
+
     private void cargarEventos(String URL) {
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,URL,null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
+
+
+
                 for (int i = 0; i < response.length(); i++) {
                     Evento evento = new Evento();
 
@@ -105,6 +113,7 @@ public class EventosActivity extends BaseAppCompatMenu {
                         evento.setLugar(jsonObject.getString("Lugar"));
                     } catch (JSONException e) {
                         Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
+                        e.printStackTrace();
                     }
                     String estado= evento.getEstado();
                     listadoEventos.add(evento);
@@ -126,6 +135,7 @@ public class EventosActivity extends BaseAppCompatMenu {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(getApplicationContext(), "ERROR DE CONEXIÓN", Toast.LENGTH_SHORT).show();
+                error.printStackTrace();
             }
         });
         requestQueue = Volley.newRequestQueue(this);
