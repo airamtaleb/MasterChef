@@ -129,6 +129,11 @@ public class VotacionActivity extends BaseAppCompatMenu {
             @Override
             public void onClick(View v) {
 
+                SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
+
+                JSONArray array = sqlite.cargarVotaciones(getIntent().getStringExtra("id_evento"), usuario);
+
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(VotacionActivity.this);
 
                 builder.setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
