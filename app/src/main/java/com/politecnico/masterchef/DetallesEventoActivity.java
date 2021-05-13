@@ -81,13 +81,30 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
         });
 
         if (evento.getEstado().equals("En curso")){
-            //
-
+            btnApuntarse.setEnabled(true);
+            btnCancelarParticipacion.setEnabled(true);
+            btnAccederEvento.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //seleccionamos el evento
+                    String idevento = evento.getIdEvento()+"";
+                    validarJuez("http://10.0.2.2/masterchef/validarJuezEvento.php",  usuario, idevento );
+                }
+            });
         } else if (evento.getEstado().equals("Finalizado")){
-
-
-            //btnAccederEvento.setEnabled(false);
-
+            btnApuntarse.setEnabled(false);
+            btnCancelarParticipacion.setEnabled(false);
+            btnAccederEvento.setText("Ver resultados");
+            btnAccederEvento.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //seleccionamos el evento
+                    String idevento = evento.getIdEvento()+"";
+                    Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
+                    i.putExtra("id_evento", idevento);
+                    startActivity(i);
+                }
+            });
         }
 
         btnApuntarse.setOnClickListener(new View.OnClickListener() {
@@ -101,18 +118,6 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
             @Override
             public void onClick(View v) {
                 anularParticipacionJuez("http://10.0.2.2/masterchef/anularParticipacion.php", usuario, evento.getIdEvento());
-            }
-        });
-
-        btnAccederEvento.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //seleccionamos el evento
-                String idevento = evento.getIdEvento()+"";
-                validarJuez("http://10.0.2.2/masterchef/validarJuezEvento.php",  usuario, idevento );
-
-
-
             }
         });
 
