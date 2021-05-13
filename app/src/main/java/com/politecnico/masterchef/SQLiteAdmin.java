@@ -15,7 +15,6 @@ import java.util.ArrayList;
 public class SQLiteAdmin {
 
 
-    private ArrayList votaciones;
     private AdminDbHelper dbHelper;
     private Votacion votacion;
 
@@ -24,29 +23,34 @@ public class SQLiteAdmin {
 
         dbHelper = new AdminDbHelper(context);
 
-        //para no duplicar el guardado de datos ////mejoara
-        if (comprobarTablaLlena() == 0) {
-            //guardarDatos();
-        }
-        leerDatos();
-
     }
 
 
-    public ArrayList getVotaciones() {
-        return votaciones;
-    }
 
-    public int comprobarTablaLlena() {
+    public Votacion leerDatos(String nombre_equipo, String id_evento){
 
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-        String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME;
+        String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO +" = '"+ nombre_equipo +"'  AND " + Contract.Entry.ID_EVENTO +" = '"+ id_evento +"'" ;
         Cursor cursor = db.rawQuery(query, null);
-        int count = cursor.getCount();
-        cursor.close();
-        return count;
 
+        Votacion votacion = new Votacion();
+
+        while (cursor.moveToNext()) {
+
+            votacion.setNombre_equipo(cursor.getString((cursor.getColumnIndex(Contract.Entry.NOMBRE_EQUIPO))));
+            votacion.setId_juez(cursor.getString((cursor.getColumnIndex(Contract.Entry.ID_JUEZ))));
+            votacion.setId_evento(cursor.getString((cursor.getColumnIndex(Contract.Entry.ID_EVENTO))));
+            votacion.setPresentacion(cursor.getString((cursor.getColumnIndex(Contract.Entry.PRESENTACION))));
+            votacion.setServicio(cursor.getString((cursor.getColumnIndex(Contract.Entry.SERVICIO))));
+            votacion.setSabor(cursor.getString((cursor.getColumnIndex(Contract.Entry.SABOR))));
+            votacion.setImagen(cursor.getString((cursor.getColumnIndex(Contract.Entry.IMAGEN))));
+            votacion.setTriptico(cursor.getString((cursor.getColumnIndex(Contract.Entry.TRIPTICO))));
+
+        }
+        cursor.close();
+
+        return votacion;
     }
 
     public void guardarDatos(Votacion votacion) {
@@ -71,41 +75,6 @@ public class SQLiteAdmin {
         // Insert the new row, returning the primary key value of the new row
         long newRowId = db.insert(Contract.Entry.TABLE_NAME, null, values);
 
-    }
-
-    public void leerDatos() {
-
-        SQLiteDatabase db = dbHelper.getReadableDatabase();
-
-        // Define a projection that specifies which columns from the database
-        // you will actually use after this query.
-        String[] projection = {
-                BaseColumns._ID,
-                Contract.Entry.NOMBRE_EQUIPO,
-
-        };
-
-        Cursor cursor = db.query(
-                Contract.Entry.TABLE_NAME,   // The table to query
-                projection,             // The array of columns to return (pass null to get all) projection
-                null,              // The columns for the WHERE clause  //selection
-                null,          // The values for the WHERE clause //selectionArgs
-                null,                   // don't group the rows
-                null,                   // don't filter by row groups
-                null               // The sort order  //sortOrder
-        );
-
-        votaciones = new ArrayList<>();
-
-
-        while (cursor.moveToNext()) {
-
-            String nombreEquipo = cursor.getString((cursor.getColumnIndex(Contract.Entry.NOMBRE_EQUIPO)));
-
-            votaciones.add(nombreEquipo);
-
-        }
-        cursor.close();
     }
 
 }

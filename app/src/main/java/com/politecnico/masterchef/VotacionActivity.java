@@ -82,10 +82,10 @@ public class VotacionActivity extends BaseAppCompatMenu {
             public void onClick(View v) {
 
                 SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
-                sqlite.leerDatos();
-                ArrayList votaciones = sqlite.getVotaciones();
+                Votacion votacion = sqlite.leerDatos(spinner.getSelectedItem().toString(), getIntent().getStringExtra("id_evento"));
+                //ArrayList votaciones = sqlite.getVotaciones();
 
-                Toast.makeText(VotacionActivity.this, votaciones.get(0).toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(VotacionActivity.this, votacion.getNombre_equipo() + " evento "+  votacion.getId_evento()+  votacion.getPresentacion(), Toast.LENGTH_LONG).show();
 
             }
         });
