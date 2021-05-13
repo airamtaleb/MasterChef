@@ -35,7 +35,7 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
 
     TextView txtvNombre, txtvFecha ,txtvHora ,txtvEstado ,txtvDescripcion ,txtvLugar ;
 
-    Button btnVolverListado, btnAccederEvento;
+    Button btnVolverListado, btnAccederEvento, btnApuntarse, btnCancelarParticipacion;
 
     RequestQueue requestQueue;
 
@@ -67,8 +67,11 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
         txtvDescripcion.setText(evento.getDescripcion());
         txtvLugar.setText(evento.getLugar());
 
-
+        btnAccederEvento = findViewById(R.id.btnAccederEvento);
+        btnApuntarse = findViewById(R.id.btnApuntarse);
+        btnCancelarParticipacion = findViewById(R.id.btnCancelarParticipacion);
         btnVolverListado = findViewById(R.id.btnVolverListado);
+
         btnVolverListado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,16 +80,29 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
             }
         });
 
-        btnAccederEvento = findViewById(R.id.btnAccederEvento);
-
         if (evento.getEstado().equals("En curso")){
             //
 
         } else if (evento.getEstado().equals("Finalizado")){
 
+
             //btnAccederEvento.setEnabled(false);
 
         }
+
+        btnApuntarse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                apuntarJuez("http://10.0.2.2/masterchef/apuntarseJuez.php", usuario, evento.getIdEvento());
+            }
+        });
+
+        btnCancelarParticipacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                anularParticipacionJuez("http://10.0.2.2/masterchef/anularParticipacion.php", usuario, evento.getIdEvento());
+            }
+        });
 
         btnAccederEvento.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -146,6 +162,58 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
             }
         };
         requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+    }
+
+    private void apuntarJuez(String URL, String idjuez, String idevento) {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Toast.makeText(DetallesEventoActivity.this, "Juez Apuntado al Evento", Toast.LENGTH_LONG).show();
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                Toast.makeText(DetallesEventoActivity.this, volleyError.toString(), Toast.LENGTH_LONG).show();
+            }
+        }
+
+        ) {
+            protected Map<String, String> getParams() throws AuthFailureError {
+                //utilizar objetos en vez de String para tener campos con otro tipo de valores//pendiente
+                Map<String, String> param = new HashMap<String, String>();
+                param.put("idjuez", idjuez);
+                param.put("idevento", idevento);
+                return param;
+            }
+        };
+        requestQueue = Volley.newRequestQueue(DetallesEventoActivity.this);
+        requestQueue.add(stringRequest);
+    }
+
+    private void anularParticipacionJuez(String URL, String idjuez, String idevento) {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Toast.makeText(DetallesEventoActivity.this, "Cancelada participacion en el Evento", Toast.LENGTH_LONG).show();
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                Toast.makeText(DetallesEventoActivity.this, volleyError.toString(), Toast.LENGTH_LONG).show();
+            }
+        }
+
+        ) {
+            protected Map<String, String> getParams() throws AuthFailureError {
+                //utilizar objetos en vez de String para tener campos con otro tipo de valores//pendiente
+                Map<String, String> param = new HashMap<String, String>();
+                param.put("idjuez", idjuez);
+                param.put("idevento", idevento);
+                return param;
+            }
+        };
+        requestQueue = Volley.newRequestQueue(DetallesEventoActivity.this);
         requestQueue.add(stringRequest);
     }
 }
