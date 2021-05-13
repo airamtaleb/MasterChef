@@ -41,6 +41,12 @@ public class BaseAppCompatMenu extends AppCompatActivity {
 
             finishAffinity();
 
+        }else if(id == R.id.item3) {
+
+            Intent i = new Intent(getApplicationContext(), EventosActivity.class);
+            startActivity(i);
+            finish();
+
         }
         return super.onOptionsItemSelected(item);
     }

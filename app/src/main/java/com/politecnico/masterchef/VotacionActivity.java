@@ -1,5 +1,6 @@
 package com.politecnico.masterchef;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -27,6 +28,8 @@ import java.util.List;
 
 public class VotacionActivity extends BaseAppCompatMenu {
 
+    List<String> grupos;
+
     EditText votoPresentacion, votoServicio, votoSabor, votoTriptico, votoImagenPersonal;
 
     SeekBar seekBarPresentacion, seekBarServicio, seekBarSabor, seekBarTriptico, seekBarImagenPersonal;
@@ -37,7 +40,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
     Votacion datosVotacion ;
 
-    Button btnGuardar;
+    Button btnGuardar, btnVolver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,17 @@ public class VotacionActivity extends BaseAppCompatMenu {
         cargarGrupos("http://10.0.2.2/masterchef/cargarGruposEvento.php?idevento=" + idevento);
 
         definirEditYSeeks();
+
+
+        //comprobar si hay datos
+       // SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
+        // spinner o grupos obtiene siempre null ///ideas
+        //Votacion votacion = sqlite.leerDatos(spinner.getSelectedItem().toString(), getIntent().getStringExtra("id_evento"));
+        //Votacion votacion = sqlite.leerDatos(grupos.get(0), getIntent().getStringExtra("id_evento"));
+
+       // if (votacion.getNombre_equipo()!=null) {
+        //    Toast.makeText(VotacionActivity.this, votacion.getNombre_equipo() + " evento " + votacion.getId_evento() + votacion.getPresentacion(), Toast.LENGTH_LONG).show();
+       // }
 
         btnGuardar = findViewById(R.id.btnGuardar);
         btnGuardar.setOnClickListener(new View.OnClickListener() {
@@ -69,8 +83,18 @@ public class VotacionActivity extends BaseAppCompatMenu {
                SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
                sqlite.guardarDatos(datosVotacion);
 
-                Toast.makeText(VotacionActivity.this, "votacion guardada", Toast.LENGTH_LONG).show();
+               Toast.makeText(VotacionActivity.this, "Votacion guardada", Toast.LENGTH_LONG).show();
 
+            }
+        });
+
+        btnVolver = findViewById(R.id.btnVolver);
+        btnVolver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), DetallesEventoActivity.class);
+                startActivity(i);
+                finish();
             }
         });
 
@@ -83,9 +107,8 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
                 SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
                 Votacion votacion = sqlite.leerDatos(spinner.getSelectedItem().toString(), getIntent().getStringExtra("id_evento"));
-                //ArrayList votaciones = sqlite.getVotaciones();
 
-                Toast.makeText(VotacionActivity.this, votacion.getNombre_equipo() + " evento "+  votacion.getId_evento()+  votacion.getPresentacion(), Toast.LENGTH_LONG).show();
+                Toast.makeText(VotacionActivity.this, votacion.getNombre_equipo() + " evento "+  votacion.getId_evento()+ "presentacion  "+ votacion.getPresentacion(), Toast.LENGTH_LONG).show();
 
             }
         });
@@ -97,7 +120,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
             @Override
             public void onResponse(JSONArray response) {
-                List<String> grupos = new ArrayList<>();
+                 grupos = new ArrayList<>();
                 for (int i = 0; i < response.length(); i++) {
                     String g = "";
                     JSONObject jsonObject;
@@ -392,8 +415,6 @@ public class VotacionActivity extends BaseAppCompatMenu {
         }
 
      */
-
-
 
 
 

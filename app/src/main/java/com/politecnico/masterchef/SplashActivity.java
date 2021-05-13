@@ -1,10 +1,13 @@
 package com.politecnico.masterchef;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -25,6 +28,9 @@ public class SplashActivity extends AppCompatActivity {
 
         //quitar ActionBar
         getSupportActionBar().hide();
+
+        progressBar.getIndeterminateDrawable()
+                .setColorFilter(Color.RED, PorterDuff.Mode.SRC_IN);
 
 
         new Handler().postDelayed(new Runnable() {

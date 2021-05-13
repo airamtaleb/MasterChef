@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.AuthFailureError;
@@ -67,10 +68,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.hora.setText(evento1.getHora());
         holder.descripcion.setText(evento1.getDescripcion());
         if (evento1.getEstado().equals("En curso")){
-            holder.itemView.setBackgroundTintList(ColorStateList.valueOf(Color.GREEN));
+            holder.itemView.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(context, R.color.md_green_A200)));
 
         } else if (evento1.getEstado().equals("Finalizado")){
-            holder.itemView.setBackgroundTintList(ColorStateList.valueOf(Color.GRAY));
+            holder.itemView.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(context, R.color.grey_300)));
             //holder.apuntarse.setEnabled(false);
             //holder.cancelar.setEnabled(false);
         }
