@@ -7,6 +7,41 @@
     android:layout_height="match_parent"
     tools:context=".EventosActivity"
     >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+    android:orientation="vertical">
+  <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/opcionesVistaEventos"
+      android:orientation="horizontal"
+      android:padding="0dp"
+      android:gravity="center"
+      tools:ignore="MissingConstraints">
+
+      <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/eventosTodos"
+          android:checked="true"
+          android:text="Todos"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventosEncurso"
+        android:text="En curso"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventosFinalizados"
+        android:text="Finalizados"/>
+  </RadioGroup>
+
 
   <androidx.recyclerview.widget.RecyclerView
       android:id="@+id/recyclerView"
@@ -16,5 +51,5 @@
       app:layout_constraintVertical_bias="0.0"
       tools:layout_editor_absoluteX="16dp" />
 
-
+  </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

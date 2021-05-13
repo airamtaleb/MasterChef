@@ -9,6 +9,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -35,22 +37,47 @@ import java.util.ArrayList;
 
 public class EventosActivity extends BaseAppCompatMenu {
 
-    ArrayList<Evento> listadoEventos = new ArrayList<>();
+    ArrayList<Evento> listadoEventos, listadoEncurso, listadoFinalizado;
     //String idEvento, nombre, fecha, hora, estado, descripcion, lugar;
-
+    RadioGroup radioGroup;
+   // RadioButton eventosTodos, eventosEncurso, eventosFinalizado;
     RequestQueue requestQueue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eventos);
+        radioGroup = (RadioGroup) findViewById(R.id.opcionesVistaEventos);
+        //eventosTodos = (RadioButton) findViewById(R.id.eventosTodos);
+        //eventosEncurso = (RadioButton) findViewById(R.id.eventosEncurso);
+        //eventosFinalizado = (RadioButton) findViewById(R.id.eventosFinalizados);
 
-
+        listadoEventos = new ArrayList<>();
+        listadoEncurso = new ArrayList<>();
+        listadoFinalizado = new ArrayList<>();
 
         cargarEventos("http://10.0.2.2/masterchef/cargarEventos.php");
         // get the reference of RecyclerView
         // set the Adapter to RecyclerView
-
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                ArrayList<Evento> listar = new ArrayList<>();
+                if(checkedId == R.id.eventosTodos){
+                    listar = listadoEventos;
+                } else if(checkedId == R.id.eventosEncurso){
+                    listar = listadoEncurso;
+                } else if(checkedId == R.id.eventosFinalizados) {
+                    listar = listadoFinalizado;
+                }
+                RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+                // set a LinearLayoutManager with default vertical orientation
+                LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
+                recyclerView.setLayoutManager(linearLayoutManager);
+                CustomAdapter customAdapter = new CustomAdapter(EventosActivity.this, listar);
+                recyclerView.setAdapter(customAdapter);
+            }
+        });
 
     }
 
@@ -65,6 +92,7 @@ public class EventosActivity extends BaseAppCompatMenu {
             public void onResponse(JSONArray response) {
                 for (int i = 0; i < response.length(); i++) {
                     Evento evento = new Evento();
+
                     JSONObject jsonObject = null;
                     try {
                         jsonObject = response.getJSONObject(i);
@@ -78,14 +106,21 @@ public class EventosActivity extends BaseAppCompatMenu {
                     } catch (JSONException e) {
                         Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
                     }
+                    String estado= evento.getEstado();
                     listadoEventos.add(evento);
+                    if (estado.equals("En curso")){
+                        listadoEncurso.add(evento);
+                    } else if (estado.equals("Finalizado")){
+                        listadoFinalizado.add(evento);
+                    }
+                    RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+                    // set a LinearLayoutManager with default vertical orientation
+                    LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
+                    recyclerView.setLayoutManager(linearLayoutManager);
+                    CustomAdapter customAdapter = new CustomAdapter(EventosActivity.this, listadoEventos);
+                    recyclerView.setAdapter(customAdapter);
                 }
-                RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-                // set a LinearLayoutManager with default vertical orientation
-                LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
-                recyclerView.setLayoutManager(linearLayoutManager);
-                CustomAdapter customAdapter = new CustomAdapter(EventosActivity.this, listadoEventos);
-                recyclerView.setAdapter(customAdapter);
+
             }
         }, new Response.ErrorListener() {
             @Override
