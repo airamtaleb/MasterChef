@@ -4,13 +4,13 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.provider.BaseColumns;
-import android.widget.Toast;
 
 import com.politecnico.masterchef.data.AdminDbHelper;
 import com.politecnico.masterchef.data.Contract;
 
-import java.util.ArrayList;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class SQLiteAdmin {
 
@@ -26,12 +26,60 @@ public class SQLiteAdmin {
     }
 
 
+    public JSONArray cargarVotaciones(String id_evento, String id_juez) {
 
-    public Votacion leerDatos(String nombre_equipo, String id_evento,String id_juez){
 
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-        String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO +" = '"+ nombre_equipo +"'  AND " + Contract.Entry.ID_EVENTO +" = '"+ id_evento +"' AND " + Contract.Entry.ID_JUEZ +" = '"+ id_juez +"'";
+        String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.ID_EVENTO + " = '" + id_evento + "' AND " + Contract.Entry.ID_JUEZ + " = '" + id_juez + "'";
+        Cursor cursor = db.rawQuery(query, null);
+
+
+        JSONArray array = new JSONArray();
+
+
+        if (cursor != null && cursor.getCount() > 0) {
+            while (cursor.moveToNext()) {
+
+
+                while (cursor.moveToNext()) {
+                    JSONObject object = new JSONObject();
+                    try {
+
+
+                        object.put("Presentacion", cursor.getString((cursor.getColumnIndex(Contract.Entry.PRESENTACION))));
+                        object.put("Servicio", cursor.getString((cursor.getColumnIndex(Contract.Entry.SERVICIO))));
+                        object.put("Sabor", cursor.getString((cursor.getColumnIndex(Contract.Entry.SABOR))));
+                        object.put("Imagen", cursor.getString((cursor.getColumnIndex(Contract.Entry.IMAGEN))));
+                        object.put("Triptico", cursor.getString((cursor.getColumnIndex(Contract.Entry.TRIPTICO))));
+                        object.put("ID_juez", cursor.getString((cursor.getColumnIndex(Contract.Entry.ID_JUEZ))));
+                        object.put("ID_evento", cursor.getString((cursor.getColumnIndex(Contract.Entry.ID_EVENTO))));
+                        object.put("Nombre_equipo", cursor.getString((cursor.getColumnIndex(Contract.Entry.NOMBRE_EQUIPO))));
+
+                        array.put(object);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+
+            }
+
+        }
+
+        cursor.close();
+
+
+
+        return array;
+    }
+
+
+    public Votacion leerDatos(String nombre_equipo, String id_evento, String id_juez) {
+
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO + " = '" + nombre_equipo + "'  AND " + Contract.Entry.ID_EVENTO + " = '" + id_evento + "' AND " + Contract.Entry.ID_JUEZ + " = '" + id_juez + "'";
         Cursor cursor = db.rawQuery(query, null);
 
         Votacion votacion = new Votacion();
@@ -58,7 +106,7 @@ public class SQLiteAdmin {
         this.votacion = votacion;
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-        String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO +" = '"+ votacion.getNombre_equipo() +"'  AND " + Contract.Entry.ID_EVENTO +" = '"+ votacion.getId_evento() +"'" ;
+        String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO + " = '" + votacion.getNombre_equipo() + "'  AND " + Contract.Entry.ID_EVENTO + " = '" + votacion.getId_evento() + "'";
         Cursor cursor = db.rawQuery(query, null);
 
         int count = cursor.getCount();
@@ -81,18 +129,18 @@ public class SQLiteAdmin {
             // Insert the new row, returning the primary key value of the new row
             long newRowId = db.insert(Contract.Entry.TABLE_NAME, null, values);
 
-        }else{
+        } else {
 
 
             //db.execSQL(); "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO +" = '"+ votacion.getNombre_equipo() +"'  AND " + Contract.Entry.ID_EVENTO +" = '"+ votacion.getId_evento() +"'" ;
 
-            db.execSQL("UPDATE "+  Contract.Entry.TABLE_NAME + " SET "
-                    + Contract.Entry.PRESENTACION +" = '"+ votacion.getPresentacion()  +  "' , "
-                    + Contract.Entry.SERVICIO +" = '"+ votacion.getServicio()  +  "' ,"
-                    + Contract.Entry.SABOR +" = '"+ votacion.getSabor()  +  "' ,"
-                    + Contract.Entry.IMAGEN +" = '"+ votacion.getImagen()  +  "' ,"
-                    + Contract.Entry.TRIPTICO +" = '"+ votacion.getTriptico()  +  "' "
-                    + " WHERE " + Contract.Entry.NOMBRE_EQUIPO +" = '"+ votacion.getNombre_equipo() +"'  AND " + Contract.Entry.ID_EVENTO +" = '"+ votacion.getId_evento() +"' AND " + Contract.Entry.ID_JUEZ +" = '"+ votacion.getId_juez() +"'") ;
+            db.execSQL("UPDATE " + Contract.Entry.TABLE_NAME + " SET "
+                    + Contract.Entry.PRESENTACION + " = '" + votacion.getPresentacion() + "' , "
+                    + Contract.Entry.SERVICIO + " = '" + votacion.getServicio() + "' ,"
+                    + Contract.Entry.SABOR + " = '" + votacion.getSabor() + "' ,"
+                    + Contract.Entry.IMAGEN + " = '" + votacion.getImagen() + "' ,"
+                    + Contract.Entry.TRIPTICO + " = '" + votacion.getTriptico() + "' "
+                    + " WHERE " + Contract.Entry.NOMBRE_EQUIPO + " = '" + votacion.getNombre_equipo() + "'  AND " + Contract.Entry.ID_EVENTO + " = '" + votacion.getId_evento() + "' AND " + Contract.Entry.ID_JUEZ + " = '" + votacion.getId_juez() + "'");
 
 
         }
