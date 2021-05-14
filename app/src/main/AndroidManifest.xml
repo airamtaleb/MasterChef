@@ -19,9 +19,11 @@
         android:theme="@style/Theme.MasterChef">
         <activity android:name=".VotacionActivity"
             android:label="@string/votacion"/>
-        <activity android:name=".DetallesEventoActivity" />
+        <activity android:name=".DetallesEventoActivity"
+            android:label="@string/detallesEvento"/>
         <activity android:name=".RegistroActivity" />
-        <activity android:name=".EventosActivity" />
+        <activity android:name=".EventosActivity"
+            android:label="@string/eventos"/>
         <activity android:name=".DatabaseActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivity">
