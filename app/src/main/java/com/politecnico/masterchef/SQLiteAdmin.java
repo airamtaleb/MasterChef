@@ -25,27 +25,20 @@ public class SQLiteAdmin {
 
     }
 
-
     public JSONArray cargarVotaciones(String id_evento, String id_juez) {
-
 
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.ID_EVENTO + " = '" + id_evento + "' AND " + Contract.Entry.ID_JUEZ + " = '" + id_juez + "'";
         Cursor cursor = db.rawQuery(query, null);
 
-
         JSONArray array = new JSONArray();
 
-
         if (cursor != null && cursor.getCount() > 0) {
-            while (cursor.moveToNext()) {
-
 
                 while (cursor.moveToNext()) {
                     JSONObject object = new JSONObject();
                     try {
-
 
                         object.put("Presentacion", cursor.getString((cursor.getColumnIndex(Contract.Entry.PRESENTACION))));
                         object.put("Servicio", cursor.getString((cursor.getColumnIndex(Contract.Entry.SERVICIO))));
@@ -62,14 +55,9 @@ public class SQLiteAdmin {
                     }
                 }
 
-
-            }
-
         }
 
         cursor.close();
-
-
 
         return array;
     }
@@ -113,7 +101,6 @@ public class SQLiteAdmin {
 
         if (count == 0) {
 
-
             // Create a new map of values, where column names are the keys
             ContentValues values = new ContentValues();
             values.put(Contract.Entry.NOMBRE_EQUIPO, votacion.getNombre_equipo());
@@ -125,12 +112,10 @@ public class SQLiteAdmin {
             values.put(Contract.Entry.IMAGEN, votacion.getImagen());
             values.put(Contract.Entry.TRIPTICO, votacion.getTriptico());
 
-
             // Insert the new row, returning the primary key value of the new row
             long newRowId = db.insert(Contract.Entry.TABLE_NAME, null, values);
 
         } else {
-
 
             //db.execSQL(); "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO +" = '"+ votacion.getNombre_equipo() +"'  AND " + Contract.Entry.ID_EVENTO +" = '"+ votacion.getId_evento() +"'" ;
 

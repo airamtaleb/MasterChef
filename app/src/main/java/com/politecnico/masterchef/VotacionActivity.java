@@ -201,21 +201,6 @@ public class VotacionActivity extends BaseAppCompatMenu {
             }
         });
 
-
-        //solo para probar
-        Button btnCargar = findViewById(R.id.btnCargar);
-        btnCargar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
-                Votacion votacion = sqlite.leerDatos(spinner.getSelectedItem().toString(), getIntent().getStringExtra("id_evento"), usuario);
-
-                Toast.makeText(VotacionActivity.this, votacion.getNombre_equipo() + " evento " + votacion.getId_evento() + "presentacion  " + votacion.getPresentacion(), Toast.LENGTH_LONG).show();
-
-            }
-        });
-
     }
 
     private void añadirRegistro(String URL, String registros) {
