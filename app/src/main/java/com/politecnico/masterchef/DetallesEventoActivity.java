@@ -1,7 +1,9 @@
 package com.politecnico.masterchef;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,6 +15,7 @@ import android.text.SpannableStringBuilder;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,10 +44,15 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
 
     String usuario;
 
+    LinearLayout panelEvento;
+
+    @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalles_evento);
+
+        panelEvento = findViewById(R.id.panelEvento);
 
         SharedPreferences preferences = DetallesEventoActivity.this.getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
         usuario = preferences.getString("id", "");
@@ -61,11 +69,11 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
 
 
         txtvNombre.setText(evento.getNombre());
-        txtvFecha.setText("Fecha: " +evento.getFecha());
-        txtvHora.setText("Hora: "+evento.getHora());
-        txtvEstado.setText("Estado: "+evento.getEstado());
-        txtvDescripcion.setText(evento.getDescripcion());
-        txtvLugar.setText(evento.getLugar());
+        txtvFecha.setText(" Fecha: " +evento.getFecha());
+        txtvHora.setText(" Hora: "+evento.getHora());
+        txtvEstado.setText(" Estado: "+evento.getEstado());
+        txtvDescripcion.setText(" Descripción: "+evento.getDescripcion());
+        txtvLugar.setText(" Lugar: "+evento.getLugar());
 
         btnAccederEvento = findViewById(R.id.btnAccederEvento);
         btnApuntarse = findViewById(R.id.btnApuntarse);
@@ -81,17 +89,27 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
         });
 
         if (evento.getEstado().equals("En curso")){
+
+            //panelEvento.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(DetallesEventoActivity.this, R.color.md_green_A200)));
+            panelEvento.setBackgroundResource(R.drawable.borde_verde);
+            //panelEvento.setBackgroundResource(R.color.md_green_A200);
+
+
             btnApuntarse.setEnabled(true);
             btnCancelarParticipacion.setEnabled(true);
             btnAccederEvento.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     //seleccionamos el evento
                     String idevento = evento.getIdEvento()+"";
                     validarJuez("http://10.0.2.2/masterchef/validarJuezEvento.php",  usuario, idevento, evento );
                 }
             });
         } else if (evento.getEstado().equals("Finalizado")){
+
+            panelEvento.setBackgroundResource(R.drawable.borde_gris);
+
             btnApuntarse.setEnabled(false);
             btnCancelarParticipacion.setEnabled(false);
             btnAccederEvento.setText("Ver resultados");

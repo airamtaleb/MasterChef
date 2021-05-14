@@ -20,7 +20,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="50dp"
+                android:padding="30dp"
                 android:text="Acceso para Jueces"
                 android:textAlignment="center"
                 android:textColor="@color/black"

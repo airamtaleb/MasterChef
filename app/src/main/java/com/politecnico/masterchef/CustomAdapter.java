@@ -68,7 +68,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.hora.setText(evento1.getHora());
         holder.descripcion.setText(evento1.getDescripcion());
         if (evento1.getEstado().equals("En curso")){
-            holder.itemView.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(context, R.color.md_green_A200)));
+            //holder.itemView.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(context, R.color.md_green_A200)));
+            holder.itemView.setBackgroundResource(R.drawable.borde_verde);
 
         } else if (evento1.getEstado().equals("Finalizado")){
             holder.itemView.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(context, R.color.grey_300)));
@@ -84,6 +85,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                 //t.show();
             }
         });
+
 
         holder.cancelar.setOnClickListener(new View.OnClickListener() {
             @Override

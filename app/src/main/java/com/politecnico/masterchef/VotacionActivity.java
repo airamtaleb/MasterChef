@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -56,6 +57,8 @@ public class VotacionActivity extends BaseAppCompatMenu {
     JSONArray array;
     String nombreEquipoAnterior = null;
 
+    TextView tvSeleccione ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,7 +73,11 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
         spinner = (Spinner) findViewById(R.id.spinnerGrupos);
 
+        tvSeleccione = findViewById(R.id.textViewSeleccione);
+
         if (estado.equals("Finalizado")){
+
+            tvSeleccione.setText(R.string.votacionGuardada);
             btnEnviar.setVisibility(View.GONE);
             btnGuardar.setVisibility(View.GONE);
             spinner.setVisibility(View.GONE);
@@ -90,6 +97,8 @@ public class VotacionActivity extends BaseAppCompatMenu {
         } else if(estado.equals("En curso")){
             //btnEnviar.setVisibility(View.VISIBLE);
             //btnGuardar.setVisibility(View.VISIBLE);
+            tvSeleccione.setText(R.string.seleccione);
+
 
             cargarGrupos("http://10.0.2.2/masterchef/cargarGruposEvento.php?idevento=" + idevento);
             definirEditYSeeks();
