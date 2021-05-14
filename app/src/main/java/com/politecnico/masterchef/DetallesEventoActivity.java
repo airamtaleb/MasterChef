@@ -88,7 +88,7 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
                 public void onClick(View v) {
                     //seleccionamos el evento
                     String idevento = evento.getIdEvento()+"";
-                    validarJuez("http://10.0.2.2/masterchef/validarJuezEvento.php",  usuario, idevento );
+                    validarJuez("http://10.0.2.2/masterchef/validarJuezEvento.php",  usuario, idevento, evento );
                 }
             });
         } else if (evento.getEstado().equals("Finalizado")){
@@ -100,8 +100,10 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
                 public void onClick(View v) {
                     //seleccionamos el evento
                     String idevento = evento.getIdEvento()+"";
+                    String estadoEvento = evento.getEstado();
                     Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
                     i.putExtra("id_evento", idevento);
+                    i.putExtra("evento", evento);
                     startActivity(i);
                 }
             });
@@ -123,7 +125,7 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
 
     }
 
-    private void validarJuez(String URL, String idjuez, String idevento) {
+    private void validarJuez(String URL, String idjuez, String idevento, Evento evento) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -140,6 +142,7 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
                         //pasar contenido por intent// clase evento implement serializable para pasar objetos
                         Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
                         i.putExtra("id_evento", idevento);
+                        i.putExtra("evento", evento);
                         startActivity(i);
                     } else if (estado.equals("En espera")) {
                         Toast.makeText(DetallesEventoActivity.this, "Autorizacion en sin confirmar", Toast.LENGTH_LONG).show();
