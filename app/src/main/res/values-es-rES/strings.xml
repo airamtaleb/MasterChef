@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MasterChef</string>
 
@@ -6,7 +7,7 @@
     <string name="correo">Correo</string>
     <string name="contraseña">Contraseña</string>
     <string name="acceder">Acceder</string>
-    <string name="si_no_esta_registrado">Si no esta registrado pulse aqui</string>
+    <string name="si_no_esta_registrado">Si no esta registrado pulse aquí</string>
     <string name="usuario_o_contraseña_incorrectos">Usuario y/o contraseña incorrectos</string>
 
 
@@ -39,7 +40,7 @@
     <string name="juez_validado_para_el_evento">Juez validado para el evento</string>
     <string name="autorizacion_sin_confirmar">Autorizacion sin confirmar</string>
     <string name="juez_no_validado_en_el_evento">Juez NO autorizado en el evento</string>
-    <string name="cancelada_participacion_al_evento">Cancelada participacion en el Evento</string>
+    <string name="cancelada_participacion_al_evento">Cancelada participación en el Evento</string>
     <string name="juez_apuntado_al_evento">Juez Apuntado al Evento</string>
     <string name="fecha">" Fecha:  "</string>
     <string name="hora">" Hora:  "</string>
@@ -64,7 +65,7 @@
     <string name="cancelar">Cancelar</string>
     <string name="enviar_votaciones">¿Enviar votaciones?</string>
     <string name="valoraciones_insertadas">Valoraciones insertadas</string>
-    <string name="votacion_guardada">Votación guardada</string>
+    <string name="votacion_guardada">Votacion guardada</string>
     <string name="error_de_conexion">ERROR DE CONEXIÓN</string>
 
 
@@ -72,10 +73,8 @@
     <string name="votacionGuardada">Votaciones enviadas: </string>
 
 
-
     <!--menu-->
     <string name="item1">Cerrar sesion</string>
     <string name="item2">Salir</string>
     <string name="item3">Lista de eventos</string>
-
 </resources>

@@ -61,7 +61,7 @@ public class RegistroActivity extends AppCompatActivity {
                     editCorreo.getEditText().setText("");
                     editPassword.getEditText().setText("");
                 } else {
-                    Toast.makeText(RegistroActivity.this, "Nos se permiten campos vacios", Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegistroActivity.this, R.string.no_se_permiten_campos_vacios, Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -81,7 +81,7 @@ public class RegistroActivity extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(RegistroActivity.this, "Juez Registrado", Toast.LENGTH_LONG).show();
+                Toast.makeText(RegistroActivity.this, R.string.juez_registrado, Toast.LENGTH_LONG).show();
             }
         }, new Response.ErrorListener() {
             @Override

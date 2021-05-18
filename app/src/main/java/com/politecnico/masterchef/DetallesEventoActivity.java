@@ -1,18 +1,10 @@
 package com.politecnico.masterchef;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
-import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -30,7 +22,6 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -69,11 +60,14 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
 
 
         txtvNombre.setText(evento.getNombre());
-        txtvFecha.setText(" Fecha: " +evento.getFecha());
-        txtvHora.setText(" Hora: "+evento.getHora());
-        txtvEstado.setText(" Estado: "+evento.getEstado());
-        txtvDescripcion.setText(" Descripción: "+evento.getDescripcion());
-        txtvLugar.setText(" Lugar: "+evento.getLugar());
+        String fecha1 = evento.getFecha();
+        String[] partes = fecha1.split("-");
+
+        txtvFecha.setText(getText(R.string.fecha) + partes[2]+"/"+partes[1]+"/"+partes[0]);
+        txtvHora.setText(getText(R.string.hora)+ evento.getHora());
+        txtvEstado.setText(getText(R.string.estado)+ evento.getEstado());
+        txtvDescripcion.setText(getText(R.string.descripcion)+ evento.getDescripcion());
+        txtvLugar.setText(getText(R.string.lugar)+ evento.getLugar());
 
         btnAccederEvento = findViewById(R.id.btnAccederEvento);
         btnApuntarse = findViewById(R.id.btnApuntarse);
@@ -112,7 +106,7 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
 
             btnApuntarse.setEnabled(false);
             btnCancelarParticipacion.setEnabled(false);
-            btnAccederEvento.setText("Ver resultados");
+            btnAccederEvento.setText(R.string.ver_resultados);
             btnAccederEvento.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -156,16 +150,16 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
                         Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
                     }
                     if (estado.equals("Admitido")) {
-                        Toast.makeText(DetallesEventoActivity.this, "Juez validado para el evento", Toast.LENGTH_LONG).show();
+                        Toast.makeText(DetallesEventoActivity.this, R.string.juez_validado_para_el_evento, Toast.LENGTH_LONG).show();
                         //pasar contenido por intent// clase evento implement serializable para pasar objetos
                         Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
                         i.putExtra("id_evento", idevento);
                         i.putExtra("evento", evento);
                         startActivity(i);
                     } else if (estado.equals("En espera")) {
-                        Toast.makeText(DetallesEventoActivity.this, "Autorizacion en sin confirmar", Toast.LENGTH_LONG).show();
+                        Toast.makeText(DetallesEventoActivity.this, R.string.autorizacion_sin_confirmar, Toast.LENGTH_LONG).show();
                     } else if (estado.equals("Denegado")) {
-                        Toast.makeText(DetallesEventoActivity.this, "Juez NO autorizado en el evento", Toast.LENGTH_LONG).show();
+                        Toast.makeText(DetallesEventoActivity.this, R.string.juez_no_validado_en_el_evento, Toast.LENGTH_LONG).show();
                     }
                 }else {
                     //Toast.makeText(DetallesEventoActivity.this, "Juez no autorizado en el evento", Toast.LENGTH_LONG).show();
@@ -195,7 +189,7 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(DetallesEventoActivity.this, "Juez Apuntado al Evento", Toast.LENGTH_LONG).show();
+                Toast.makeText(DetallesEventoActivity.this, R.string.juez_apuntado_al_evento, Toast.LENGTH_LONG).show();
             }
         }, new Response.ErrorListener() {
             @Override
@@ -221,7 +215,7 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(DetallesEventoActivity.this, "Cancelada participacion en el Evento", Toast.LENGTH_LONG).show();
+                Toast.makeText(DetallesEventoActivity.this, R.string.cancelada_participacion_al_evento, Toast.LENGTH_LONG).show();
             }
         }, new Response.ErrorListener() {
             @Override

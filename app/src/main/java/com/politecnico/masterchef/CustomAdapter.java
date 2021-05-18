@@ -4,9 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
-import android.graphics.Color;
-import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,20 +23,15 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import java.io.Serializable;
-import java.security.spec.ECField;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.prefs.Preferences;
 
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder>  {
 
     ArrayList<Evento> listadoEventos;
-    private Context context;
+    private final Context context;
     String usuario;
     RequestQueue requestQueue;
 
@@ -54,8 +46,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // infalte the item Layout
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.rowlayout, parent, false);
-        MyViewHolder vh = new MyViewHolder(v); // pass the view to View Holder
-        return vh;
+        return new MyViewHolder(v);
     }
 
     @Override
@@ -64,7 +55,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
         Evento evento1 = listadoEventos.get(position);
         holder.nombre.setText(evento1.getNombre());
-        holder.fecha.setText(evento1.getFecha());
+
+
+        String fecha1 = evento1.getFecha();
+        String[] partes = fecha1.split("-");
+        holder.fecha.setText(partes[2]+"/"+partes[1]+"/"+partes[0]);
         holder.hora.setText(evento1.getHora());
         holder.descripcion.setText(evento1.getDescripcion());
         if (evento1.getEstado().equals("En curso")){
@@ -124,7 +119,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         return listadoEventos.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView nombre, fecha, hora, descripcion;// init the item view's
         Button apuntarse, cancelar;
 

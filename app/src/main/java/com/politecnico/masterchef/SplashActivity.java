@@ -1,7 +1,6 @@
 package com.politecnico.masterchef;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
 import android.content.Context;
 import android.content.Intent;
@@ -39,18 +38,17 @@ public class SplashActivity extends AppCompatActivity {
                 SharedPreferences preferences = getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
                 boolean sesion = preferences.getBoolean("sesion", false);
 
+                Intent i;
                 if (sesion){
 
-                    Intent i = new Intent(getApplicationContext(), EventosActivity.class);
-                    startActivity(i);
-                    finish();
+                    i = new Intent(getApplicationContext(), EventosActivity.class);
                 }else {
 
-                    Intent i = new Intent(getApplicationContext(), LoginActivity.class);
-                    startActivity(i);
-                    finish();
+                    i = new Intent(getApplicationContext(), LoginActivity.class);
 
                 }
+                startActivity(i);
+                finish();
             }
         }, 2000);
     }

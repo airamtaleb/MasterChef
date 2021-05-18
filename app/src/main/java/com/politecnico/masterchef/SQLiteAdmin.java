@@ -15,8 +15,7 @@ import org.json.JSONObject;
 public class SQLiteAdmin {
 
 
-    private AdminDbHelper dbHelper;
-    private Votacion votacion;
+    private final AdminDbHelper dbHelper;
 
 
     public SQLiteAdmin(Context context) {
@@ -91,11 +90,11 @@ public class SQLiteAdmin {
 
     public void guardarDatos(Votacion votacion) {
 
-        this.votacion = votacion;
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO + " = '" + votacion.getNombre_equipo() + "'  AND " + Contract.Entry.ID_EVENTO + " = '" + votacion.getId_evento() + "'";
-        Cursor cursor = db.rawQuery(query, null);
+        Cursor cursor;
+        cursor = db.rawQuery(query, null);
 
         int count = cursor.getCount();
 

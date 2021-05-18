@@ -10,7 +10,6 @@ import android.text.SpannableStringBuilder;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,10 +27,8 @@ import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -82,15 +79,17 @@ public class LoginActivity extends AppCompatActivity {
 
         //enlace escrito
         //cambiar color un aparte
-        SpannableStringBuilder builder = new SpannableStringBuilder();
 
-        SpannableString str1= new SpannableString("Si no esta registrado pulse ");
-        str1.setSpan(new ForegroundColorSpan(Color.BLACK), 0, str1.length(), 0);
-        builder.append(str1);
+            SpannableStringBuilder builder = new SpannableStringBuilder();
 
-        SpannableString str2= new SpannableString("AQUI");
-        str2.setSpan(new ForegroundColorSpan(Color.BLUE), 0, str2.length(), 0);
-        builder.append(str2);
+            SpannableString str1 = new SpannableString("Si no esta registrado pulse ");
+            str1.setSpan(new ForegroundColorSpan(Color.BLACK), 0, str1.length(), 0);
+            builder.append(str1);
+
+            SpannableString str2 = new SpannableString("AQUI");
+            str2.setSpan(new ForegroundColorSpan(Color.BLUE), 0, str2.length(), 0);
+            builder.append(str2);
+
 
         enlace = findViewById(R.id.textEnlace);
         enlace.setText(builder, TextView.BufferType.SPANNABLE);
@@ -123,7 +122,7 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(i);
                 } else {
 
-                    Toast.makeText(LoginActivity.this, "Usuario y/o contraseña incorrectos", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, R.string.usuario_o_contraseña_incorrectos, Toast.LENGTH_LONG).show();
                 }
             }
         }, new Response.ErrorListener() {

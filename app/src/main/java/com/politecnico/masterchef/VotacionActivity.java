@@ -168,20 +168,20 @@ public class VotacionActivity extends BaseAppCompatMenu {
                         }
                     }
                     AlertDialog.Builder builder = new AlertDialog.Builder(VotacionActivity.this);
-                    builder.setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
+                    builder.setPositiveButton(R.string.confirmar, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             String registros = array.toString();
                             añadirRegistro("http://10.0.2.2/masterchef/insertarVotacion.php", registros);
                         }
                     });
 
-                    builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                    builder.setNegativeButton(R.string.cancelar, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             // User clicked OK button
                         }
                     });
                     builder.setMessage(prevision)
-                            .setTitle("¿Enviar votaciones?");
+                            .setTitle(R.string.enviar_votaciones);
                     AlertDialog dialog = builder.create();
                     dialog.show();
                 }
@@ -206,7 +206,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(VotacionActivity.this, "Valoraciones insertadas", Toast.LENGTH_LONG).show();
+                Toast.makeText(VotacionActivity.this, R.string.valoraciones_insertadas, Toast.LENGTH_LONG).show();
             }
         }, new Response.ErrorListener() {
             @Override
@@ -245,7 +245,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
         SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
         sqlite.guardarDatos(datosVotacion);
 
-        Toast.makeText(VotacionActivity.this, "Votacion guardada", Toast.LENGTH_LONG).show();
+        Toast.makeText(VotacionActivity.this, R.string.votacion_guardada, Toast.LENGTH_LONG).show();
 
     }
 
@@ -277,7 +277,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), "ERROR DE CONEXIÓN", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.error_de_conexion, Toast.LENGTH_SHORT).show();
             }
         });
         requestQueue = Volley.newRequestQueue(this);
@@ -310,7 +310,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), "ERROR DE CONEXIÓN", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.error_de_conexion, Toast.LENGTH_SHORT).show();
             }
         });
         requestQueue = Volley.newRequestQueue(this);

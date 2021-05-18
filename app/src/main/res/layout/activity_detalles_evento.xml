@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-
         android:orientation="vertical"
         android:padding="20dp">
 
@@ -25,7 +24,7 @@
             android:layout_gravity="center"
             android:text="Nombre evento"
             android:textColor="@color/black"
-            android:textSize="40dp"
+            android:textSize="40sp"
             android:textStyle="bold|italic" />
 
         <TextView
@@ -33,35 +32,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="fecha"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textViewHora"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hora"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textViewEstado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="estado"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textViewDescripcion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="descripcion"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textViewLugar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="lugar"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -78,7 +77,7 @@
                 android:layout_gravity="left"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/bordes_redondos"
-                android:text="Apuntarse"
+                android:text="@string/apuntarse"
                 android:textColor="#FFF"
                 android:textSize="12sp" />
 
@@ -89,7 +88,7 @@
                 android:layout_gravity="right"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/bordes_redondos"
-                android:text="Anular Participación"
+                android:text="@string/anular_participacion"
                 android:textColor="#FFF"
                 android:textSize="12sp" />
 
@@ -106,7 +105,7 @@
         android:layout_marginRight="15dp"
         android:background="@drawable/bordes_redondos"
         android:backgroundTint="#FFFFFF"
-        android:text="Acceder al evento"
+        android:text="@string/acceder_al_evento"
         android:textColor="#FFF"
         android:textSize="15sp" />
 
@@ -118,7 +117,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/bordes_redondos"
-        android:text="Volver al listado"
+        android:text="@string/volver_al_listado"
         android:textColor="#FFF"
         android:textSize="15sp" />
 

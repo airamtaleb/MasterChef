@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,7 +30,7 @@ public class BaseAppCompatMenu extends AppCompatActivity {
         if (id == R.id.item1) {
 
             SharedPreferences preferences = getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
-            preferences.edit().clear().commit();
+            preferences.edit().clear().apply();
             Intent i = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(i);
             finish();

@@ -24,7 +24,6 @@
             android:label="@string/registro"/>
         <activity android:name=".EventosActivity"
             android:label="@string/eventos"/>
-        <activity android:name=".DatabaseActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>

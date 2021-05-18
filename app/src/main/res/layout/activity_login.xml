@@ -21,7 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="30dp"
-                android:text="Acceso para Jueces"
+                android:text="@string/acceso_para_jueces"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -36,7 +36,7 @@
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
-                android:hint="Correo"
+                android:hint="@string/correo"
                 android:inputType="textPersonName"
                 android:paddingLeft="5dp"
                 app:startIconDrawable="@drawable/icon_email">
@@ -55,7 +55,7 @@
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
-                android:hint="Contraseña"
+                android:hint="@string/contraseña"
                 app:passwordToggleEnabled="true"
                 android:paddingLeft="5dp"
                 app:startIconDrawable="@drawable/icon_lock">
@@ -74,7 +74,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/bordes_redondos"
-                android:text="Acceder"
+                android:text="@string/acceder"
                 android:textColor="#FFF"
                 android:textSize="18sp" />
 
@@ -83,7 +83,7 @@
                 android:id="@+id/textEnlace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Si no esta registrado pulse aqui"
+                android:text="@string/si_no_esta_registrado"
                 android:textSize="15sp"
                 android:layout_marginTop="40dp"
                 android:clickable="true"/>

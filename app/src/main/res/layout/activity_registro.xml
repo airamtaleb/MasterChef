@@ -23,7 +23,7 @@
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
-                android:hint="Nombre"
+                android:hint="@string/nombre"
                 android:inputType="textPersonName"
                 android:paddingLeft="5dp"
                 app:startIconDrawable="@drawable/baseline_face_black_36">
@@ -41,7 +41,7 @@
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
-                android:hint="Apellidos"
+                android:hint="@string/apellidos"
                 android:inputType="textPersonName"
                 android:paddingLeft="5dp"
                 app:startIconDrawable="@drawable/icon_email">
@@ -59,7 +59,7 @@
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
-                android:hint="Departamento"
+                android:hint="@string/departamento"
                 android:inputType="textPersonName"
                 android:paddingLeft="5dp"
                 app:startIconDrawable="@drawable/icon_email">
@@ -78,7 +78,7 @@
 
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
-                android:hint="Intolerancias"
+                android:hint="@string/intolerancias"
                 android:inputType="textPersonName"
                 android:paddingLeft="5dp"
                 app:startIconDrawable="@drawable/icon_email">
@@ -99,7 +99,7 @@
 
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
-                android:hint="Correo"
+                android:hint="@string/correo"
                 android:inputType="textPersonName"
                 android:paddingLeft="5dp"
                 app:startIconDrawable="@drawable/icon_email">
@@ -117,7 +117,7 @@
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="@android:color/darker_gray"
                 android:ems="10"
-                android:hint="Contraseña"
+                android:hint="@string/contraseña"
                 app:passwordToggleEnabled="true"
                 android:paddingLeft="5dp"
                 app:startIconDrawable="@drawable/icon_lock">
@@ -135,7 +135,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/bordes_redondos"
-                android:text="Registrarse"
+                android:text="@string/registrarse"
                 android:textColor="#FFF"
                 android:textSize="18sp" />
 
@@ -147,7 +147,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/bordes_redondos"
-                android:text="Ir a login"
+                android:text="@string/ir_a_login"
                 android:textColor="#FFF"
                 android:textSize="18sp" />
 
