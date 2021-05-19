@@ -247,7 +247,6 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
             @Override
             public void onResponse(JSONArray response) {
                 if (0 < response.length()) {
-                    System.out.println("vottaaaaaaa");
                     Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
                     i.putExtra("id_evento", idevento);
                     i.putExtra("evento", evento);

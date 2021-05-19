@@ -331,29 +331,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
     }
 
-    private void comprobarRealizada(String URL) {
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,URL,null, new Response.Listener<JSONArray>() {
-            @Override
-            public void onResponse(JSONArray response) {
-                if (0 < response.length()) {
-                    btnEnviar.setEnabled(false);
-                    btnGuardar.setEnabled(false);
-                    tvSeleccione.setText("El juez ya ha votado el evento");
 
-
-                }
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), R.string.error_de_conexion, Toast.LENGTH_SHORT).show();
-                error.printStackTrace();
-            }
-        });
-        requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(jsonArrayRequest);
-    }
 
 
 
