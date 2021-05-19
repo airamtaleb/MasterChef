@@ -102,6 +102,7 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
                     //seleccionamos el evento
                     String idevento = evento.getIdEvento()+"";
                     validarJuez("https://politecnico-estella.ddns.net:10443/masterchef_01/php/validarJuezEvento.php",  usuario, idevento, evento );
+                    //Toast.makeText(getApplicationContext(), "Juez no apuntado", Toast.LENGTH_LONG).show();
                 }
             });
         } else if (evento.getEstado().equals("Finalizado")){
