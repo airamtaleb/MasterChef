@@ -188,6 +188,9 @@ public class VotacionActivity extends BaseAppCompatMenu {
                             public void onClick(DialogInterface dialog, int id) {
                                 String registros = array.toString();
                                 añadirRegistro("http://10.0.2.2/masterchef/insertarVotacion.php", registros);
+                                Intent i = new Intent(getApplicationContext(), DetallesEventoActivity.class);
+                                Toast.makeText(getApplicationContext(), "Votaciones introducidas", Toast.LENGTH_LONG).show();
+                                finish();
                             }
                         });
 

@@ -92,7 +92,7 @@ public class SQLiteAdmin {
 
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-        String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO + " = '" + votacion.getNombre_equipo() + "'  AND " + Contract.Entry.ID_EVENTO + " = '" + votacion.getId_evento() + "'";
+        String query = "SELECT * FROM " + Contract.Entry.TABLE_NAME + " WHERE " + Contract.Entry.NOMBRE_EQUIPO + " = '" + votacion.getNombre_equipo() + "'  AND " + Contract.Entry.ID_EVENTO + " = '" + votacion.getId_evento() + "'  AND " + Contract.Entry.ID_JUEZ + " = '" + votacion.getId_juez() + "'";
         Cursor cursor;
         cursor = db.rawQuery(query, null);
 
