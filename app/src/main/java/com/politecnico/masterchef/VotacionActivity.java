@@ -214,7 +214,6 @@ public class VotacionActivity extends BaseAppCompatMenu {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), DetallesEventoActivity.class);
-                tvSeleccione.setText("Ha votado");
                 finish();
             }
         });
