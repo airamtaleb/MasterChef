@@ -4,7 +4,6 @@ package com.politecnico.masterchef;
 import android.os.Bundle;
 import android.widget.RadioGroup;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 
 import androidx.recyclerview.widget.LinearLayoutManager;
