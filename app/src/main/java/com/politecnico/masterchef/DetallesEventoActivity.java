@@ -16,9 +16,11 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -153,10 +155,12 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
                     if (estado.equals("Admitido")) {
                         Toast.makeText(DetallesEventoActivity.this, R.string.juez_validado_para_el_evento, Toast.LENGTH_LONG).show();
                         //pasar contenido por intent// clase evento implement serializable para pasar objetos
-                        Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
-                        i.putExtra("id_evento", idevento);
-                        i.putExtra("evento", evento);
-                        startActivity(i);
+                        comprobarRealizada("http://10.0.2.2/masterchef/comprobarVotacionRealizada.php?idevento="+ idevento+"&idjuez="+idjuez, idevento, evento);
+                        //Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
+                        //i.putExtra("id_evento", idevento);
+                        //i.putExtra("evento", evento);
+                        //i.putExtra("estadoVoto", true);
+                        //startActivity(i);
                     } else if (estado.equals("En espera")) {
                         Toast.makeText(DetallesEventoActivity.this, R.string.autorizacion_sin_confirmar, Toast.LENGTH_LONG).show();
                     } else if (estado.equals("Denegado")) {
@@ -236,5 +240,36 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
         };
         requestQueue = Volley.newRequestQueue(DetallesEventoActivity.this);
         requestQueue.add(stringRequest);
+    }
+
+    private void comprobarRealizada(String URL, String idevento, Evento evento) {
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,URL,null, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                if (0 < response.length()) {
+                    System.out.println("vottaaaaaaa");
+                    Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
+                    i.putExtra("id_evento", idevento);
+                    i.putExtra("evento", evento);
+                    i.putExtra("estadoVoto", true);
+                    startActivity(i);
+                } else {
+                    Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
+                    i.putExtra("id_evento", idevento);
+                    i.putExtra("evento", evento);
+                    i.putExtra("estadoVoto", false);
+                    startActivity(i);
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(), R.string.error_de_conexion, Toast.LENGTH_SHORT).show();
+                error.printStackTrace();
+            }
+        });
+        requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(jsonArrayRequest);
     }
 }

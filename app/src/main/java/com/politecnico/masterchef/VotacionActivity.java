@@ -55,7 +55,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
     Button btnGuardar, btnVolver, btnEnviar;
 
-    String usuario;
+    String usuario, idevento;
 
     JSONArray array;
     String nombreEquipoAnterior = null;
@@ -68,14 +68,15 @@ public class VotacionActivity extends BaseAppCompatMenu {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_votacion);
-        String idevento = getIntent().getStringExtra("id_evento");
+        idevento = getIntent().getStringExtra("id_evento");
         Evento evento = (Evento) getIntent().getSerializableExtra("evento");
+        boolean voto = (Boolean) getIntent().getSerializableExtra("estadoVoto");
         String estado = evento.getEstado();
         btnGuardar = findViewById(R.id.btnGuardar);
         btnEnviar = findViewById(R.id.btnEnviar);
         SharedPreferences preferences = VotacionActivity.this.getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
         usuario = preferences.getString("id", "");
-        haVotado = false;
+        haVotado = voto;
 
         spinner = (Spinner) findViewById(R.id.spinnerGrupos);
 
@@ -92,33 +93,31 @@ public class VotacionActivity extends BaseAppCompatMenu {
             bloquearVotos();
 
         } else if(estado.equals("En curso")){
-            comprobarRealizada("http://10.0.2.2/masterchef/comprobarVotacionRealizada.php?idevento="+ idevento+"&idjuez="+usuario);
-            if (haVotado){
+            cargarGrupos("http://10.0.2.2/masterchef/cargarGruposEvento.php?idevento=" + idevento);
+            definirEditYSeeks();
+            //comprobarRealizada("http://10.0.2.2/masterchef/comprobarVotacionRealizada.php?idevento="+ idevento+"&idjuez="+usuario);
+            //String t =(String) tvSeleccione.getText();
+            if(haVotado) {
                 btnEnviar.setEnabled(false);
                 btnGuardar.setEnabled(false);
-                tvSeleccione.setText("El juez ya ha votado el evento");
-
                 spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                         String equipo = spinner.getSelectedItem().toString();
                         cargarVotos("http://10.0.2.2/masterchef/cargarVotosIntroducidos.php" +
-                                "?idevento=" + idevento+"&idjuez="+usuario + "&equipo="+equipo);
+                                "?idevento=" + idevento+"&idjuez="+usuario + "&equipo='"+equipo+"'");
                         bloquearVotos();
                     }
                     @Override
                     public void onNothingSelected(AdapterView<?> parent) {
                     }
                 });
+            } else{
 
-            } else {
                 btnEnviar.setEnabled(true);
                 btnGuardar.setEnabled(true);
                 tvSeleccione.setText(R.string.seleccione);
 
-
-                cargarGrupos("http://10.0.2.2/masterchef/cargarGruposEvento.php?idevento=" + idevento);
-                definirEditYSeeks();
 
                 spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
@@ -212,8 +211,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), DetallesEventoActivity.class);
-                i.putExtra("evento", evento);
-                startActivity(i);
+                tvSeleccione.setText("Ha votado");
                 finish();
             }
         });
@@ -336,7 +334,11 @@ public class VotacionActivity extends BaseAppCompatMenu {
             @Override
             public void onResponse(JSONArray response) {
                 if (0 < response.length()) {
-                    haVotado=true;
+                    btnEnviar.setEnabled(false);
+                    btnGuardar.setEnabled(false);
+                    tvSeleccione.setText("El juez ya ha votado el evento");
+
+
                 }
 
             }
