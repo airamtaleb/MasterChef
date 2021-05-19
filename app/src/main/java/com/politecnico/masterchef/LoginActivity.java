@@ -49,6 +49,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        new NukeSSLCerts().nuke();
         setContentView(R.layout.activity_login);
 
 
@@ -71,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (!usuario.isEmpty() && !password.isEmpty()) {
                     //en este caso ponemos 10.0.2.2 en vez de localhost si no no lo reconoce...
-                    validarUsuario("http://10.0.2.2/masterchef/validar_usuario.php");
+                    validarUsuario("https://politecnico-estella.ddns.net:10443/masterchef_01/php/validar_usuario.php");
                 } else
                     Toast.makeText(LoginActivity.this, "No se permiten los campos vacios", Toast.LENGTH_LONG).show();
             }

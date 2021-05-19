@@ -45,6 +45,8 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalles_evento);
 
+        new NukeSSLCerts().nuke();
+
         panelEvento = findViewById(R.id.panelEvento);
 
         SharedPreferences preferences = DetallesEventoActivity.this.getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);

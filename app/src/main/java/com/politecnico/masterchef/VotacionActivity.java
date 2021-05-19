@@ -67,6 +67,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        new NukeSSLCerts().nuke();
         setContentView(R.layout.activity_votacion);
         idevento = getIntent().getStringExtra("id_evento");
         Evento evento = (Evento) getIntent().getSerializableExtra("evento");

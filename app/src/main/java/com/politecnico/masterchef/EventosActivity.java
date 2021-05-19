@@ -34,6 +34,7 @@ public class EventosActivity extends BaseAppCompatMenu {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        new NukeSSLCerts().nuke();
         setContentView(R.layout.activity_eventos);
         radioGroup = (RadioGroup) findViewById(R.id.opcionesVistaEventos);
         //eventosTodos = (RadioButton) findViewById(R.id.eventosTodos);

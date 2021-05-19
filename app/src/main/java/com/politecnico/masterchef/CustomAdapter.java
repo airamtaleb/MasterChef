@@ -52,6 +52,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         // set the data in items
+        new NukeSSLCerts().nuke();
 
         Evento evento1 = listadoEventos.get(position);
         holder.nombre.setText(evento1.getNombre());

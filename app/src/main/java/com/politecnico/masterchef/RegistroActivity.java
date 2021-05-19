@@ -30,6 +30,7 @@ public class RegistroActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        new NukeSSLCerts().nuke();
         setContentView(R.layout.activity_registro);
 
         editNombre = findViewById(R.id.editNombre);
