@@ -101,7 +101,7 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
 
                     //seleccionamos el evento
                     String idevento = evento.getIdEvento()+"";
-                    validarJuez("http://10.0.2.2/masterchef/validarJuezEvento.php",  usuario, idevento, evento );
+                    validarJuez("https://politecnico-estella.ddns.net:10443/masterchef_01/php/validarJuezEvento.php",  usuario, idevento, evento );
                 }
             });
         } else if (evento.getEstado().equals("Finalizado")){
@@ -129,14 +129,14 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
         btnApuntarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                apuntarJuez("http://10.0.2.2/masterchef/apuntarseJuez.php", usuario, evento.getIdEvento());
+                apuntarJuez("https://politecnico-estella.ddns.net:10443/masterchef_01/php/apuntarseJuez.php", usuario, evento.getIdEvento());
             }
         });
 
         btnCancelarParticipacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                anularParticipacionJuez("http://10.0.2.2/masterchef/anularParticipacion.php", usuario, evento.getIdEvento());
+                anularParticipacionJuez("https://politecnico-estella.ddns.net:10443/masterchef_01/php/anularParticipacion.php", usuario, evento.getIdEvento());
             }
         });
 
@@ -157,7 +157,7 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
                     if (estado.equals("Admitido")) {
                         Toast.makeText(DetallesEventoActivity.this, R.string.juez_validado_para_el_evento, Toast.LENGTH_LONG).show();
                         //pasar contenido por intent// clase evento implement serializable para pasar objetos
-                        comprobarRealizada("http://10.0.2.2/masterchef/comprobarVotacionRealizada.php?idevento="+ idevento+"&idjuez="+idjuez, idevento, evento);
+                        comprobarRealizada("https://politecnico-estella.ddns.net:10443/masterchef_01/php/comprobarVotacionRealizada.php?idevento="+ idevento+"&idjuez="+idjuez, idevento, evento);
                         //Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
                         //i.putExtra("id_evento", idevento);
                         //i.putExtra("evento", evento);

@@ -54,7 +54,7 @@ public class RegistroActivity extends AppCompatActivity {
                 password = editPassword.getEditText().getText().toString();
 
                 if (!nombre.isEmpty() && !apellidos.isEmpty() && !correo.isEmpty() && !password.isEmpty() ) {
-                    añadirRegistro("http://10.0.2.2/masterchef/registrarJuez.php");
+                    añadirRegistro("https://politecnico-estella.ddns.net:10443/masterchef_01/php/registrarJuez.php");
                     editNombre.getEditText().setText("");
                     editApellidos.getEditText().setText("");
                     editDepartamento.getEditText().setText("");

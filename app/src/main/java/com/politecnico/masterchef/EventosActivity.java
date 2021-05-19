@@ -45,7 +45,7 @@ public class EventosActivity extends BaseAppCompatMenu {
         listadoEncurso = new ArrayList<>();
         listadoFinalizado = new ArrayList<>();
 
-        cargarEventos("http://10.0.2.2/masterchef/cargarEventos.php");
+        cargarEventos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarEventos.php");
         // get the reference of RecyclerView
         // set the Adapter to RecyclerView
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

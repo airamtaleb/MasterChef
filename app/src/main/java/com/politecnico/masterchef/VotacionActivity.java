@@ -90,11 +90,11 @@ public class VotacionActivity extends BaseAppCompatMenu {
             btnGuardar.setVisibility(View.GONE);
             spinner.setVisibility(View.GONE);
             definirEditYSeeks();
-            cargarVotos("http://10.0.2.2/masterchef/cargarVotos.php?idevento=" + idevento);
+            cargarVotos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarVotos.php?idevento=" + idevento);
             bloquearVotos();
 
         } else if(estado.equals("En curso")){
-            cargarGrupos("http://10.0.2.2/masterchef/cargarGruposEvento.php?idevento=" + idevento);
+            cargarGrupos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarGruposEvento.php?idevento=" + idevento);
             definirEditYSeeks();
             //comprobarRealizada("http://10.0.2.2/masterchef/comprobarVotacionRealizada.php?idevento="+ idevento+"&idjuez="+usuario);
             //String t =(String) tvSeleccione.getText();
@@ -105,7 +105,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
                     @Override
                     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                         String equipo = spinner.getSelectedItem().toString();
-                        cargarVotos("http://10.0.2.2/masterchef/cargarVotosIntroducidos.php" +
+                        cargarVotos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarVotosIntroducidos.php" +
                                 "?idevento=" + idevento+"&idjuez="+usuario + "&equipo='"+equipo+"'");
                         bloquearVotos();
                     }
@@ -188,7 +188,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
                         builder.setPositiveButton(R.string.confirmar, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 String registros = array.toString();
-                                añadirRegistro("http://10.0.2.2/masterchef/insertarVotacion.php", registros);
+                                añadirRegistro("https://politecnico-estella.ddns.net:10443/masterchef_01/php/insertarVotacion.php", registros);
                                 Intent i = new Intent(getApplicationContext(), DetallesEventoActivity.class);
                                 Toast.makeText(getApplicationContext(), "Votaciones introducidas", Toast.LENGTH_LONG).show();
                                 finish();

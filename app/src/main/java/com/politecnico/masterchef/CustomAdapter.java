@@ -78,7 +78,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.apuntarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                apuntarJuez("http://10.0.2.2/masterchef/apuntarseJuez.php", usuario, evento1.getIdEvento());
+                apuntarJuez("https://politecnico-estella.ddns.net:10443/masterchef_01/php/apuntarseJuez.php", usuario, evento1.getIdEvento());
                 //Toast t= Toast.makeText(context, "Solicitada participacion: "+usuario, Toast.LENGTH_SHORT);
                 //t.show();
             }
@@ -88,7 +88,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.cancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                anularParticipacionJuez("http://10.0.2.2/masterchef/anularParticipacion.php", usuario, evento1.getIdEvento());
+                anularParticipacionJuez("https://politecnico-estella.ddns.net:10443/masterchef_01/php/anularParticipacion.php", usuario, evento1.getIdEvento());
                 //Toast t= Toast.makeText(context, "Cancelada participacion", Toast.LENGTH_SHORT);
                 //t.show();
             }
