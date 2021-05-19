@@ -121,6 +121,7 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
                     Intent i = new Intent(getApplicationContext(), VotacionActivity.class);
                     i.putExtra("id_evento", idevento);
                     i.putExtra("evento", evento);
+                    i.putExtra("estadoVoto", false);
                     startActivity(i);
                 }
             });
