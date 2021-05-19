@@ -103,9 +103,10 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
         } else if (evento.getEstado().equals("Finalizado")){
 
             panelEvento.setBackgroundResource(R.drawable.borde_gris);
-
-            btnApuntarse.setEnabled(false);
-            btnCancelarParticipacion.setEnabled(false);
+            btnApuntarse.setVisibility(View.GONE);
+            btnCancelarParticipacion.setVisibility(View.GONE);
+            //btnApuntarse.setEnabled(false);
+            //btnCancelarParticipacion.setEnabled(false);
             btnAccederEvento.setText(R.string.ver_resultados);
             btnAccederEvento.setOnClickListener(new View.OnClickListener() {
                 @Override

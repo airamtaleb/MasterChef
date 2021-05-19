@@ -18,6 +18,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -59,6 +62,8 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
     TextView tvSeleccione ;
 
+    boolean haVotado;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +75,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
         btnEnviar = findViewById(R.id.btnEnviar);
         SharedPreferences preferences = VotacionActivity.this.getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
         usuario = preferences.getString("id", "");
+        haVotado = false;
 
         spinner = (Spinner) findViewById(R.id.spinnerGrupos);
 
@@ -83,111 +89,122 @@ public class VotacionActivity extends BaseAppCompatMenu {
             spinner.setVisibility(View.GONE);
             definirEditYSeeks();
             cargarVotos("http://10.0.2.2/masterchef/cargarVotos.php?idevento=" + idevento);
-            votoPresentacion.setEnabled(false);
-            seekBarPresentacion.setEnabled(false);
-            votoServicio.setEnabled(false);
-            seekBarServicio.setEnabled(false);
-            votoSabor.setEnabled(false);
-            seekBarSabor.setEnabled(false);
-            votoTriptico.setEnabled(false);
-            seekBarTriptico.setEnabled(false);
-            votoImagenPersonal.setEnabled(false);
-            seekBarImagenPersonal.setEnabled(false);
+            bloquearVotos();
 
         } else if(estado.equals("En curso")){
-            //btnEnviar.setVisibility(View.VISIBLE);
-            //btnGuardar.setVisibility(View.VISIBLE);
-            tvSeleccione.setText(R.string.seleccione);
+            comprobarRealizada("http://10.0.2.2/masterchef/comprobarVotacionRealizada.php?idevento="+ idevento+"&idjuez="+usuario);
+            if (haVotado){
+                btnEnviar.setEnabled(false);
+                btnGuardar.setEnabled(false);
+                tvSeleccione.setText("El juez ya ha votado el evento");
+
+                spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                        String equipo = spinner.getSelectedItem().toString();
+                        cargarVotos("http://10.0.2.2/masterchef/cargarVotosIntroducidos.php" +
+                                "?idevento=" + idevento+"&idjuez="+usuario + "&equipo="+equipo);
+                        bloquearVotos();
+                    }
+                    @Override
+                    public void onNothingSelected(AdapterView<?> parent) {
+                    }
+                });
+
+            } else {
+                btnEnviar.setEnabled(true);
+                btnGuardar.setEnabled(true);
+                tvSeleccione.setText(R.string.seleccione);
 
 
-            cargarGrupos("http://10.0.2.2/masterchef/cargarGruposEvento.php?idevento=" + idevento);
-            definirEditYSeeks();
+                cargarGrupos("http://10.0.2.2/masterchef/cargarGruposEvento.php?idevento=" + idevento);
+                definirEditYSeeks();
 
-            spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                @Override
-                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                    if (nombreEquipoAnterior != null) {
-                        guardarVotosEquipo(nombreEquipoAnterior);
+                spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                    @Override
+                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                        if (nombreEquipoAnterior != null) {
+                            guardarVotosEquipo(nombreEquipoAnterior);
+                        }
+
+                        SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
+                        Votacion votacion = sqlite.leerDatos(spinner.getSelectedItem().toString(), getIntent().getStringExtra("id_evento"), usuario);
+
+                        if (votacion.getPresentacion() == null) {
+                            votoPresentacion.setText("" + 0);
+                            votoServicio.setText("" + 0);
+                            votoSabor.setText("" + 0);
+                            votoImagenPersonal.setText("" + 0);
+                            votoTriptico.setText("" + 0);
+                        } else {
+                            votoPresentacion.setText(votacion.getPresentacion());
+                            votoServicio.setText(votacion.getServicio());
+                            votoSabor.setText(votacion.getSabor());
+                            votoImagenPersonal.setText(votacion.getImagen());
+                            votoTriptico.setText(votacion.getTriptico());
+                        }
+                        nombreEquipoAnterior = spinner.getSelectedItem().toString();
                     }
 
-                    SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
-                    Votacion votacion = sqlite.leerDatos(spinner.getSelectedItem().toString(), getIntent().getStringExtra("id_evento"), usuario);
-
-                    if (votacion.getPresentacion() == null) {
-                        votoPresentacion.setText("" + 0);
-                        votoServicio.setText("" + 0);
-                        votoSabor.setText("" + 0);
-                        votoImagenPersonal.setText("" + 0);
-                        votoTriptico.setText("" + 0);
-                    } else {
-                        votoPresentacion.setText(votacion.getPresentacion());
-                        votoServicio.setText(votacion.getServicio());
-                        votoSabor.setText(votacion.getSabor());
-                        votoImagenPersonal.setText(votacion.getImagen());
-                        votoTriptico.setText(votacion.getTriptico());
+                    @Override
+                    public void onNothingSelected(AdapterView<?> parent) {
                     }
-                    nombreEquipoAnterior = spinner.getSelectedItem().toString();
-                }
-
-                @Override
-                public void onNothingSelected(AdapterView<?> parent) {
-                }
-            });
+                });
 
 
-            btnGuardar.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    guardarVotosEquipo(spinner.getSelectedItem().toString());
-                }
-            });
-
-            btnEnviar.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
-
-                    array = sqlite.cargarVotaciones(getIntent().getStringExtra("id_evento"), usuario);
-
-                    String prevision = "";
-
-                    for (int i = 0; i < array.length(); i++) {
-                        JSONObject jsonObject = null;
-                        try {
-                            jsonObject = array.getJSONObject(i);
-                            prevision += "Equipo: " + jsonObject.getString("Nombre_equipo").toString() + "\n"
-                                    + " - " + jsonObject.getString("Presentacion").toString()
-                                    + " - " + jsonObject.getString("Servicio").toString()
-                                    + " - " + jsonObject.getString("Sabor").toString()
-                                    + " - " + jsonObject.getString("Triptico").toString()
-                                    + " - " + jsonObject.getString("Imagen").toString() + "\n";
-                        } catch (JSONException e) {
-                            Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
-                            e.printStackTrace();
-                        }
+                btnGuardar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        guardarVotosEquipo(spinner.getSelectedItem().toString());
                     }
-                    AlertDialog.Builder builder = new AlertDialog.Builder(VotacionActivity.this);
-                    builder.setPositiveButton(R.string.confirmar, new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            String registros = array.toString();
-                            añadirRegistro("http://10.0.2.2/masterchef/insertarVotacion.php", registros);
+                });
+
+                btnEnviar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        SQLiteAdmin sqlite = new SQLiteAdmin(VotacionActivity.this);
+
+                        array = sqlite.cargarVotaciones(getIntent().getStringExtra("id_evento"), usuario);
+
+                        String prevision = "";
+
+                        for (int i = 0; i < array.length(); i++) {
+                            JSONObject jsonObject = null;
+                            try {
+                                jsonObject = array.getJSONObject(i);
+                                prevision += "Equipo: " + jsonObject.getString("Nombre_equipo").toString() + "\n"
+                                        + " - " + jsonObject.getString("Presentacion").toString()
+                                        + " - " + jsonObject.getString("Servicio").toString()
+                                        + " - " + jsonObject.getString("Sabor").toString()
+                                        + " - " + jsonObject.getString("Triptico").toString()
+                                        + " - " + jsonObject.getString("Imagen").toString() + "\n";
+                            } catch (JSONException e) {
+                                Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
+                                e.printStackTrace();
+                            }
                         }
-                    });
+                        AlertDialog.Builder builder = new AlertDialog.Builder(VotacionActivity.this);
+                        builder.setPositiveButton(R.string.confirmar, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                String registros = array.toString();
+                                añadirRegistro("http://10.0.2.2/masterchef/insertarVotacion.php", registros);
+                            }
+                        });
 
-                    builder.setNegativeButton(R.string.cancelar, new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            // User clicked OK button
-                        }
-                    });
-                    builder.setMessage(prevision)
-                            .setTitle(R.string.enviar_votaciones);
-                    AlertDialog dialog = builder.create();
-                    dialog.show();
-                }
-            });
+                        builder.setNegativeButton(R.string.cancelar, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // User clicked OK button
+                            }
+                        });
+                        builder.setMessage(prevision)
+                                .setTitle(R.string.enviar_votaciones);
+                        AlertDialog dialog = builder.create();
+                        dialog.show();
+                    }
+                });
 
-
+            }
         }
 
         btnVolver = findViewById(R.id.btnVolver);
@@ -229,10 +246,8 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
     private void guardarVotosEquipo(String nombre) {
 
-
         datosVotacion = new Votacion();
         datosVotacion.setNombre_equipo(nombre);
-
 
         datosVotacion.setId_juez(usuario);
         datosVotacion.setId_evento(getIntent().getStringExtra("id_evento"));
@@ -287,7 +302,6 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
     private void cargarVotos(String URL) {
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, URL, null, new Response.Listener<JSONArray>() {
-
             @Override
             public void onResponse(JSONArray response) {
                 grupos = new ArrayList<>();
@@ -305,7 +319,6 @@ public class VotacionActivity extends BaseAppCompatMenu {
                         Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 }
-
             }
         }, new Response.ErrorListener() {
             @Override
@@ -316,6 +329,41 @@ public class VotacionActivity extends BaseAppCompatMenu {
         requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(jsonArrayRequest);
 
+    }
+
+    private void comprobarRealizada(String URL) {
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,URL,null, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                if (0 < response.length()) {
+                    haVotado=true;
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(), R.string.error_de_conexion, Toast.LENGTH_SHORT).show();
+                error.printStackTrace();
+            }
+        });
+        requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(jsonArrayRequest);
+    }
+
+
+
+    private void bloquearVotos(){
+        votoPresentacion.setEnabled(false);
+        seekBarPresentacion.setEnabled(false);
+        votoServicio.setEnabled(false);
+        seekBarServicio.setEnabled(false);
+        votoSabor.setEnabled(false);
+        seekBarSabor.setEnabled(false);
+        votoTriptico.setEnabled(false);
+        seekBarTriptico.setEnabled(false);
+        votoImagenPersonal.setEnabled(false);
+        seekBarImagenPersonal.setEnabled(false);
     }
 
     private void definirEditYSeeks() {
@@ -504,6 +552,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
 
             }
         });
+
     }
     /*
 
