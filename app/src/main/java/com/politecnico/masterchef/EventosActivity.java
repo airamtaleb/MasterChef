@@ -74,8 +74,6 @@ public class EventosActivity extends BaseAppCompatMenu {
             @Override
             public void onResponse(JSONArray response) {
 
-
-
                 for (int i = 0; i < response.length(); i++) {
                     Evento evento = new Evento();
 
