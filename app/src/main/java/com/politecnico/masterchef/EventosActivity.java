@@ -63,9 +63,24 @@ public class EventosActivity extends BaseAppCompatMenu {
                     listar = listadoFinalizado;
                 }
                 RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-                // set a LinearLayoutManager with default vertical orientation
-                LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
-                recyclerView.setLayoutManager(linearLayoutManager);
+
+
+                //obtenemos la orientacion
+                int orientation = getResources().getConfiguration().orientation;
+                if(orientation == Configuration.ORIENTATION_PORTRAIT) {
+
+                    // set a LinearLayoutManager with default vertical orientation
+                    LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
+                    recyclerView.setLayoutManager(linearLayoutManager);
+                }else {
+                    // lanscape grid
+
+                    Context context = getApplicationContext();
+                    GridLayoutManager gridLayoutManager = new GridLayoutManager(context, 2);
+
+                    recyclerView.setLayoutManager(gridLayoutManager);
+                }
+
                 CustomAdapter customAdapter = new CustomAdapter(EventosActivity.this, listar);
                 recyclerView.setAdapter(customAdapter);
             }
