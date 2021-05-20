@@ -77,4 +77,5 @@
     <string name="item1">Cerrar sesion</string>
     <string name="item2">Salir</string>
     <string name="item3">Lista de eventos</string>
+    <string name="votaciones_introducidas">Votaciones introducidas</string>
 </resources>

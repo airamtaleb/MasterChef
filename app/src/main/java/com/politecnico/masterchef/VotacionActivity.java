@@ -194,7 +194,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
                                 String registros = array.toString();
                                 añadirRegistro("https://politecnico-estella.ddns.net:10443/masterchef_01/php/insertarVotacion.php", registros);
                                 Intent i = new Intent(getApplicationContext(), DetallesEventoActivity.class);
-                                Toast.makeText(getApplicationContext(), "Votaciones introducidas", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), R.string.votaciones_introducidas, Toast.LENGTH_LONG).show();
                                 finish();
                             }
                         });

@@ -66,6 +66,7 @@
     <string name="valoraciones_insertadas">Valoraciones insertadas</string>
     <string name="votacion_guardada">Votación guardada</string>
     <string name="error_de_conexion">ERROR DE CONEXIÓN</string>
+    <string name="votaciones_introducidas">Votaciones introducidas</string>
 
 
     <string name="seleccione">Seleccione equipo:</string>

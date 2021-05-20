@@ -57,4 +57,5 @@
     <string name="item3">Ekitaldien zerrenda</string>
     <string name="juez_no_validado_en_el_evento">Epaile EZ onartua ekitaldian</string>
     <string name="confirmar">Baieztatu</string>
+    <string name="votaciones_introducidas">Bozketa sartua</string>
 </resources>
