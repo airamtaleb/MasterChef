@@ -1,8 +1,9 @@
 <?php
 include 'conexion.php';
 $idevento=$_GET['idevento'];
+$equipo=$_GET['equipo'];
 
-$sentencia=$conexion->prepare("SELECT * FROM Eventos WHERE ID_evento=$idevento");
+$sentencia=$conexion->prepare("SELECT Nombre_equipo, ROUND(AVG(Presentacion)) AS Presentacion, ROUND(AVG(Servicio)) AS Servicio, ROUND(AVG(Sabor)) AS Sabor, ROUND(AVG(Triptico)) AS Triptico , ROUND(AVG(Imagen)) AS Imagen   FROM Valoraciones WHERE ID_evento=$idevento AND Nombre_equipo=$equipo ");
 $sentencia->execute();
 
 $resultado = $sentencia->get_result();

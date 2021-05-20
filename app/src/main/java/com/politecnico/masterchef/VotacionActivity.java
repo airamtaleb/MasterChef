@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -83,23 +82,33 @@ public class VotacionActivity extends BaseAppCompatMenu {
         spinner = (Spinner) findViewById(R.id.spinnerGrupos);
 
         tvSeleccione = findViewById(R.id.textViewSeleccione);
-
+        cargarGrupos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarGruposEvento.php?idevento=" + idevento);
+        definirEditYSeeks();
         if (estado.equals("Finalizado")){
 
             tvSeleccione.setText(R.string.votacionGuardada);
-            tvSeleccione.setTextColor(Color.GRAY);
             btnEnviar.setVisibility(View.GONE);
             btnGuardar.setVisibility(View.GONE);
-            spinner.setVisibility(View.GONE);
-            definirEditYSeeks();
-            cargarVotos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarVotos.php?idevento=" + idevento);
-            bloquearVotos();
+            spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                    String equipo = spinner.getSelectedItem().toString();
+                    //cargarVotos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarVotosIntroducidos.php" +
+                           // "?idevento=" + idevento+"&idjuez="+usuario + "&equipo='"+equipo+"'");
+                    cargarVotos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarVotos.php?idevento=" + idevento+"&equipo='"+equipo+"'");
+                    //cargarVotos("https://10.0.2.2/masterchef/cargarVotos.php?idevento=" + idevento+"&equipo='"+equipo+"'");
+                    bloquearVotos();
+                }
+                @Override
+                public void onNothingSelected(AdapterView<?> parent) {
+                }
+            });
+
+            //bloquearVotos();
 
         } else if(estado.equals("En curso")){
-            tvSeleccione.setTextColor(Color.GRAY);
 
-            cargarGrupos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarGruposEvento.php?idevento=" + idevento);
-            definirEditYSeeks();
+
             //comprobarRealizada("http://10.0.2.2/masterchef/comprobarVotacionRealizada.php?idevento="+ idevento+"&idjuez="+usuario);
             //String t =(String) tvSeleccione.getText();
             if(haVotado) {
@@ -194,7 +203,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
                                 String registros = array.toString();
                                 añadirRegistro("https://politecnico-estella.ddns.net:10443/masterchef_01/php/insertarVotacion.php", registros);
                                 Intent i = new Intent(getApplicationContext(), DetallesEventoActivity.class);
-                                Toast.makeText(getApplicationContext(), R.string.votaciones_introducidas, Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "Votaciones introducidas", Toast.LENGTH_LONG).show();
                                 finish();
                             }
                         });
