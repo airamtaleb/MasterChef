@@ -82,20 +82,33 @@ public class VotacionActivity extends BaseAppCompatMenu {
         spinner = (Spinner) findViewById(R.id.spinnerGrupos);
 
         tvSeleccione = findViewById(R.id.textViewSeleccione);
-
+        cargarGrupos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarGruposEvento.php?idevento=" + idevento);
+        definirEditYSeeks();
         if (estado.equals("Finalizado")){
 
             tvSeleccione.setText(R.string.votacionGuardada);
             btnEnviar.setVisibility(View.GONE);
             btnGuardar.setVisibility(View.GONE);
-            spinner.setVisibility(View.GONE);
-            definirEditYSeeks();
-            cargarVotos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarVotos.php?idevento=" + idevento);
-            bloquearVotos();
+            spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                    String equipo = spinner.getSelectedItem().toString();
+                    //cargarVotos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarVotosIntroducidos.php" +
+                           // "?idevento=" + idevento+"&idjuez="+usuario + "&equipo='"+equipo+"'");
+                    cargarVotos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarVotos.php?idevento=" + idevento+"&equipo='"+equipo+"'");
+                    //cargarVotos("https://10.0.2.2/masterchef/cargarVotos.php?idevento=" + idevento+"&equipo='"+equipo+"'");
+                    bloquearVotos();
+                }
+                @Override
+                public void onNothingSelected(AdapterView<?> parent) {
+                }
+            });
+
+            //bloquearVotos();
 
         } else if(estado.equals("En curso")){
-            cargarGrupos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarGruposEvento.php?idevento=" + idevento);
-            definirEditYSeeks();
+
+
             //comprobarRealizada("http://10.0.2.2/masterchef/comprobarVotacionRealizada.php?idevento="+ idevento+"&idjuez="+usuario);
             //String t =(String) tvSeleccione.getText();
             if(haVotado) {
