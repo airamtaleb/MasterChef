@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context=".DetallesEventoActivity">
+
+    <LinearLayout
+        android:id="@+id/panelEvento"
+        android:layout_width="393dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Nombre evento"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textViewFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fecha"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="estado"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="descripcion"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewLugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lugar"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnApuntarse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bordes_redondos"
+                android:text="@string/apuntarse"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnCancelarParticipacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bordes_redondos"
+                android:text="@string/anular_participacion"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/btnAccederEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/acceder_al_evento"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnVolverListado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bordes_redondos"
+        android:text="@string/volver_al_listado"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>
