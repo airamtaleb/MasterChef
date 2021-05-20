@@ -68,7 +68,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             holder.itemView.setBackgroundResource(R.drawable.borde_verde);
 
         } else if (evento1.getEstado().equals("Finalizado")){
-            holder.itemView.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(context, R.color.grey_300)));
+            //holder.itemView.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(context, R.color.grey_300)));
+            holder.itemView.setBackgroundResource(R.drawable.bordes_redondos);
             holder.apuntarse.setVisibility(View.GONE);
             holder.cancelar.setVisibility(View.GONE);
             //holder.apuntarse.setEnabled(false);

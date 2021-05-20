@@ -23,11 +23,12 @@
             android:id="@+id/textViewNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:layout_gravity="center"
             android:text="Nombre evento"
             android:textColor="@color/black"
             android:textSize="30sp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold|italic"
+            />
 
         <TextView
             android:id="@+id/textViewFecha"
@@ -35,6 +36,7 @@
             android:layout_height="wrap_content"
             android:text="fecha"
             android:textSize="20sp"
+            android:paddingLeft="10dp"
             />
 
         <TextView
@@ -42,28 +44,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hora"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:paddingLeft="10dp"/>
 
         <TextView
             android:id="@+id/textViewEstado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="estado"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:paddingLeft="10dp"/>
 
         <TextView
             android:id="@+id/textViewDescripcion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="descripcion"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:paddingLeft="10dp"/>
 
         <TextView
             android:id="@+id/textViewLugar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="lugar"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:paddingLeft="10dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
