@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="horizontal"
-    tools:context=".DetallesEventoActivity">
+    tools:context=".DetallesEventoActivity"
+    android:layout_marginTop="10dp">
 
     <LinearLayout
         android:id="@+id/panelEvento"
@@ -15,6 +16,7 @@
         android:layout_gravity="left"
         android:layout_margin="10dp"
         android:orientation="vertical"
+
         android:padding="20dp">
 
         <TextView
@@ -32,7 +34,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="fecha"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            />
 
         <TextView
             android:id="@+id/textViewHora"
@@ -65,7 +68,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
 
             android:orientation="horizontal"
             android:padding="10dp">
@@ -102,31 +105,31 @@
         android:orientation="vertical"
         android:gravity="center">
 
-    <Button
-        android:id="@+id/btnAccederEvento"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/bordes_redondos"
-        android:backgroundTint="#FFFFFF"
-        android:text="@string/acceder_al_evento"
-        android:textColor="#FFF"
-        android:textSize="15sp" />
+        <Button
+            android:id="@+id/btnAccederEvento"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/bordes_redondos"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/acceder_al_evento"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
 
-    <Button
-        android:id="@+id/btnVolverListado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/bordes_redondos"
-        android:text="@string/volver_al_listado"
-        android:textColor="#FFF"
-        android:textSize="15sp" />
+        <Button
+            android:id="@+id/btnVolverListado"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bordes_redondos"
+            android:text="@string/volver_al_listado"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
 
     </LinearLayout>
 </LinearLayout>

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -86,6 +87,7 @@ public class VotacionActivity extends BaseAppCompatMenu {
         if (estado.equals("Finalizado")){
 
             tvSeleccione.setText(R.string.votacionGuardada);
+            tvSeleccione.setTextColor(Color.GRAY);
             btnEnviar.setVisibility(View.GONE);
             btnGuardar.setVisibility(View.GONE);
             spinner.setVisibility(View.GONE);
@@ -94,6 +96,8 @@ public class VotacionActivity extends BaseAppCompatMenu {
             bloquearVotos();
 
         } else if(estado.equals("En curso")){
+            tvSeleccione.setTextColor(Color.GRAY);
+
             cargarGrupos("https://politecnico-estella.ddns.net:10443/masterchef_01/php/cargarGruposEvento.php?idevento=" + idevento);
             definirEditYSeeks();
             //comprobarRealizada("http://10.0.2.2/masterchef/comprobarVotacionRealizada.php?idevento="+ idevento+"&idjuez="+usuario);

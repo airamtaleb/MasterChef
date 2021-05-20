@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -72,6 +73,13 @@ public class DetallesEventoActivity extends BaseAppCompatMenu {
         txtvEstado.setText(getText(R.string.estado)+ evento.getEstado());
         txtvDescripcion.setText(getText(R.string.descripcion)+ evento.getDescripcion());
         txtvLugar.setText(getText(R.string.lugar)+ evento.getLugar());
+
+        //les doy color para que se vea en modo oscuro
+        txtvFecha.setTextColor(Color.GRAY);
+        txtvHora.setTextColor(Color.GRAY);
+        txtvEstado.setTextColor(Color.GRAY);
+        txtvDescripcion.setTextColor(Color.GRAY);
+        txtvLugar.setTextColor(Color.GRAY);
 
         btnAccederEvento = findViewById(R.id.btnAccederEvento);
         btnApuntarse = findViewById(R.id.btnApuntarse);
